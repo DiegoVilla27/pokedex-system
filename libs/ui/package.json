@@ -1,0 +1,10 @@
+{
+  "name": "@pokedex/ui",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./fonts.css": "./fonts.css",
+    "./tokens.json": "./tokens.json",
+    "./icons": "./icons.ts"
+  }
+}

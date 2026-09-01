@@ -1,0 +1,8 @@
+<h1>HOLA!</h1>
+
+@for (icon of iconsMapped(); track icon) {
+<div style="display: flex; gap: 4px">
+  <p style="margin: 0px">{{ icon.n }}</p>
+  <div [innerHTML]="icon.i | safeHtml" style="width: 20px; height: 20px"></div>
+</div>
+}

@@ -1,19 +1,20 @@
 {
-  "name": "@org/source",
+  "name": "@pokedex/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "npx nx run-many -t dev",
+    "build": "npx nx run-many -t build",
+    "test": "npx nx run-many -t test",
+    "graph": "npx nx graph",
+    "docker": "docker compose up build -d",
+    "clean": "rm -rf node_modules .nx pnpm-lock.yaml && pnpm i"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "@nx/js": "23.1.1",
-    "@swc-node/register": "1.11.1",
-    "@swc/core": "1.15.8",
-    "@swc/helpers": "0.5.18",
-    "@types/node": "^24.0.0",
-    "nx": "23.1.1",
+    "nx": "23.1.2",
     "prettier": "^3.8.1",
-    "tslib": "^2.3.0",
     "typescript": "~6.0.3"
   }
 }
