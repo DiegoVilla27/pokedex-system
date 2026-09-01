@@ -1,0 +1,30 @@
+name: pokedex_flutter
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0+1
+
+scripts:
+  dev:ios: flutter run -d DF7E47CA-2BBD-42A2-AF30-4DBB8DC271C7
+  dev:android: flutter run -d
+  gen: dart run build_runner build --delete-conflicting-outputs
+  clean:all: >
+    flutter clean &&
+    flutter pub get &&
+    dart run build_runner clean
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - ../../libs/ui/assets/icons/

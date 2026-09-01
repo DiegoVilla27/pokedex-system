@@ -1,0 +1,29 @@
+{
+  "name": "pokedex_flutter",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/pokedex_flutter/lib",
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "flutter run",
+        "cwd": "apps/pokedex_flutter"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "flutter build web",
+        "cwd": "apps/pokedex_flutter"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "flutter test",
+        "cwd": "apps/pokedex_flutter"
+      }
+    }
+  }
+}

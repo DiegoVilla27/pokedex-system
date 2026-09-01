@@ -73,3 +73,12 @@ apps/**/android/build/
 apps/**/android/app/build/
 apps/**/android/.idea/
 UserInterfaceState.xcuserstate
+
+# Flutter / Dart
+apps/**/.dart_tool/
+apps/**/.flutter-plugins
+apps/**/.flutter-plugins-dependencies
+apps/**/.packages
+apps/**/.pub-cache/
+*.iml
+
