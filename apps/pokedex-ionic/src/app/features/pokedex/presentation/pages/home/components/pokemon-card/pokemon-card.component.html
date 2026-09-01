@@ -1,0 +1,72 @@
+@if (pokemon(); as poke) {
+  <ion-card
+    [style.--poke-color-rgb]="bgColor()"
+    button
+    (click)="goToPokemon(pokemon()!)"
+  >
+    <ion-card-header>
+      <h2>#{{ poke.info.id | padNumber }}</h2>
+      <button
+        class="favorite-btn"
+        [class.is-favorite]="isFavorite()"
+        aria-label="Favorite"
+        (click)="toggleFavorite($event)"
+      >
+        <ion-icon [name]="isFavorite() ? 'heart' : 'heart-outline'"></ion-icon>
+      </button>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Contenedor del Pokémon con todos los efectos de profundidad -->
+      <div class="sprite-wrapper">
+        <!-- 1. Pokéball de trazo sutil centrada detrás de la cabeza (como en la foto) -->
+        <ion-icon src="assets/pokeball.svg" class="bg-pokeball"></ion-icon>
+
+        <!-- 2. Partículas temáticas flotando en 3D (blancas sutiles) -->
+        @if (poke.info.types.length > 0) {
+          @let mainType = poke.info.types[0].type.name;
+          <div class="particles-container">
+            <ion-icon
+              [src]="POKEMON_TYPE_CONFIG[mainType].icon"
+              class="particle p-top-left"
+            ></ion-icon>
+            <ion-icon
+              [src]="POKEMON_TYPE_CONFIG[mainType].icon"
+              class="particle p-bottom-right"
+            ></ion-icon>
+            <ion-icon
+              [src]="POKEMON_TYPE_CONFIG[mainType].icon"
+              class="particle p-top-right"
+            ></ion-icon>
+          </div>
+        }
+
+        <!-- 3. Sprite del Pokémon -->
+        @if (poke.info.sprites.other.home.front_default; as sprite) {
+          <img
+            [ngSrc]="sprite"
+            width="120"
+            height="120"
+            [alt]="poke.name"
+            class="pokemon-sprite"
+            priority
+          />
+        }
+
+        <!-- 4. Sombra suave de suelo bajo los pies -->
+        <div class="ground-shadow"></div>
+      </div>
+
+      <h1>{{ poke.name }}</h1>
+      <div class="pokemon-types">
+        @for (t of poke.info.types; track t.type.name) {
+          @let config = POKEMON_TYPE_CONFIG[t.type.name];
+          <div [ngStyle]="{ 'background-color': config.color }">
+            <ion-icon [src]="config.icon" class="type-icon"></ion-icon>
+            <p>{{ t.type.name }}</p>
+          </div>
+        }
+      </div>
+    </ion-card-content>
+  </ion-card>
+}

@@ -1,0 +1,58 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+}
+
+ion-content {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  --background: transparent;
+}
+
+.pokemon-tabs {
+  padding: 1.25rem 1.2rem calc(env(safe-area-inset-bottom, 20px) + 3.5rem) 1.2rem;
+  min-height: 100%;
+  background-color: var(--app-background);
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.4);
+
+  ion-segment {
+    --background: #121928;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 3px;
+    margin-bottom: 1.5rem;
+
+    ion-segment-button {
+      --indicator-color: #1a2336;
+      --indicator-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+      --color: rgba(255, 255, 255, 0.5);
+      --color-checked: #ffffff;
+      --border-radius: 26px;
+      height: 38px;
+      border-radius: 26px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  .tab-panel {
+    animation: fadeInTab 0.25s ease-out;
+  }
+}
+
+@keyframes fadeInTab {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

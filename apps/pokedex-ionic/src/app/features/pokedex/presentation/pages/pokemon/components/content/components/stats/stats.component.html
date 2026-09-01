@@ -1,0 +1,25 @@
+<div class="stats-card">
+  @for (s of stats(); track s.stat.name) {
+    @let config = POKEMON_STAT_CONFIG[s.stat.name];
+    <div class="stat-row">
+      <div class="stat-label-group">
+        <ion-icon
+          [icon]="config.iconData"
+          class="stat-icon"
+          [style.color]="config.color"
+        ></ion-icon>
+        <span class="stat-name">{{ config.label }}</span>
+      </div>
+
+      <div class="stat-bar-track">
+        <div
+          class="stat-bar-fill"
+          [style.width.%]="(s.base_stat / 100) * 100"
+          [style.background-color]="config.color"
+        ></div>
+      </div>
+
+      <span class="stat-value">{{ s.base_stat }}</span>
+    </div>
+  }
+</div>

@@ -1,0 +1,91 @@
+ion-toolbar {
+  padding: 1rem;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 0px;
+
+      h1,
+      p {
+        margin: 0px;
+      }
+
+      h1 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    ion-buttons {
+      ion-icon {
+        font-size: 45px;
+        background-color: var(--app-background);
+      }
+    }
+  }
+
+  .header-search {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+
+    ion-searchbar {
+      padding: 0px;
+      --icon-color: var(--text);
+    }
+
+    ion-icon {
+      font-size: 1.5rem;
+    }
+  }
+
+  .header-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.5rem;
+    padding: 0px;
+
+    /* Ocultar barra de scroll */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .slider-item {
+      flex: 0 0 auto; /* Ancho de cada tarjeta (80% de la pantalla) */
+      scroll-snap-align: center; /* Se fija al centro al soltar */
+      border-radius: 0.5rem;
+      border: 0.5px solid rgba(255, 255, 255, 0.5);
+      padding: 0.4rem 0.8rem;
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
+      margin-bottom: 1px;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+      font-size: 0.8rem;
+    }
+
+    .selected {
+      border: none;
+      background-color: var(--type-color);
+    }
+  }
+}

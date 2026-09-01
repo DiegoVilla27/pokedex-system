@@ -1,0 +1,31 @@
+// For information on how to create your own theme, please refer to:
+// https://ionicframework.com/docs/theming/
+:root {
+  --app-background: #0e1421;
+  --app-background-rgb: 14, 20, 33;
+
+  --app-text: #ffffff;
+  --app-text-rgb: 255, 255, 255;
+
+  --ion-background-color: var(--app-background);
+  --ion-background-color-rgb: var(--app-background-rgb);
+
+  --ion-text-color: var(--app-text);
+  --ion-text-color-rgb: var(--app-text-rgb);
+
+  --ion-toolbar-background: var(--app-background);
+  --ion-toolbar-color: var(--app-text);
+  --ion-toolbar-border-color: rgba(255, 255, 255, 0.08);
+}
+
+ion-content {
+  --background: var(--app-background);
+}
+
+ion-tab-bar {
+  --background: var(--app-background);
+  --color: rgba(255, 255, 255, 0.5);
+  --color-selected: #ffffff;
+
+  --border: 1px solid rgba(255, 255, 255, 0.08);
+}

@@ -1,0 +1,32 @@
+{
+  "name": "pokedex-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/pokedex-api/src",
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "./mvnw spring-boot:run",
+        "cwd": "apps/pokedex-api"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "outputs": [
+        "{projectRoot}/target"
+      ],
+      "options": {
+        "command": "./mvnw clean package -DskipTests",
+        "cwd": "apps/pokedex-api"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "./mvnw test",
+        "cwd": "apps/pokedex-api"
+      }
+    }
+  }
+}

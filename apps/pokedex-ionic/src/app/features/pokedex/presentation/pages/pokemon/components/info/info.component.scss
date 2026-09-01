@@ -1,0 +1,207 @@
+:host {
+  display: block;
+  flex-shrink: 0;
+}
+
+.pokemon-box-info {
+  position: relative;
+  margin-bottom: 2rem;
+  height: 30%;
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    text-align: left;
+  }
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0.5px;
+  }
+  p {
+    margin: 0;
+  }
+  .title-info {
+    font-weight: 100;
+    margin-top: 5px;
+  }
+  .subtitle-info {
+    font-weight: bold;
+  }
+
+  .pokemon-types {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    div {
+      display: inline-flex !important;
+      flex-direction: row !important;
+      align-items: center;
+      flex: 0 0 auto;
+      gap: 5px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+      .type-icon {
+        font-size: 10px;
+        width: 10px;
+        height: 10px;
+        color: white;
+        flex-shrink: 0;
+      }
+
+      p {
+        color: #ffffff;
+        font-weight: 800;
+        margin: 0;
+        font-size: 0.8rem;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .sprite-wrapper {
+    position: absolute;
+    top: 160%;
+    right: -20px;
+    width: 100%;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0 10px 0;
+    padding-left: 30vw;
+
+    .bg-pokeball {
+      position: absolute;
+      top: -200px;
+      right: -50px;
+      width: 250px;
+      height: 250px;
+      color: white;
+      opacity: 0.03;
+      transform: rotate(18deg);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .particles-container {
+      position: absolute;
+      inset: 0;
+      left: 30vw;
+      pointer-events: none;
+      z-index: 1;
+
+      .particle {
+        position: absolute;
+        color: white;
+        will-change: transform;
+
+        &.p-top-left {
+          top: 8px;
+          left: 6px;
+          font-size: 16px;
+          opacity: 0.22;
+          filter: blur(1.4px);
+          animation: float-slow-1 4.8s ease-in-out infinite alternate;
+        }
+
+        &.p-bottom-right {
+          bottom: 10px;
+          right: 4px;
+          font-size: 19px;
+          opacity: 0.42;
+          filter: blur(0.3px) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+          animation: float-slow-2 5.6s ease-in-out infinite alternate;
+        }
+
+        &.p-top-right {
+          top: 18px;
+          right: 14px;
+          font-size: 12px;
+          opacity: 0.18;
+          filter: blur(0.8px);
+          animation: float-slow-3 4.2s ease-in-out infinite alternate;
+        }
+      }
+    }
+
+    .pokemon-sprite {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 240px;
+      object-fit: contain;
+      filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.65));
+    }
+
+    .ground-shadow {
+      position: absolute;
+      bottom: -120px;
+      left: 65%;
+      transform: translateX(-50%);
+      width: 65%;
+      height: 14px;
+      background: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 0.45) 0%,
+        transparent 75%
+      );
+      border-radius: 50%;
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+}
+
+@keyframes float-slow-1 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-30deg);
+  }
+  50% {
+    transform: translate3d(2px, -5px, 0) rotate(-26deg);
+  }
+  100% {
+    transform: translate3d(-2px, -8px, 0) rotate(-34deg);
+  }
+}
+
+@keyframes float-slow-2 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(20deg);
+  }
+  50% {
+    transform: translate3d(-3px, -6px, 0) rotate(16deg);
+  }
+  100% {
+    transform: translate3d(2px, -10px, 0) rotate(24deg);
+  }
+}
+
+@keyframes float-slow-3 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  50% {
+    transform: translate3d(3px, -4px, 0) rotate(50deg);
+  }
+  100% {
+    transform: translate3d(1px, -7px, 0) rotate(40deg);
+  }
+}

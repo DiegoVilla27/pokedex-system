@@ -1,0 +1,38 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.pokemon {
+  &-box {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    padding-top: 9rem;
+    background-color: rgb(var(--poke-color-rgb));
+    height: 100%;
+    box-shadow:
+      0 14px 28px -6px rgba(0, 0, 0, 0.65),
+      inset 0 1px 1px 0 rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    // 1. Resplandor radial elíptico en el centro + 2. Tinte ambiental + 3. Fondo oscuro
+    background:
+      radial-gradient(
+        ellipse 95% 65% at 50% 36%,
+        rgba(var(--poke-color-rgb), 0.65) 0%,
+        rgba(var(--poke-color-rgb), 0.25) 45%,
+        transparent 75%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(var(--poke-color-rgb), 0.25) 0%,
+        rgba(15, 20, 30, 0.75) 50%,
+        #090d16 100%
+      ),
+      #090d16;
+  }
+}

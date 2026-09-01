@@ -1,0 +1,44 @@
+{
+  "name": "pokedex-ionic",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "https://ionicframework.com/",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "dev": "pnpm dev:ios",
+    "dev:ios": "ionic capacitor run ios -l --external --target=DF7E47CA-2BBD-42A2-AF30-4DBB8DC271C7",
+    "dev:android": "ionic capacitor run android -l --external",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "sync": "pnpm build && npx cap sync",
+    "test": "ng test",
+    "lint": "ng lint",
+    "ios:sync": "pnpm build && npx cap sync ios",
+    "ios:xcode": "npx cap open ios",
+    "ios:devices": "xcrun simctl list devices available",
+    "android:sync": "pnpm build && npx cap sync android",
+    "android:xcode": "npx cap open android",
+    "android:devices": "adb devices"
+  },
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/app": "8.1.1",
+    "@capacitor/core": "8.5.0",
+    "@capacitor/haptics": "8.0.2",
+    "@capacitor/ios": "^8.5.0",
+    "@capacitor/keyboard": "8.0.5",
+    "@capacitor/status-bar": "8.0.3",
+    "@ionic/angular": "^9.0.0",
+    "@ionic/storage-angular": "^4.0.0",
+    "@pokedex/ui": "workspace:*",
+    "ionicons": "^8.1.0",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.0",
+    "@ionic/angular-toolkit": "^13.0.0"
+  },
+  "description": "An Ionic project"
+}

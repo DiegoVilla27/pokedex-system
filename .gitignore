@@ -51,3 +51,25 @@ Thumbs.db
 .angular
 
 __screenshots__/
+
+# Java / Spring Boot
+apps/**/target/
+apps/**/build/
+apps/**/.gradle/
+apps/**/.factorypath
+apps/**/bin/
+*.class
+*.jar
+*.war
+
+# Ionic / Capacitor / Mobile
+apps/**/www/
+apps/**/.ionic/
+apps/**/ios/DerivedData/
+apps/**/ios/App/build/
+apps/**/ios/App/Pods/
+apps/**/android/.gradle/
+apps/**/android/build/
+apps/**/android/app/build/
+apps/**/android/.idea/
+UserInterfaceState.xcuserstate

@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="chevron-back" size="large" [routerLink]="'/pokedex'" />
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <button
+        class="header-favorite-btn"
+        [class.is-favorite]="isFavorite()"
+        aria-label="Favorite"
+        (click)="toggleFavorite()"
+      >
+        <ion-icon
+          [name]="isFavorite() ? 'heart' : 'heart-outline'"
+          size="large"
+        ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

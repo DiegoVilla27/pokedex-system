@@ -1,0 +1,8 @@
+<app-pokemon-header [pokemon]="pokemon()" />
+
+<div class="pokemon-box" [style.--poke-color-rgb]="bgColor()">
+  @if (pokemon(); as poke) {
+    <app-pokemon-info [pokemon]="poke" />
+    <app-pokemon-content [pokemon]="poke" />
+  }
+</div>

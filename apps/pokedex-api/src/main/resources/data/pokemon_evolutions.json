@@ -1,0 +1,1840 @@
+[
+  {
+    "pokemonId": 1,
+    "evolutions": [
+      {
+        "toPokemonId": 1,
+        "order": 1
+      },
+      {
+        "toPokemonId": 2,
+        "order": 2
+      },
+      {
+        "toPokemonId": 3,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 2,
+    "evolutions": [
+      {
+        "toPokemonId": 1,
+        "order": 1
+      },
+      {
+        "toPokemonId": 2,
+        "order": 2
+      },
+      {
+        "toPokemonId": 3,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 3,
+    "evolutions": [
+      {
+        "toPokemonId": 1,
+        "order": 1
+      },
+      {
+        "toPokemonId": 2,
+        "order": 2
+      },
+      {
+        "toPokemonId": 3,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 4,
+    "evolutions": [
+      {
+        "toPokemonId": 4,
+        "order": 1
+      },
+      {
+        "toPokemonId": 5,
+        "order": 2
+      },
+      {
+        "toPokemonId": 6,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 5,
+    "evolutions": [
+      {
+        "toPokemonId": 4,
+        "order": 1
+      },
+      {
+        "toPokemonId": 5,
+        "order": 2
+      },
+      {
+        "toPokemonId": 6,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 6,
+    "evolutions": [
+      {
+        "toPokemonId": 4,
+        "order": 1
+      },
+      {
+        "toPokemonId": 5,
+        "order": 2
+      },
+      {
+        "toPokemonId": 6,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 7,
+    "evolutions": [
+      {
+        "toPokemonId": 7,
+        "order": 1
+      },
+      {
+        "toPokemonId": 8,
+        "order": 2
+      },
+      {
+        "toPokemonId": 9,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 8,
+    "evolutions": [
+      {
+        "toPokemonId": 7,
+        "order": 1
+      },
+      {
+        "toPokemonId": 8,
+        "order": 2
+      },
+      {
+        "toPokemonId": 9,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 9,
+    "evolutions": [
+      {
+        "toPokemonId": 7,
+        "order": 1
+      },
+      {
+        "toPokemonId": 8,
+        "order": 2
+      },
+      {
+        "toPokemonId": 9,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 10,
+    "evolutions": [
+      {
+        "toPokemonId": 10,
+        "order": 1
+      },
+      {
+        "toPokemonId": 11,
+        "order": 2
+      },
+      {
+        "toPokemonId": 12,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 11,
+    "evolutions": [
+      {
+        "toPokemonId": 10,
+        "order": 1
+      },
+      {
+        "toPokemonId": 11,
+        "order": 2
+      },
+      {
+        "toPokemonId": 12,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 12,
+    "evolutions": [
+      {
+        "toPokemonId": 10,
+        "order": 1
+      },
+      {
+        "toPokemonId": 11,
+        "order": 2
+      },
+      {
+        "toPokemonId": 12,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 13,
+    "evolutions": [
+      {
+        "toPokemonId": 13,
+        "order": 1
+      },
+      {
+        "toPokemonId": 14,
+        "order": 2
+      },
+      {
+        "toPokemonId": 15,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 14,
+    "evolutions": [
+      {
+        "toPokemonId": 13,
+        "order": 1
+      },
+      {
+        "toPokemonId": 14,
+        "order": 2
+      },
+      {
+        "toPokemonId": 15,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 15,
+    "evolutions": [
+      {
+        "toPokemonId": 13,
+        "order": 1
+      },
+      {
+        "toPokemonId": 14,
+        "order": 2
+      },
+      {
+        "toPokemonId": 15,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 16,
+    "evolutions": [
+      {
+        "toPokemonId": 16,
+        "order": 1
+      },
+      {
+        "toPokemonId": 17,
+        "order": 2
+      },
+      {
+        "toPokemonId": 18,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 17,
+    "evolutions": [
+      {
+        "toPokemonId": 16,
+        "order": 1
+      },
+      {
+        "toPokemonId": 17,
+        "order": 2
+      },
+      {
+        "toPokemonId": 18,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 18,
+    "evolutions": [
+      {
+        "toPokemonId": 16,
+        "order": 1
+      },
+      {
+        "toPokemonId": 17,
+        "order": 2
+      },
+      {
+        "toPokemonId": 18,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 19,
+    "evolutions": [
+      {
+        "toPokemonId": 19,
+        "order": 1
+      },
+      {
+        "toPokemonId": 20,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 20,
+    "evolutions": [
+      {
+        "toPokemonId": 19,
+        "order": 1
+      },
+      {
+        "toPokemonId": 20,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 21,
+    "evolutions": [
+      {
+        "toPokemonId": 21,
+        "order": 1
+      },
+      {
+        "toPokemonId": 22,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 22,
+    "evolutions": [
+      {
+        "toPokemonId": 21,
+        "order": 1
+      },
+      {
+        "toPokemonId": 22,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 23,
+    "evolutions": [
+      {
+        "toPokemonId": 23,
+        "order": 1
+      },
+      {
+        "toPokemonId": 24,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 24,
+    "evolutions": [
+      {
+        "toPokemonId": 23,
+        "order": 1
+      },
+      {
+        "toPokemonId": 24,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 25,
+    "evolutions": [
+      {
+        "toPokemonId": 25,
+        "order": 1
+      },
+      {
+        "toPokemonId": 26,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 26,
+    "evolutions": [
+      {
+        "toPokemonId": 25,
+        "order": 1
+      },
+      {
+        "toPokemonId": 26,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 27,
+    "evolutions": [
+      {
+        "toPokemonId": 27,
+        "order": 1
+      },
+      {
+        "toPokemonId": 28,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 28,
+    "evolutions": [
+      {
+        "toPokemonId": 27,
+        "order": 1
+      },
+      {
+        "toPokemonId": 28,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 29,
+    "evolutions": [
+      {
+        "toPokemonId": 29,
+        "order": 1
+      },
+      {
+        "toPokemonId": 30,
+        "order": 2
+      },
+      {
+        "toPokemonId": 31,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 30,
+    "evolutions": [
+      {
+        "toPokemonId": 29,
+        "order": 1
+      },
+      {
+        "toPokemonId": 30,
+        "order": 2
+      },
+      {
+        "toPokemonId": 31,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 31,
+    "evolutions": [
+      {
+        "toPokemonId": 29,
+        "order": 1
+      },
+      {
+        "toPokemonId": 30,
+        "order": 2
+      },
+      {
+        "toPokemonId": 31,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 32,
+    "evolutions": [
+      {
+        "toPokemonId": 32,
+        "order": 1
+      },
+      {
+        "toPokemonId": 33,
+        "order": 2
+      },
+      {
+        "toPokemonId": 34,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 33,
+    "evolutions": [
+      {
+        "toPokemonId": 32,
+        "order": 1
+      },
+      {
+        "toPokemonId": 33,
+        "order": 2
+      },
+      {
+        "toPokemonId": 34,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 34,
+    "evolutions": [
+      {
+        "toPokemonId": 32,
+        "order": 1
+      },
+      {
+        "toPokemonId": 33,
+        "order": 2
+      },
+      {
+        "toPokemonId": 34,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 35,
+    "evolutions": [
+      {
+        "toPokemonId": 35,
+        "order": 1
+      },
+      {
+        "toPokemonId": 36,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 36,
+    "evolutions": [
+      {
+        "toPokemonId": 35,
+        "order": 1
+      },
+      {
+        "toPokemonId": 36,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 37,
+    "evolutions": [
+      {
+        "toPokemonId": 37,
+        "order": 1
+      },
+      {
+        "toPokemonId": 38,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 38,
+    "evolutions": [
+      {
+        "toPokemonId": 37,
+        "order": 1
+      },
+      {
+        "toPokemonId": 38,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 39,
+    "evolutions": [
+      {
+        "toPokemonId": 39,
+        "order": 1
+      },
+      {
+        "toPokemonId": 40,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 40,
+    "evolutions": [
+      {
+        "toPokemonId": 39,
+        "order": 1
+      },
+      {
+        "toPokemonId": 40,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 41,
+    "evolutions": [
+      {
+        "toPokemonId": 41,
+        "order": 1
+      },
+      {
+        "toPokemonId": 42,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 42,
+    "evolutions": [
+      {
+        "toPokemonId": 41,
+        "order": 1
+      },
+      {
+        "toPokemonId": 42,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 43,
+    "evolutions": [
+      {
+        "toPokemonId": 43,
+        "order": 1
+      },
+      {
+        "toPokemonId": 44,
+        "order": 2
+      },
+      {
+        "toPokemonId": 45,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 44,
+    "evolutions": [
+      {
+        "toPokemonId": 43,
+        "order": 1
+      },
+      {
+        "toPokemonId": 44,
+        "order": 2
+      },
+      {
+        "toPokemonId": 45,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 45,
+    "evolutions": [
+      {
+        "toPokemonId": 43,
+        "order": 1
+      },
+      {
+        "toPokemonId": 44,
+        "order": 2
+      },
+      {
+        "toPokemonId": 45,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 46,
+    "evolutions": [
+      {
+        "toPokemonId": 46,
+        "order": 1
+      },
+      {
+        "toPokemonId": 47,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 47,
+    "evolutions": [
+      {
+        "toPokemonId": 46,
+        "order": 1
+      },
+      {
+        "toPokemonId": 47,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 48,
+    "evolutions": [
+      {
+        "toPokemonId": 48,
+        "order": 1
+      },
+      {
+        "toPokemonId": 49,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 49,
+    "evolutions": [
+      {
+        "toPokemonId": 48,
+        "order": 1
+      },
+      {
+        "toPokemonId": 49,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 50,
+    "evolutions": [
+      {
+        "toPokemonId": 50,
+        "order": 1
+      },
+      {
+        "toPokemonId": 51,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 51,
+    "evolutions": [
+      {
+        "toPokemonId": 50,
+        "order": 1
+      },
+      {
+        "toPokemonId": 51,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 52,
+    "evolutions": [
+      {
+        "toPokemonId": 52,
+        "order": 1
+      },
+      {
+        "toPokemonId": 53,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 53,
+    "evolutions": [
+      {
+        "toPokemonId": 52,
+        "order": 1
+      },
+      {
+        "toPokemonId": 53,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 54,
+    "evolutions": [
+      {
+        "toPokemonId": 54,
+        "order": 1
+      },
+      {
+        "toPokemonId": 55,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 55,
+    "evolutions": [
+      {
+        "toPokemonId": 54,
+        "order": 1
+      },
+      {
+        "toPokemonId": 55,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 56,
+    "evolutions": [
+      {
+        "toPokemonId": 56,
+        "order": 1
+      },
+      {
+        "toPokemonId": 57,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 57,
+    "evolutions": [
+      {
+        "toPokemonId": 56,
+        "order": 1
+      },
+      {
+        "toPokemonId": 57,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 58,
+    "evolutions": [
+      {
+        "toPokemonId": 58,
+        "order": 1
+      },
+      {
+        "toPokemonId": 59,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 59,
+    "evolutions": [
+      {
+        "toPokemonId": 58,
+        "order": 1
+      },
+      {
+        "toPokemonId": 59,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 60,
+    "evolutions": [
+      {
+        "toPokemonId": 60,
+        "order": 1
+      },
+      {
+        "toPokemonId": 61,
+        "order": 2
+      },
+      {
+        "toPokemonId": 62,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 61,
+    "evolutions": [
+      {
+        "toPokemonId": 60,
+        "order": 1
+      },
+      {
+        "toPokemonId": 61,
+        "order": 2
+      },
+      {
+        "toPokemonId": 62,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 62,
+    "evolutions": [
+      {
+        "toPokemonId": 60,
+        "order": 1
+      },
+      {
+        "toPokemonId": 61,
+        "order": 2
+      },
+      {
+        "toPokemonId": 62,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 63,
+    "evolutions": [
+      {
+        "toPokemonId": 63,
+        "order": 1
+      },
+      {
+        "toPokemonId": 64,
+        "order": 2
+      },
+      {
+        "toPokemonId": 65,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 64,
+    "evolutions": [
+      {
+        "toPokemonId": 63,
+        "order": 1
+      },
+      {
+        "toPokemonId": 64,
+        "order": 2
+      },
+      {
+        "toPokemonId": 65,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 65,
+    "evolutions": [
+      {
+        "toPokemonId": 63,
+        "order": 1
+      },
+      {
+        "toPokemonId": 64,
+        "order": 2
+      },
+      {
+        "toPokemonId": 65,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 66,
+    "evolutions": [
+      {
+        "toPokemonId": 66,
+        "order": 1
+      },
+      {
+        "toPokemonId": 67,
+        "order": 2
+      },
+      {
+        "toPokemonId": 68,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 67,
+    "evolutions": [
+      {
+        "toPokemonId": 66,
+        "order": 1
+      },
+      {
+        "toPokemonId": 67,
+        "order": 2
+      },
+      {
+        "toPokemonId": 68,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 68,
+    "evolutions": [
+      {
+        "toPokemonId": 66,
+        "order": 1
+      },
+      {
+        "toPokemonId": 67,
+        "order": 2
+      },
+      {
+        "toPokemonId": 68,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 69,
+    "evolutions": [
+      {
+        "toPokemonId": 69,
+        "order": 1
+      },
+      {
+        "toPokemonId": 70,
+        "order": 2
+      },
+      {
+        "toPokemonId": 71,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 70,
+    "evolutions": [
+      {
+        "toPokemonId": 69,
+        "order": 1
+      },
+      {
+        "toPokemonId": 70,
+        "order": 2
+      },
+      {
+        "toPokemonId": 71,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 71,
+    "evolutions": [
+      {
+        "toPokemonId": 69,
+        "order": 1
+      },
+      {
+        "toPokemonId": 70,
+        "order": 2
+      },
+      {
+        "toPokemonId": 71,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 72,
+    "evolutions": [
+      {
+        "toPokemonId": 72,
+        "order": 1
+      },
+      {
+        "toPokemonId": 73,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 73,
+    "evolutions": [
+      {
+        "toPokemonId": 72,
+        "order": 1
+      },
+      {
+        "toPokemonId": 73,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 74,
+    "evolutions": [
+      {
+        "toPokemonId": 74,
+        "order": 1
+      },
+      {
+        "toPokemonId": 75,
+        "order": 2
+      },
+      {
+        "toPokemonId": 76,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 75,
+    "evolutions": [
+      {
+        "toPokemonId": 74,
+        "order": 1
+      },
+      {
+        "toPokemonId": 75,
+        "order": 2
+      },
+      {
+        "toPokemonId": 76,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 76,
+    "evolutions": [
+      {
+        "toPokemonId": 74,
+        "order": 1
+      },
+      {
+        "toPokemonId": 75,
+        "order": 2
+      },
+      {
+        "toPokemonId": 76,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 77,
+    "evolutions": [
+      {
+        "toPokemonId": 77,
+        "order": 1
+      },
+      {
+        "toPokemonId": 78,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 78,
+    "evolutions": [
+      {
+        "toPokemonId": 77,
+        "order": 1
+      },
+      {
+        "toPokemonId": 78,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 79,
+    "evolutions": [
+      {
+        "toPokemonId": 79,
+        "order": 1
+      },
+      {
+        "toPokemonId": 80,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 80,
+    "evolutions": [
+      {
+        "toPokemonId": 79,
+        "order": 1
+      },
+      {
+        "toPokemonId": 80,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 81,
+    "evolutions": [
+      {
+        "toPokemonId": 81,
+        "order": 1
+      },
+      {
+        "toPokemonId": 82,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 82,
+    "evolutions": [
+      {
+        "toPokemonId": 81,
+        "order": 1
+      },
+      {
+        "toPokemonId": 82,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 84,
+    "evolutions": [
+      {
+        "toPokemonId": 84,
+        "order": 1
+      },
+      {
+        "toPokemonId": 85,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 85,
+    "evolutions": [
+      {
+        "toPokemonId": 84,
+        "order": 1
+      },
+      {
+        "toPokemonId": 85,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 86,
+    "evolutions": [
+      {
+        "toPokemonId": 86,
+        "order": 1
+      },
+      {
+        "toPokemonId": 87,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 87,
+    "evolutions": [
+      {
+        "toPokemonId": 86,
+        "order": 1
+      },
+      {
+        "toPokemonId": 87,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 88,
+    "evolutions": [
+      {
+        "toPokemonId": 88,
+        "order": 1
+      },
+      {
+        "toPokemonId": 89,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 89,
+    "evolutions": [
+      {
+        "toPokemonId": 88,
+        "order": 1
+      },
+      {
+        "toPokemonId": 89,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 90,
+    "evolutions": [
+      {
+        "toPokemonId": 90,
+        "order": 1
+      },
+      {
+        "toPokemonId": 91,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 91,
+    "evolutions": [
+      {
+        "toPokemonId": 90,
+        "order": 1
+      },
+      {
+        "toPokemonId": 91,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 92,
+    "evolutions": [
+      {
+        "toPokemonId": 92,
+        "order": 1
+      },
+      {
+        "toPokemonId": 93,
+        "order": 2
+      },
+      {
+        "toPokemonId": 94,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 93,
+    "evolutions": [
+      {
+        "toPokemonId": 92,
+        "order": 1
+      },
+      {
+        "toPokemonId": 93,
+        "order": 2
+      },
+      {
+        "toPokemonId": 94,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 94,
+    "evolutions": [
+      {
+        "toPokemonId": 92,
+        "order": 1
+      },
+      {
+        "toPokemonId": 93,
+        "order": 2
+      },
+      {
+        "toPokemonId": 94,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 96,
+    "evolutions": [
+      {
+        "toPokemonId": 96,
+        "order": 1
+      },
+      {
+        "toPokemonId": 97,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 97,
+    "evolutions": [
+      {
+        "toPokemonId": 96,
+        "order": 1
+      },
+      {
+        "toPokemonId": 97,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 98,
+    "evolutions": [
+      {
+        "toPokemonId": 98,
+        "order": 1
+      },
+      {
+        "toPokemonId": 99,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 99,
+    "evolutions": [
+      {
+        "toPokemonId": 98,
+        "order": 1
+      },
+      {
+        "toPokemonId": 99,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 100,
+    "evolutions": [
+      {
+        "toPokemonId": 100,
+        "order": 1
+      },
+      {
+        "toPokemonId": 101,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 101,
+    "evolutions": [
+      {
+        "toPokemonId": 100,
+        "order": 1
+      },
+      {
+        "toPokemonId": 101,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 102,
+    "evolutions": [
+      {
+        "toPokemonId": 102,
+        "order": 1
+      },
+      {
+        "toPokemonId": 103,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 103,
+    "evolutions": [
+      {
+        "toPokemonId": 102,
+        "order": 1
+      },
+      {
+        "toPokemonId": 103,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 104,
+    "evolutions": [
+      {
+        "toPokemonId": 104,
+        "order": 1
+      },
+      {
+        "toPokemonId": 105,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 105,
+    "evolutions": [
+      {
+        "toPokemonId": 104,
+        "order": 1
+      },
+      {
+        "toPokemonId": 105,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 109,
+    "evolutions": [
+      {
+        "toPokemonId": 109,
+        "order": 1
+      },
+      {
+        "toPokemonId": 110,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 110,
+    "evolutions": [
+      {
+        "toPokemonId": 109,
+        "order": 1
+      },
+      {
+        "toPokemonId": 110,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 111,
+    "evolutions": [
+      {
+        "toPokemonId": 111,
+        "order": 1
+      },
+      {
+        "toPokemonId": 112,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 112,
+    "evolutions": [
+      {
+        "toPokemonId": 111,
+        "order": 1
+      },
+      {
+        "toPokemonId": 112,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 116,
+    "evolutions": [
+      {
+        "toPokemonId": 116,
+        "order": 1
+      },
+      {
+        "toPokemonId": 117,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 117,
+    "evolutions": [
+      {
+        "toPokemonId": 116,
+        "order": 1
+      },
+      {
+        "toPokemonId": 117,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 118,
+    "evolutions": [
+      {
+        "toPokemonId": 118,
+        "order": 1
+      },
+      {
+        "toPokemonId": 119,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 119,
+    "evolutions": [
+      {
+        "toPokemonId": 118,
+        "order": 1
+      },
+      {
+        "toPokemonId": 119,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 120,
+    "evolutions": [
+      {
+        "toPokemonId": 120,
+        "order": 1
+      },
+      {
+        "toPokemonId": 121,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 121,
+    "evolutions": [
+      {
+        "toPokemonId": 120,
+        "order": 1
+      },
+      {
+        "toPokemonId": 121,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 129,
+    "evolutions": [
+      {
+        "toPokemonId": 129,
+        "order": 1
+      },
+      {
+        "toPokemonId": 130,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 130,
+    "evolutions": [
+      {
+        "toPokemonId": 129,
+        "order": 1
+      },
+      {
+        "toPokemonId": 130,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 133,
+    "evolutions": [
+      {
+        "toPokemonId": 133,
+        "order": 1
+      },
+      {
+        "toPokemonId": 134,
+        "order": 2
+      },
+      {
+        "toPokemonId": 135,
+        "order": 2
+      },
+      {
+        "toPokemonId": 136,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 134,
+    "evolutions": [
+      {
+        "toPokemonId": 133,
+        "order": 1
+      },
+      {
+        "toPokemonId": 134,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 135,
+    "evolutions": [
+      {
+        "toPokemonId": 133,
+        "order": 1
+      },
+      {
+        "toPokemonId": 135,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 136,
+    "evolutions": [
+      {
+        "toPokemonId": 133,
+        "order": 1
+      },
+      {
+        "toPokemonId": 136,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 138,
+    "evolutions": [
+      {
+        "toPokemonId": 138,
+        "order": 1
+      },
+      {
+        "toPokemonId": 139,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 139,
+    "evolutions": [
+      {
+        "toPokemonId": 138,
+        "order": 1
+      },
+      {
+        "toPokemonId": 139,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 140,
+    "evolutions": [
+      {
+        "toPokemonId": 140,
+        "order": 1
+      },
+      {
+        "toPokemonId": 141,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 141,
+    "evolutions": [
+      {
+        "toPokemonId": 140,
+        "order": 1
+      },
+      {
+        "toPokemonId": 141,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "pokemonId": 147,
+    "evolutions": [
+      {
+        "toPokemonId": 147,
+        "order": 1
+      },
+      {
+        "toPokemonId": 148,
+        "order": 2
+      },
+      {
+        "toPokemonId": 149,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 148,
+    "evolutions": [
+      {
+        "toPokemonId": 147,
+        "order": 1
+      },
+      {
+        "toPokemonId": 148,
+        "order": 2
+      },
+      {
+        "toPokemonId": 149,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "pokemonId": 149,
+    "evolutions": [
+      {
+        "toPokemonId": 147,
+        "order": 1
+      },
+      {
+        "toPokemonId": 148,
+        "order": 2
+      },
+      {
+        "toPokemonId": 149,
+        "order": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  @if (!pokedexSvc.loading()) {
+  <div class="pokedex-grid">
+    @for (pokemon of pokedexSvc.pokemons(); track pokemon.name) {
+    <app-pokemon-card [pokemon]="pokemon" />
+    }
+  </div>
+
+  <ion-infinite-scroll threshold="150px" (ionInfinite)="loadMore($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading pokemon..."
+    ></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  }
+</ion-content>

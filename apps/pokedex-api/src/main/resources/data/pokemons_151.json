@@ -1,0 +1,6260 @@
+[
+  {
+    "name": "bulbasaur",
+    "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon. It can go for days without eating a single morsel. In the bulb on its back, it stores energy. The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows. It carries a seed on its back right from birth. As it grows older, the seed also grows larger. While it is young, it uses the nutrients that are stored in the seeds on its back in order to grow.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png",
+    "height": 7,
+    "weight": 69,
+    "color": {
+      "r": 128,
+      "g": 203,
+      "b": 188
+    },
+    "typeIds": [
+      1,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 45
+      },
+      {
+        "statId": 2,
+        "value": 49
+      },
+      {
+        "statId": 3,
+        "value": 49
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 65
+      },
+      {
+        "statId": 6,
+        "value": 45
+      }
+    ]
+  },
+  {
+    "name": "ivysaur",
+    "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs. The bulb on its back grows by drawing energy. It gives off an aroma when it is ready to bloom. Exposure to sun light adds to its strength. Sunlight also makes the bud on its back grow larger. If the bud on its back starts to smell sweet, it is evidence that the large flower will soon bloom. When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower’s coming bloom.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/2.png",
+    "height": 10,
+    "weight": 130,
+    "color": {
+      "r": 87,
+      "g": 179,
+      "b": 194
+    },
+    "typeIds": [
+      1,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 62
+      },
+      {
+        "statId": 3,
+        "value": 63
+      },
+      {
+        "statId": 4,
+        "value": 80
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "venusaur",
+    "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight. The flower on its back catches the sun's rays. The sunlight is then absorbed and used for energy. By spreading the broad petals of its flower and catching the sun's rays, it fills its body with power. It is able to convert sunlight into energy. As a result, it is more powerful in the summertime. As it warms itself and absorbs the sunlight, its flower petals release a pleasant fragrance.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/3.png",
+    "height": 20,
+    "weight": 1000,
+    "color": {
+      "r": 9,
+      "g": 196,
+      "b": 216
+    },
+    "typeIds": [
+      1,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 80
+      },
+      {
+        "statId": 2,
+        "value": 82
+      },
+      {
+        "statId": 3,
+        "value": 83
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 100
+      },
+      {
+        "statId": 6,
+        "value": 80
+      }
+    ]
+  },
+  {
+    "name": "charmander",
+    "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail. The flame at the tip of its tail makes a sound as it burns. You can only hear it in quiet places. The flame on its tail shows the strength of its life force. If it is weak, the flame also burns weakly. The flame on its tail indicates charmander's life force. If it is healthy, the flame burns brightly.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/4.png",
+    "height": 6,
+    "weight": 85,
+    "color": {
+      "r": 235,
+      "g": 125,
+      "b": 8
+    },
+    "typeIds": [
+      3
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 39
+      },
+      {
+        "statId": 2,
+        "value": 52
+      },
+      {
+        "statId": 3,
+        "value": 43
+      },
+      {
+        "statId": 4,
+        "value": 60
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 65
+      }
+    ]
+  },
+  {
+    "name": "charmeleon",
+    "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels. Tough fights could excite this Pokémon. When excited, it may blow out bluishwhite flames. It is very hot headed by nature, so it constantly seeks opponents. It calms down only when it wins. It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws. If it becomes agitated during battle, it spouts intense flames, incinerating its surroundings.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/5.png",
+    "height": 11,
+    "weight": 190,
+    "color": {
+      "r": 216,
+      "g": 56,
+      "b": 39
+    },
+    "typeIds": [
+      3
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 58
+      },
+      {
+        "statId": 2,
+        "value": 64
+      },
+      {
+        "statId": 3,
+        "value": 58
+      },
+      {
+        "statId": 4,
+        "value": 80
+      },
+      {
+        "statId": 5,
+        "value": 65
+      },
+      {
+        "statId": 6,
+        "value": 80
+      }
+    ]
+  },
+  {
+    "name": "charizard",
+    "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally. When expelling a blast of super hot fire, the red flame at the tip of its tail burns more intensely. If charizard be comes furious, the flame at the tip of its tail flares up in a whitishblue color. Breathing intense, hot flames, it can melt almost any thing. Its breath inflicts terrible pain on enemies. It is said that charizard’s fire burns hotter if it has experienced harsh battles.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/6.png",
+    "height": 17,
+    "weight": 905,
+    "color": {
+      "r": 5,
+      "g": 85,
+      "b": 104
+    },
+    "typeIds": [
+      3,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 78
+      },
+      {
+        "statId": 2,
+        "value": 84
+      },
+      {
+        "statId": 3,
+        "value": 78
+      },
+      {
+        "statId": 4,
+        "value": 109
+      },
+      {
+        "statId": 5,
+        "value": 85
+      },
+      {
+        "statId": 6,
+        "value": 100
+      }
+    ]
+  },
+  {
+    "name": "squirtle",
+    "description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth. Shoots water at prey while in the water. Withdraws into its shell when in danger. The shell is soft when it is born. It soon becomes so resilient, prod ding fingers will bounce off it. The shell, which hardens soon after it is born, is resilient. If you poke it, it will bounce back out. When it feels threatened, it draws its legs inside its shell and sprays water from its mouth.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png",
+    "height": 5,
+    "weight": 90,
+    "color": {
+      "r": 107,
+      "g": 196,
+      "b": 230
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 44
+      },
+      {
+        "statId": 2,
+        "value": 48
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 64
+      },
+      {
+        "statId": 6,
+        "value": 43
+      }
+    ]
+  },
+  {
+    "name": "wartortle",
+    "description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance. When tapped, this Pokémon will pull in its head, but its tail will still stick out a little bit. It is recognized as a symbol of longevity. If its shell has algae on it, that wartortle is very old. It cleverly con trols its furry ears and tail to maintain its balance while swimming. Its long, furry tail is a symbol of longevity, making it quite popular among older people.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/8.png",
+    "height": 10,
+    "weight": 225,
+    "color": {
+      "r": 183,
+      "g": 198,
+      "b": 218
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 59
+      },
+      {
+        "statId": 2,
+        "value": 63
+      },
+      {
+        "statId": 3,
+        "value": 80
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 58
+      }
+    ]
+  },
+  {
+    "name": "blastoise",
+    "description": "A brutal Pokémon with pressurized water jets on its shell. They are used for high speed tackles. Once it takes aim at its enemy, it blasts out water with even more force than a fire hose. It deliberately makes itself heavy so it can with stand the recoil of the water jets it fires. The rocket cannons on its shell fire jets of water capable of punch ing holes through thick steel. It firmly plants its feet on the ground before shooting water from the jets on its back.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/9.png",
+    "height": 16,
+    "weight": 855,
+    "color": {
+      "r": 128,
+      "g": 170,
+      "b": 197
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 79
+      },
+      {
+        "statId": 2,
+        "value": 83
+      },
+      {
+        "statId": 3,
+        "value": 100
+      },
+      {
+        "statId": 4,
+        "value": 85
+      },
+      {
+        "statId": 5,
+        "value": 105
+      },
+      {
+        "statId": 6,
+        "value": 78
+      }
+    ]
+  },
+  {
+    "name": "caterpie",
+    "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls. If you touch the feeler on top of its head, it will release a horrible stink to protect itself. For protection, it releases a horri ble stench from the antenna on its head to drive away enemies. Its feet have suction cups designed to stick to any surface. It tenaciously climbs trees to forage. It releases a stench from its red antenna to repel enemies. It grows by molting repeatedly.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10.png",
+    "height": 3,
+    "weight": 29,
+    "color": {
+      "r": 105,
+      "g": 187,
+      "b": 74
+    },
+    "typeIds": [
+      6
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 45
+      },
+      {
+        "statId": 2,
+        "value": 30
+      },
+      {
+        "statId": 3,
+        "value": 35
+      },
+      {
+        "statId": 4,
+        "value": 20
+      },
+      {
+        "statId": 5,
+        "value": 20
+      },
+      {
+        "statId": 6,
+        "value": 45
+      }
+    ]
+  },
+  {
+    "name": "metapod",
+    "description": "This Pokémon is vulnerable to attack while its shell is soft, exposing its weak and tender body. Hardens its shell to protect itself. However, a large impact may cause it to pop out of its shell. Inside the shell, it is soft and weak as it pre pares to evolve. It stays motion less in the shell. It prepares for evolution by har dening its shell as much as possi ble to protect its soft body.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/11.png",
+    "height": 7,
+    "weight": 99,
+    "color": {
+      "r": 107,
+      "g": 182,
+      "b": 29
+    },
+    "typeIds": [
+      6
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 50
+      },
+      {
+        "statId": 2,
+        "value": 20
+      },
+      {
+        "statId": 3,
+        "value": 55
+      },
+      {
+        "statId": 4,
+        "value": 25
+      },
+      {
+        "statId": 5,
+        "value": 25
+      },
+      {
+        "statId": 6,
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "butterfree",
+    "description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air. Its wings, covered with poisonous powders, repel water. This allows it to fly in the rain. It collects honey every day. It rubs honey onto the hairs on its legs to carry it back to its nest. Water-repellent powder on its wings enables it to collect honey, even in the heav iest of rains. It flits from flower to flower, collecting honey. It can even identify distant flowers in bloom.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/12.png",
+    "height": 11,
+    "weight": 320,
+    "color": {
+      "r": 22,
+      "g": 79,
+      "b": 94
+    },
+    "typeIds": [
+      6,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 45
+      },
+      {
+        "statId": 3,
+        "value": 50
+      },
+      {
+        "statId": 4,
+        "value": 90
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "weedle",
+    "description": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head. Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves. Its poison stinger is very powerful. Its bright-colored body is intended to warn off its enemies. It attacks using a two-inch poison barb on its head. It can usually be found under the leaves it eats. The barb on top of its head secretes a strong poison. It uses this toxic barb to protect itself.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/13.png",
+    "height": 3,
+    "weight": 32,
+    "color": {
+      "r": 194,
+      "g": 153,
+      "b": 112
+    },
+    "typeIds": [
+      6,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 35
+      },
+      {
+        "statId": 3,
+        "value": 30
+      },
+      {
+        "statId": 4,
+        "value": 20
+      },
+      {
+        "statId": 5,
+        "value": 20
+      },
+      {
+        "statId": 6,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "kakuna",
+    "description": "Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators. Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy. Although it is a cocoon, it can move a little. It can extend its poison barb if it is attacked. From this form, it will grow into an adult. As its body becomes soft er, the external shell hardens. Nearly incapable of movement, it leans against stout trees while waiting for its evolution.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/14.png",
+    "height": 6,
+    "weight": 100,
+    "color": {
+      "r": 236,
+      "g": 217,
+      "b": 4
+    },
+    "typeIds": [
+      6,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 45
+      },
+      {
+        "statId": 2,
+        "value": 25
+      },
+      {
+        "statId": 3,
+        "value": 50
+      },
+      {
+        "statId": 4,
+        "value": 25
+      },
+      {
+        "statId": 5,
+        "value": 25
+      },
+      {
+        "statId": 6,
+        "value": 35
+      }
+    ]
+  },
+  {
+    "name": "beedrill",
+    "description": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail. It has 3 poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly. It can take down any opponent with its powerful poi son stingers. It sometimes attacks in swarms. It has three poison barbs. The barb on its tail secretes the most powerful poison. It uses sharp, poisonous stings to defeat prey, then takes the victim back to its nest for food.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/15.png",
+    "height": 10,
+    "weight": 295,
+    "color": {
+      "r": 198,
+      "g": 206,
+      "b": 213
+    },
+    "typeIds": [
+      6,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 90
+      },
+      {
+        "statId": 3,
+        "value": 40
+      },
+      {
+        "statId": 4,
+        "value": 45
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "pidgey",
+    "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand. Very docile. If attacked, it will often kick up sand to protect itself rather than fight back. It usually hides in tall grass. Be cause it dislikes fighting, it pro tects itself by kicking up sand. Common in grassy areas and forests, it is very docile and will chase off enemies by flap ping up sand.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/16.png",
+    "height": 3,
+    "weight": 18,
+    "color": {
+      "r": 228,
+      "g": 214,
+      "b": 177
+    },
+    "typeIds": [
+      7,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 45
+      },
+      {
+        "statId": 3,
+        "value": 40
+      },
+      {
+        "statId": 4,
+        "value": 35
+      },
+      {
+        "statId": 5,
+        "value": 35
+      },
+      {
+        "statId": 6,
+        "value": 56
+      }
+    ]
+  },
+  {
+    "name": "pidgeotto",
+    "description": "Very protective of its sprawling territorial area, this Pokémon will fiercely peck at any intruder. This Pokémon is full of vitality. It constantly flies around its large territory in search of prey. It has outstanding vision. However high it flies, it is able to distin guish the move ments of its prey. It immobilizes its prey using welldeveloped claws, then carries the prey more than 60 miles to its nest.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/17.png",
+    "height": 11,
+    "weight": 300,
+    "color": {
+      "r": 235,
+      "g": 225,
+      "b": 177
+    },
+    "typeIds": [
+      7,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 63
+      },
+      {
+        "statId": 2,
+        "value": 60
+      },
+      {
+        "statId": 3,
+        "value": 55
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 71
+      }
+    ]
+  },
+  {
+    "name": "pidgeot",
+    "description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as magikarp. This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons. Its well-developed chest muscles make it strong enough to whip up a gusty windstorm with just a few flaps. It spreads its beautiful wings wide to frighten its enemies. It can fly at Mach 2 speed. Its outstanding vision allows it to spot splashing magikarp, even while flying at 3300 feet.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/18.png",
+    "height": 15,
+    "weight": 395,
+    "color": {
+      "r": 221,
+      "g": 205,
+      "b": 155
+    },
+    "typeIds": [
+      7,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 83
+      },
+      {
+        "statId": 2,
+        "value": 80
+      },
+      {
+        "statId": 3,
+        "value": 75
+      },
+      {
+        "statId": 4,
+        "value": 70
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 101
+      }
+    ]
+  },
+  {
+    "name": "rattata",
+    "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places. Will chew on any thing with its fangs. If you see one, it is certain that 40 more live in the area. It eats anything. Wherever food is available, it will settle down and produce offspring continuously. Living wherever there is food available, it ceaselessly scav enges for edibles the entire day. This Pokémon's impressive vital ity allows it to live anywhere. It also multiplies very quickly.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/19.png",
+    "height": 3,
+    "weight": 35,
+    "color": {
+      "r": 147,
+      "g": 75,
+      "b": 149
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 30
+      },
+      {
+        "statId": 2,
+        "value": 56
+      },
+      {
+        "statId": 3,
+        "value": 35
+      },
+      {
+        "statId": 4,
+        "value": 25
+      },
+      {
+        "statId": 5,
+        "value": 35
+      },
+      {
+        "statId": 6,
+        "value": 72
+      }
+    ]
+  },
+  {
+    "name": "raticate",
+    "description": "It uses its whis kers to maintain its balance. It apparently slows down if they are cut off. Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey. Gnaws on anything with its tough fangs. It can even topple concrete buildings by gnaw ing on them. Its whiskers help it to maintain balance. Its fangs never stop grow ing, so it gnaws to pare them down. The webs on its hind legs enable it to cross rivers. It search es wide areas for food.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/20.png",
+    "height": 7,
+    "weight": 185,
+    "color": {
+      "r": 190,
+      "g": 135,
+      "b": 59
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 55
+      },
+      {
+        "statId": 2,
+        "value": 81
+      },
+      {
+        "statId": 3,
+        "value": 60
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 97
+      }
+    ]
+  },
+  {
+    "name": "spearow",
+    "description": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne. Inept at flying high. However, it can fly around very fast to protect its ter ritory. It flaps its short wings to flush out insects from tall grass. It then plucks them with its stubby beak. Very protective of its territory, it flaps its short wings busily to dart around at high speed. To protect its territory, it flies around ceaselessly, making highpitched cries.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/21.png",
+    "height": 3,
+    "weight": 20,
+    "color": {
+      "r": 232,
+      "g": 166,
+      "b": 152
+    },
+    "typeIds": [
+      7,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 60
+      },
+      {
+        "statId": 3,
+        "value": 30
+      },
+      {
+        "statId": 4,
+        "value": 31
+      },
+      {
+        "statId": 5,
+        "value": 31
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "fearow",
+    "description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest. A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly. It shoots itself suddenly high into the sky, then plummets down in one fell swoop to strike its prey. It cleverly uses its thin, long beak to pluck and eat small insects that hide under the ground. It uses its long beak to attack. It has a surprisingly long reach, so it must be treated with caution.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/22.png",
+    "height": 12,
+    "weight": 380,
+    "color": {
+      "r": 214,
+      "g": 140,
+      "b": 72
+    },
+    "typeIds": [
+      7,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 90
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 61
+      },
+      {
+        "statId": 5,
+        "value": 61
+      },
+      {
+        "statId": 6,
+        "value": 100
+      }
+    ]
+  },
+  {
+    "name": "ekans",
+    "description": "Moves silently and stealthily. Eats the eggs of birds, such as pidgey and spearow, whole. The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest. It can freely de tach its jaw to swallow large prey whole. It can be come too heavy to move, however. It always hides in grass. When first born, it has no poison, so its bite is painful, but harmless. It flutters the tip of its tongue to seek out the scent of prey, then swallows the prey whole.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/23.png",
+    "height": 20,
+    "weight": 69,
+    "color": {
+      "r": 170,
+      "g": 124,
+      "b": 199
+    },
+    "typeIds": [
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 35
+      },
+      {
+        "statId": 2,
+        "value": 60
+      },
+      {
+        "statId": 3,
+        "value": 44
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 54
+      },
+      {
+        "statId": 6,
+        "value": 55
+      }
+    ]
+  },
+  {
+    "name": "arbok",
+    "description": "It is rumored that the ferocious warning markings on its belly differ from area to area. The frightening patterns on its belly have been studied. Six variations have been confirmed. Transfixing prey with the face-like pattern on its belly, it binds and poisons the frightened victim. With a very venge ful nature, it won't give up the chase, no matter how far, once it targets its prey. To intimidate foes, it spreads its chest wide and makes eerie sounds by expelling air from its mouth.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/24.png",
+    "height": 35,
+    "weight": 650,
+    "color": {
+      "r": 140,
+      "g": 135,
+      "b": 165
+    },
+    "typeIds": [
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 95
+      },
+      {
+        "statId": 3,
+        "value": 69
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 79
+      },
+      {
+        "statId": 6,
+        "value": 80
+      }
+    ]
+  },
+  {
+    "name": "pikachu",
+    "description": "When several of these Pokémon gather, their electricity could build and cause lightning storms. It keeps its tail raised to monitor its surroundings. If you yank its tail, it will try to bite you. This intelligent Pokémon roasts hard berries with electricity to make them tender enough to eat. It raises its tail to check its surroundings. The tail is sometimes struck by lightning in this pose. It lives in forests with others. It stores electricity in the pouches on its cheeks.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png",
+    "height": 4,
+    "weight": 60,
+    "color": {
+      "r": 246,
+      "g": 211,
+      "b": 5
+    },
+    "typeIds": [
+      8
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 35
+      },
+      {
+        "statId": 2,
+        "value": 55
+      },
+      {
+        "statId": 3,
+        "value": 40
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "raichu",
+    "description": "Its long tail serves as a ground to protect itself from its own high voltage power. When electricity builds up inside its body, it becomes feisty. It also glows in the dark. When its electric ity builds, its muscles are stimu lated, and it be comes more aggres sive than usual. If the electric pouches in its cheeks become fully charged, both ears will stand straight up. If its electric pouches run empty, it raises its tail to gather electri city from the atmosphere.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/26.png",
+    "height": 8,
+    "weight": 300,
+    "color": {
+      "r": 233,
+      "g": 185,
+      "b": 12
+    },
+    "typeIds": [
+      8
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 90
+      },
+      {
+        "statId": 3,
+        "value": 55
+      },
+      {
+        "statId": 4,
+        "value": 90
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 110
+      }
+    ]
+  },
+  {
+    "name": "sandshrew",
+    "description": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food. Its body is dry. When it gets cold at night, its hide is said to become coated with a fine dew. If it fell from a great height, this Pokémon could save itself by rolling into a ball and bouncing. Disliking water, it lives in deep burrows in arid areas. It can roll itself instantly into a ball. It prefers dry, sandy places because it uses the sand to protect itself when threatened.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/27.png",
+    "height": 6,
+    "weight": 120,
+    "color": {
+      "r": 209,
+      "g": 182,
+      "b": 13
+    },
+    "typeIds": [
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 50
+      },
+      {
+        "statId": 2,
+        "value": 75
+      },
+      {
+        "statId": 3,
+        "value": 85
+      },
+      {
+        "statId": 4,
+        "value": 20
+      },
+      {
+        "statId": 5,
+        "value": 30
+      },
+      {
+        "statId": 6,
+        "value": 40
+      }
+    ]
+  },
+  {
+    "name": "sandslash",
+    "description": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape. It is skilled at slashing enemies with its claws. If broken, they start to grow back in a day. In an attempt to hide itself, it will run around at top speed to kick up a blinding dust storm. If it digs at an incredible pace, it may snap off its spikes and claws. They grow back in a day. Adept at climbing trees, it rolls into a spiny ball, then attacks its enemies from above.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/28.png",
+    "height": 10,
+    "weight": 295,
+    "color": {
+      "r": 174,
+      "g": 124,
+      "b": 16
+    },
+    "typeIds": [
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 75
+      },
+      {
+        "statId": 2,
+        "value": 100
+      },
+      {
+        "statId": 3,
+        "value": 110
+      },
+      {
+        "statId": 4,
+        "value": 45
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 65
+      }
+    ]
+  },
+  {
+    "name": "nidoran-f",
+    "description": "Although small, its venomous barbs render this Pokémon dangerous. The female has smaller horns. A mild-mannered Pokémon that does not like to fight. Beware, its small horns secrete venom. The poison hidden in its small horn is extremely po tent. Even a tiny scratch can have fatal results. Although not very combative, it will torment its foes with poison spikes if it is threat ened in any way. Small and very docile, it pro tects itself with its small, poison ous horn when attacked.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/29.png",
+    "height": 4,
+    "weight": 70,
+    "color": {
+      "r": 188,
+      "g": 199,
+      "b": 227
+    },
+    "typeIds": [
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 55
+      },
+      {
+        "statId": 2,
+        "value": 47
+      },
+      {
+        "statId": 3,
+        "value": 52
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 40
+      },
+      {
+        "statId": 6,
+        "value": 41
+      }
+    ]
+  },
+  {
+    "name": "nidorina",
+    "description": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting. When resting deep in its burrow, its thorns always retract. This is proof that it is relaxed. When feeding its young, it first chews and tender izes the food, then spits it out for the offspring. It has a calm and caring nature. Because its horn grows slowly, it prefers not to fight. It has a docile nature. If it is threatened with attack, it raises the barbs that are all over its body.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/30.png",
+    "height": 8,
+    "weight": 200,
+    "color": {
+      "r": 178,
+      "g": 208,
+      "b": 225
+    },
+    "typeIds": [
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 70
+      },
+      {
+        "statId": 2,
+        "value": 62
+      },
+      {
+        "statId": 3,
+        "value": 67
+      },
+      {
+        "statId": 4,
+        "value": 55
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 56
+      }
+    ]
+  },
+  {
+    "name": "nidoqueen",
+    "description": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves. Tough scales cover the sturdy body of this Pokémon. It appears that the scales grow in cycles. Its body is cover ed with needlelike scales. It never shows signs of shrinking from any attack. It uses its scaly, rugged body to seal the entrance of its nest and protect its young from predators. The hard scales that cover its strong body serve as excellent protection from any attack.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/31.png",
+    "height": 13,
+    "weight": 600,
+    "color": {
+      "r": 117,
+      "g": 171,
+      "b": 208
+    },
+    "typeIds": [
+      2,
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 90
+      },
+      {
+        "statId": 2,
+        "value": 92
+      },
+      {
+        "statId": 3,
+        "value": 87
+      },
+      {
+        "statId": 4,
+        "value": 75
+      },
+      {
+        "statId": 5,
+        "value": 85
+      },
+      {
+        "statId": 6,
+        "value": 76
+      }
+    ]
+  },
+  {
+    "name": "nidoran-m",
+    "description": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom. Its large ears are always kept upright. If it senses danger, it will attack with a poisonous sting. It is small, but its horn is filled with poison. It charges then stabs with the horn to inject poison. It raises its big ears to check its surroundings. It will strike first if it senses any danger. It constantly moves its large ears in many directions in order to detect danger right away.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/32.png",
+    "height": 5,
+    "weight": 90,
+    "color": {
+      "r": 195,
+      "g": 155,
+      "b": 203
+    },
+    "typeIds": [
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 46
+      },
+      {
+        "statId": 2,
+        "value": 57
+      },
+      {
+        "statId": 3,
+        "value": 40
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 40
+      },
+      {
+        "statId": 6,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "nidorino",
+    "description": "An aggressive Pokémon that is quick to attack. The horn on its head secretes a powerful venom. Its horns contain venom. If they are stabbed into an enemy, the impact makes the poison leak out. It raises its big ears to check its surroundings. If it senses any thing, it attacks immediately. Quick to anger, it stabs enemies with its horn to inject a powerful poison when it becomes agitated. It is easily agitated and uses its horn for offense as soon as it notices an attacker.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/33.png",
+    "height": 9,
+    "weight": 195,
+    "color": {
+      "r": 194,
+      "g": 155,
+      "b": 202
+    },
+    "typeIds": [
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 61
+      },
+      {
+        "statId": 2,
+        "value": 72
+      },
+      {
+        "statId": 3,
+        "value": 57
+      },
+      {
+        "statId": 4,
+        "value": 55
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 65
+      }
+    ]
+  },
+  {
+    "name": "nidoking",
+    "description": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones. Its steel-like hide adds to its powerful tackle. Its horns are so hard, they can pierce a diamond. It swings its big tail around during battle. If its foe flinches, it will charge with its sturdy body. Its tail is thick and powerful. If it binds an enemy, it can snap the victim's spine quite easily. It uses its thick arms, legs and tail to attack forcefully. Melee combat is its specialty.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/34.png",
+    "height": 14,
+    "weight": 620,
+    "color": {
+      "r": 182,
+      "g": 140,
+      "b": 187
+    },
+    "typeIds": [
+      2,
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 81
+      },
+      {
+        "statId": 2,
+        "value": 102
+      },
+      {
+        "statId": 3,
+        "value": 77
+      },
+      {
+        "statId": 4,
+        "value": 85
+      },
+      {
+        "statId": 5,
+        "value": 75
+      },
+      {
+        "statId": 6,
+        "value": 85
+      }
+    ]
+  },
+  {
+    "name": "clefairy",
+    "description": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas. Adored for their cute looks and playfulness. They are thought to be rare, as they do not appear often. The moonlight that it stores in the wings on its back apparently gives it the ability to float in midair. Its adorable be havior and cry make it highly popular. However, this cute Pokémon is rarely found. Thought to live with others on quiet mountains, it is popular for its adorable nature.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/35.png",
+    "height": 6,
+    "weight": 75,
+    "color": {
+      "r": 239,
+      "g": 198,
+      "b": 207
+    },
+    "typeIds": [
+      10
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 70
+      },
+      {
+        "statId": 2,
+        "value": 45
+      },
+      {
+        "statId": 3,
+        "value": 48
+      },
+      {
+        "statId": 4,
+        "value": 60
+      },
+      {
+        "statId": 5,
+        "value": 65
+      },
+      {
+        "statId": 6,
+        "value": 35
+      }
+    ]
+  },
+  {
+    "name": "clefable",
+    "description": "A timid fairy Pokémon that is rarely seen. It will run and hide the moment it senses people. They appear to be very protective of their own world. It is a kind of fairy, rarely seen by people. With its acute hearing, it can pick up sounds from far away. It usually hides in quiet places. Its very sensitive ears lets it dis tinguish distant sounds. As a re sult, it prefers quiet places. Said to live in quiet, remote mountains, this type of fairy has a strong aversion to being seen.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/36.png",
+    "height": 13,
+    "weight": 400,
+    "color": {
+      "r": 242,
+      "g": 188,
+      "b": 182
+    },
+    "typeIds": [
+      10
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 95
+      },
+      {
+        "statId": 2,
+        "value": 70
+      },
+      {
+        "statId": 3,
+        "value": 73
+      },
+      {
+        "statId": 4,
+        "value": 95
+      },
+      {
+        "statId": 5,
+        "value": 90
+      },
+      {
+        "statId": 6,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "vulpix",
+    "description": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older. Both its fur and its tails are beautiful. As it grows, the tails split and form more tails. As it develops, its single white tail gains color and splits into six. It is quite warm and cuddly. If it is attacked by an enemy that is stronger than itself, it feigns injury to fool the enemy and escapes. While young, it has six gorgeous tails. When it grows, several new tails are sprouted.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/37.png",
+    "height": 6,
+    "weight": 99,
+    "color": {
+      "r": 227,
+      "g": 131,
+      "b": 38
+    },
+    "typeIds": [
+      3
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 38
+      },
+      {
+        "statId": 2,
+        "value": 41
+      },
+      {
+        "statId": 3,
+        "value": 40
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 65
+      },
+      {
+        "statId": 6,
+        "value": 65
+      }
+    ]
+  },
+  {
+    "name": "ninetales",
+    "description": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse. According to an enduring legend, 9 noble saints were united and reincarnated as this Pokémon. Some legends claim that each of its nine tails has its own unique type of special mystical power. Its nine beautiful tails are filled with a wondrous energy that could keep it alive for 1,000 years. It is said to live a thousand years, and each of its tails is loaded with supernatural powers.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/38.png",
+    "height": 11,
+    "weight": 199,
+    "color": {
+      "r": 230,
+      "g": 219,
+      "b": 129
+    },
+    "typeIds": [
+      3
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 73
+      },
+      {
+        "statId": 2,
+        "value": 76
+      },
+      {
+        "statId": 3,
+        "value": 75
+      },
+      {
+        "statId": 4,
+        "value": 81
+      },
+      {
+        "statId": 5,
+        "value": 100
+      },
+      {
+        "statId": 6,
+        "value": 100
+      }
+    ]
+  },
+  {
+    "name": "jigglypuff",
+    "description": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep. Uses its alluring eyes to enrapture its foe. It then sings a pleasing melody that lulls the foe to sleep. If it inflates to sing a lullaby, it can perform longer and cause sure drowsiness in its audience. Looking into its cute, round eyes causes it to sing a relaxing melody, inducing its enemies to sleep.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/39.png",
+    "height": 5,
+    "weight": 55,
+    "color": {
+      "r": 240,
+      "g": 200,
+      "b": 209
+    },
+    "typeIds": [
+      7,
+      10
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 115
+      },
+      {
+        "statId": 2,
+        "value": 45
+      },
+      {
+        "statId": 3,
+        "value": 20
+      },
+      {
+        "statId": 4,
+        "value": 45
+      },
+      {
+        "statId": 5,
+        "value": 25
+      },
+      {
+        "statId": 6,
+        "value": 20
+      }
+    ]
+  },
+  {
+    "name": "wigglytuff",
+    "description": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size. Its body is full of elasticity. By inhaling deeply, it can continue to inflate itself without limit. Their fur feels so good that if two of them snuggle together, they won't want to be separated. It has a very fine fur. Take care not to make it angry, or it may inflate steadily and hit with a body slam. Its fine fur feels sublime to the touch. It can expand its body by inhaling air.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/40.png",
+    "height": 10,
+    "weight": 120,
+    "color": {
+      "r": 236,
+      "g": 209,
+      "b": 219
+    },
+    "typeIds": [
+      7,
+      10
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 140
+      },
+      {
+        "statId": 2,
+        "value": 70
+      },
+      {
+        "statId": 3,
+        "value": 45
+      },
+      {
+        "statId": 4,
+        "value": 85
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 45
+      }
+    ]
+  },
+  {
+    "name": "zubat",
+    "description": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets. Emits ultrasonic cries while it flies. They act as a sonar used to check for ob jects in its way. While flying, it constantly emits ultrasonic waves from its mouth to check its surroundings. Capable of flying safely in dark places, it emits ultrasonic cries to check for any obstacles. During the day, it gathers with others and hangs from the ceilings of old buildings and caves.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/41.png",
+    "height": 8,
+    "weight": 75,
+    "color": {
+      "r": 169,
+      "g": 154,
+      "b": 226
+    },
+    "typeIds": [
+      2,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 45
+      },
+      {
+        "statId": 3,
+        "value": 35
+      },
+      {
+        "statId": 4,
+        "value": 30
+      },
+      {
+        "statId": 5,
+        "value": 40
+      },
+      {
+        "statId": 6,
+        "value": 55
+      }
+    ]
+  },
+  {
+    "name": "golbat",
+    "description": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly. It attacks in a stealthy manner, without warning. Its sharp fangs are used to bite and suck blood. However hard its victim's hide may be, it punctures with sharp fangs and gorges itself with blood. It can drink more than 10 ounces of blood at once. If it has too much, it gets heavy and flies clumsily.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/42.png",
+    "height": 16,
+    "weight": 550,
+    "color": {
+      "r": 7,
+      "g": 106,
+      "b": 143
+    },
+    "typeIds": [
+      2,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 75
+      },
+      {
+        "statId": 2,
+        "value": 80
+      },
+      {
+        "statId": 3,
+        "value": 70
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 75
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "oddish",
+    "description": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds. It may be mistaken for a clump of weeds. If you try to yank it out of the ground, it shrieks horribly. Awakened by moon light, it roams actively at night. In the day, it stays quietly underground. If exposed to moonlight, it starts to move. It roams far and wide at night to scatter its seeds.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/43.png",
+    "height": 5,
+    "weight": 54,
+    "color": {
+      "r": 81,
+      "g": 167,
+      "b": 65
+    },
+    "typeIds": [
+      1,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 45
+      },
+      {
+        "statId": 2,
+        "value": 50
+      },
+      {
+        "statId": 3,
+        "value": 55
+      },
+      {
+        "statId": 4,
+        "value": 75
+      },
+      {
+        "statId": 5,
+        "value": 65
+      },
+      {
+        "statId": 6,
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "gloom",
+    "description": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey. Smells incredibly foul! However, around 1 out of 1,000 people enjoy sniffing its nosebending stink. What appears to be drool is actually sweet honey. It is very sticky and clings stubbornly if touched. It secretes a sticky, drool-like honey. Although sweet, it smells too repulsive to get very close.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/44.png",
+    "height": 8,
+    "weight": 86,
+    "color": {
+      "r": 218,
+      "g": 121,
+      "b": 50
+    },
+    "typeIds": [
+      1,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 65
+      },
+      {
+        "statId": 3,
+        "value": 70
+      },
+      {
+        "statId": 4,
+        "value": 85
+      },
+      {
+        "statId": 5,
+        "value": 75
+      },
+      {
+        "statId": 6,
+        "value": 40
+      }
+    ]
+  },
+  {
+    "name": "vileplume",
+    "description": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up. Flaps its broad flower petals to scatter its poisonous pollen. The flapping sound is very loud. It has the world's largest petals. With every step, the petals shake out heavy clouds of toxic pollen. The bud bursts into bloom with a bang. It then starts scattering allergenic, poi sonous pollen. By shaking its big petals, it scat ters toxic pollen into the air, turning the air yellow.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/45.png",
+    "height": 12,
+    "weight": 186,
+    "color": {
+      "r": 232,
+      "g": 67,
+      "b": 82
+    },
+    "typeIds": [
+      1,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 75
+      },
+      {
+        "statId": 2,
+        "value": 80
+      },
+      {
+        "statId": 3,
+        "value": 85
+      },
+      {
+        "statId": 4,
+        "value": 110
+      },
+      {
+        "statId": 5,
+        "value": 90
+      },
+      {
+        "statId": 6,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "paras",
+    "description": "Burrows to suck tree roots. The mushrooms on its back grow by draw ing nutrients from the bug host. Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition. It is doused with mushroom spores when it is born. As its body grows, mushrooms sprout from its back. As its body grows large, oriental mushrooms named tochukaso start sprouting out of its back. The tochukaso growing on this Pokémon's back orders it to extract juice from tree trunks.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/46.png",
+    "height": 3,
+    "weight": 54,
+    "color": {
+      "r": 235,
+      "g": 115,
+      "b": 83
+    },
+    "typeIds": [
+      6,
+      1
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 35
+      },
+      {
+        "statId": 2,
+        "value": 70
+      },
+      {
+        "statId": 3,
+        "value": 55
+      },
+      {
+        "statId": 4,
+        "value": 45
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 25
+      }
+    ]
+  },
+  {
+    "name": "parasect",
+    "description": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places. The bug host is drained of energy by the mushrooms on its back. They appear to do all the thinking. It stays mostly in dark, damp places, the preference not of the bug, but of the big mush rooms on its back. The larger the mushroom on its back grows, the stronger the mush room spores it scatters. The large mushroom on its back controls it. It often fights over territory with Shiinotic.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/47.png",
+    "height": 10,
+    "weight": 295,
+    "color": {
+      "r": 226,
+      "g": 35,
+      "b": 59
+    },
+    "typeIds": [
+      6,
+      1
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 95
+      },
+      {
+        "statId": 3,
+        "value": 80
+      },
+      {
+        "statId": 4,
+        "value": 60
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "venonat",
+    "description": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night. Its large eyes act as radars. In a bright place, you can see that they are clusters of many tiny eyes. Its eyes also function as radar units. It catches and eats small bugs that hide in darkness. Poison oozes from all over its body. It catches and eats small bugs at night that are at tracted by light. Its big eyes are actually clusters of tiny eyes. At night, its kind is drawn by light.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/48.png",
+    "height": 10,
+    "weight": 300,
+    "color": {
+      "r": 129,
+      "g": 52,
+      "b": 143
+    },
+    "typeIds": [
+      6,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 55
+      },
+      {
+        "statId": 3,
+        "value": 50
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 45
+      }
+    ]
+  },
+  {
+    "name": "venomoth",
+    "description": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has. The powdery scales on its wings are hard to remove. They also contain poison that leaks out on contact. When it attacks, it flaps its large wings violently to scatter its poi sonous powder all around. The powder on its wings is poisonous if it is dark in color. If it is light, it causes paralysis. It flutters its wings to scatter dustlike scales. The scales leach toxins if they contact skin.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/49.png",
+    "height": 15,
+    "weight": 125,
+    "color": {
+      "r": 197,
+      "g": 161,
+      "b": 203
+    },
+    "typeIds": [
+      6,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 70
+      },
+      {
+        "statId": 2,
+        "value": 65
+      },
+      {
+        "statId": 3,
+        "value": 60
+      },
+      {
+        "statId": 4,
+        "value": 90
+      },
+      {
+        "statId": 5,
+        "value": 75
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "diglett",
+    "description": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground. It prefers dark places. It spends most of its time underground, though it may pop up in caves. Its skin is very thin. If it is exposed to light, its blood heats up, causing it to grow weak. If a diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops. It digs under ground and chews on tree roots, sticking its head out only when the sun isn't bright.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/50.png",
+    "height": 2,
+    "weight": 8,
+    "color": {
+      "r": 170,
+      "g": 147,
+      "b": 138
+    },
+    "typeIds": [
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 10
+      },
+      {
+        "statId": 2,
+        "value": 55
+      },
+      {
+        "statId": 3,
+        "value": 25
+      },
+      {
+        "statId": 4,
+        "value": 35
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 95
+      }
+    ]
+  },
+  {
+    "name": "dugtrio",
+    "description": "A team of diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground. A team of triplets that can burrow over 60 mph. Due to this, some people think it's an earthquake. Its three heads bob separately up and down to loosen the soil nearby, making it easier for it to burrow. Extremely power ful, they can dig through even the hardest ground to a depth of over 60 miles. These diglett triplets dig over 60 miles below sea level. No one knows what it's like underground.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/51.png",
+    "height": 7,
+    "weight": 333,
+    "color": {
+      "r": 180,
+      "g": 148,
+      "b": 135
+    },
+    "typeIds": [
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 35
+      },
+      {
+        "statId": 2,
+        "value": 100
+      },
+      {
+        "statId": 3,
+        "value": 50
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 120
+      }
+    ]
+  },
+  {
+    "name": "meowth",
+    "description": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change. Appears to be more active at night. It loves round and shiny things. It can't stop from picking them up. It is fascinated by round objects. It can't stop playing with them until it tires and falls asleep. It loves anything that shines. It especially adores coins that it picks up and se cretly hoards. It is nocturnal in nature. If it spots something shiny, its eyes glitter brightly.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/52.png",
+    "height": 4,
+    "weight": 42,
+    "color": {
+      "r": 228,
+      "g": 213,
+      "b": 146
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 45
+      },
+      {
+        "statId": 3,
+        "value": 35
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 40
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "persian",
+    "description": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness. The gem in its forehead glows on its own! It walks with all the grace and elegance of a proud queen. Many adore it for its sophisticated air. However, it will lash out and scratch for little reason. Its lithe muscles allow it to walk without making a sound. It attacks in an instant. Behind its lithe, elegant appearance lies a barbaric side. It will tear apart its prey on a mere whim.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/53.png",
+    "height": 10,
+    "weight": 320,
+    "color": {
+      "r": 221,
+      "g": 207,
+      "b": 121
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 70
+      },
+      {
+        "statId": 3,
+        "value": 60
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 65
+      },
+      {
+        "statId": 6,
+        "value": 115
+      }
+    ]
+  },
+  {
+    "name": "psyduck",
+    "description": "While lulling its enemies with its vacant look, this wily Pokémon will use psychokinetic powers. Always tormented by headaches. It uses psychic powers, but it is not known if it intends to do so. It has mystical powers but doesn't recall that it has used them. That is why it always looks puzzled. If its chronic headache peaks, it may exhibit odd powers. It seems unable to recall such an episode. It never remembers using its odd powers, so it always tilts its head in puzzlement.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/54.png",
+    "height": 8,
+    "weight": 196,
+    "color": {
+      "r": 243,
+      "g": 194,
+      "b": 40
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 50
+      },
+      {
+        "statId": 2,
+        "value": 52
+      },
+      {
+        "statId": 3,
+        "value": 48
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 55
+      }
+    ]
+  },
+  {
+    "name": "golduck",
+    "description": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa. Its slim and long limbs end in broad flippers. They are used for swimming gracefully in lakes. When it swims at full speed using its long, webbed limbs, its fore head somehow be gins to glow. It appears by waterways at dusk. It may use tele kinetic powers if its forehead glows mysteriously. It swims grace fully along on the quiet, slow-moving rivers and lakes of which it is so fond.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/55.png",
+    "height": 17,
+    "weight": 766,
+    "color": {
+      "r": 118,
+      "g": 166,
+      "b": 220
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 80
+      },
+      {
+        "statId": 2,
+        "value": 82
+      },
+      {
+        "statId": 3,
+        "value": 78
+      },
+      {
+        "statId": 4,
+        "value": 95
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 85
+      }
+    ]
+  },
+  {
+    "name": "mankey",
+    "description": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant. An agile Pokémon that lives in trees. It angers easily and will not hesitate to attack anything. It is extremely ill-tempered. Groups of them will attack any handy target for no reason. It's unsafe to ap proach if it gets violently enraged for no reason and can't distinguish friends from foes. It lives in treetop colonies. If one becomes enraged, the whole colony rampages for no reason.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/56.png",
+    "height": 5,
+    "weight": 280,
+    "color": {
+      "r": 234,
+      "g": 221,
+      "b": 207
+    },
+    "typeIds": [
+      12
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 80
+      },
+      {
+        "statId": 3,
+        "value": 35
+      },
+      {
+        "statId": 4,
+        "value": 35
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "primeape",
+    "description": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught. It stops being angry only when nobody else is around. To view this moment is very difficult. If approached while asleep, it may awaken and angrily give chase in a groggy state of semi-sleep. It becomes wildly furious if it even senses someone looking at it. It chases anyone that meets its glare. Some researchers theorize that Primeape remains angry even when inside a Poké Ball.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/57.png",
+    "height": 10,
+    "weight": 320,
+    "color": {
+      "r": 231,
+      "g": 217,
+      "b": 204
+    },
+    "typeIds": [
+      12
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 105
+      },
+      {
+        "statId": 3,
+        "value": 60
+      },
+      {
+        "statId": 4,
+        "value": 60
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 95
+      }
+    ]
+  },
+  {
+    "name": "growlithe",
+    "description": "Very protective of its territory. It will bark and bite to repel intruders from its space. A Pokémon with a friendly nature. However, it will bark fiercely at anything invading its territory. It has a brave and trustworthy na ture. It fear lessly stands up to bigger and stronger foes. Extremely loyal, it will fearlessly bark at any oppo nent to protect its own trainer from harm. It controls a big territory. If it detects an unknown smell, it roars loudly to force out the intruder.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/58.png",
+    "height": 7,
+    "weight": 190,
+    "color": {
+      "r": 241,
+      "g": 225,
+      "b": 199
+    },
+    "typeIds": [
+      3
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 55
+      },
+      {
+        "statId": 2,
+        "value": 70
+      },
+      {
+        "statId": 3,
+        "value": 45
+      },
+      {
+        "statId": 4,
+        "value": 70
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "arcanine",
+    "description": "A Pokémon that has been admired since the past for its beauty. It runs agilely as if on wings. A legendary Poké mon in China. Many people are charmed by its grace and beauty while running. This legendary Chinese Pokémon is considered magnif icent. Many people are enchanted by its grand mane. Its magnificent bark conveys a sense of majesty. Anyone hearing it can't help but grovel before it. A Pokémon that is described in Chinese legends. It is said to race at an unbelievable speed.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/59.png",
+    "height": 19,
+    "weight": 1550,
+    "color": {
+      "r": 241,
+      "g": 222,
+      "b": 194
+    },
+    "typeIds": [
+      3
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 90
+      },
+      {
+        "statId": 2,
+        "value": 110
+      },
+      {
+        "statId": 3,
+        "value": 80
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 95
+      }
+    ]
+  },
+  {
+    "name": "poliwag",
+    "description": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand. The direction of the spiral on the belly differs by area. It is more adept at swimming than walking. Because it is in ept at walking on its newly grown legs, it always swims around in water. The direction of its belly spiral differs by area. The equator is thought to have an effect on this. The swirl on its belly is its insides showing through the skin. It looks clearer after it eats.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/60.png",
+    "height": 6,
+    "weight": 124,
+    "color": {
+      "r": 97,
+      "g": 143,
+      "b": 184
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 50
+      },
+      {
+        "statId": 3,
+        "value": 40
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 40
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "poliwhirl",
+    "description": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy. Under attack, it uses its belly spiral to put the foe to sleep. It then makes its escape. The swirl on its belly subtly un dulates. Staring at it may gradual ly cause drowsi ness. The skin on most of its body is moist. However, the skin on its belly spiral feels smooth. Though it is skilled at walk ing, it prefers to live underwater where there is less danger.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/61.png",
+    "height": 10,
+    "weight": 200,
+    "color": {
+      "r": 96,
+      "g": 139,
+      "b": 176
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 65
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "poliwrath",
+    "description": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers. Swims powerfully using all the muscles in its body. It can even overtake champion swimmers. This strong and skilled swimmer is even capable of crossing the Pacific Ocean just by kicking. Although an ener getic, skilled swimmer that uses all of its mus cles, it lives on dry land. It can use its well-developed arms and legs to run on the surface of the water for a split second.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/62.png",
+    "height": 13,
+    "weight": 540,
+    "color": {
+      "r": 94,
+      "g": 134,
+      "b": 171
+    },
+    "typeIds": [
+      5,
+      12
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 90
+      },
+      {
+        "statId": 2,
+        "value": 95
+      },
+      {
+        "statId": 3,
+        "value": 95
+      },
+      {
+        "statId": 4,
+        "value": 70
+      },
+      {
+        "statId": 5,
+        "value": 90
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "abra",
+    "description": "Using its ability to read minds, it will identify impending danger and teleport to safety. Sleeps 18 hours a day. If it senses danger, it will teleport itself to safety even as it sleeps. It senses impend ing attacks and teleports away to safety before the actual attacks can strike. If it decides to teleport randomly, it creates the illusion that it has created copies of itself. It hypnotizes itself so that it can teleport away when it senses danger, even if it is asleep.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/63.png",
+    "height": 9,
+    "weight": 195,
+    "color": {
+      "r": 210,
+      "g": 162,
+      "b": 14
+    },
+    "typeIds": [
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 25
+      },
+      {
+        "statId": 2,
+        "value": 20
+      },
+      {
+        "statId": 3,
+        "value": 15
+      },
+      {
+        "statId": 4,
+        "value": 105
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "kadabra",
+    "description": "It emits special alpha waves from its body that induce headaches just by being close by. Many odd things happen if this Pokémon is close by. For example, it makes clocks run backwards. It possesses strong spiritual power. The more danger it faces, the stronger its psychic power. If it uses its abilities, it emits special alpha waves that cause machines to malfunction. When it closes its eyes, twice as many alpha parti cles come out of the surface of its body.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/64.png",
+    "height": 13,
+    "weight": 565,
+    "color": {
+      "r": 189,
+      "g": 140,
+      "b": 24
+    },
+    "typeIds": [
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 35
+      },
+      {
+        "statId": 3,
+        "value": 30
+      },
+      {
+        "statId": 4,
+        "value": 120
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 105
+      }
+    ]
+  },
+  {
+    "name": "alakazam",
+    "description": "Its brain can out perform a super computer. Its intelligence quotient is said to be 5,000. A Pokémon that can memorize anything. It never forgets what it learns-- that's why this Pokémon is smart. Closing both its eyes heightens all its other senses. This enables it to use its abilities to their extremes. Its brain cells multiply continu ally until it dies. As a result, it remembers everything. It has an IQ of 5000. It calcu lates many things in order to gain the edge in every battle.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/65.png",
+    "height": 15,
+    "weight": 480,
+    "color": {
+      "r": 190,
+      "g": 142,
+      "b": 22
+    },
+    "typeIds": [
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 55
+      },
+      {
+        "statId": 2,
+        "value": 50
+      },
+      {
+        "statId": 3,
+        "value": 45
+      },
+      {
+        "statId": 4,
+        "value": 135
+      },
+      {
+        "statId": 5,
+        "value": 95
+      },
+      {
+        "statId": 6,
+        "value": 120
+      }
+    ]
+  },
+  {
+    "name": "machop",
+    "description": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger. Very powerful in spite of its small size. Its mastery of many types of martial arts makes it very tough. Always brimming with power, it passes time by lifting boulders. Doing so makes it even stronger. It loves to work out and build its muscles. It is never satisfied, even if it trains hard all day long. It trains by lifting rocks in the mountains. It can even pick up a graveler with ease.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/66.png",
+    "height": 8,
+    "weight": 195,
+    "color": {
+      "r": 161,
+      "g": 196,
+      "b": 207
+    },
+    "typeIds": [
+      12
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 70
+      },
+      {
+        "statId": 2,
+        "value": 80
+      },
+      {
+        "statId": 3,
+        "value": 50
+      },
+      {
+        "statId": 4,
+        "value": 35
+      },
+      {
+        "statId": 5,
+        "value": 35
+      },
+      {
+        "statId": 6,
+        "value": 35
+      }
+    ]
+  },
+  {
+    "name": "machoke",
+    "description": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions. The belt around its waist holds back its energy. Without it, this Pokémon would be unstoppable. It always goes at its full power, but this very tough and durable Pokémon never gets tired. The muscles cover ing its body teem with power. Even when still, it exudes an amazing sense of strength. This tough Pokémon always stays in the zone. Its muscles become thicker after every battle.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/67.png",
+    "height": 15,
+    "weight": 705,
+    "color": {
+      "r": 185,
+      "g": 194,
+      "b": 221
+    },
+    "typeIds": [
+      12
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 80
+      },
+      {
+        "statId": 2,
+        "value": 100
+      },
+      {
+        "statId": 3,
+        "value": 70
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 60
+      },
+      {
+        "statId": 6,
+        "value": 45
+      }
+    ]
+  },
+  {
+    "name": "machamp",
+    "description": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon. One arm alone can move mountains. Using all four arms, this Pokémon fires off awesome punches. It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles. It uses its four powerful arms to pin the limbs of its foe, then throws the victim over the horizon. Its superpowerful punches are said to knock the victim flying clear over the horizon.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/68.png",
+    "height": 16,
+    "weight": 1300,
+    "color": {
+      "r": 150,
+      "g": 180,
+      "b": 207
+    },
+    "typeIds": [
+      12
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 90
+      },
+      {
+        "statId": 2,
+        "value": 130
+      },
+      {
+        "statId": 3,
+        "value": 80
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 85
+      },
+      {
+        "statId": 6,
+        "value": 55
+      }
+    ]
+  },
+  {
+    "name": "bellsprout",
+    "description": "A carnivorous Pokémon that traps and eats bugs. It uses its root feet to soak up needed moisture. Prefers hot and humid places. It ensnares tiny insects with its vines and devours them. Even though its body is extremely skinny, it is blindingly fast when catching its prey. It plants its feet deep underground to replenish wa ter. It can't es cape its enemy while it's rooted. If it notices anything that moves, it immediately flings its vine at the object.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/69.png",
+    "height": 7,
+    "weight": 40,
+    "color": {
+      "r": 171,
+      "g": 211,
+      "b": 132
+    },
+    "typeIds": [
+      1,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 50
+      },
+      {
+        "statId": 2,
+        "value": 75
+      },
+      {
+        "statId": 3,
+        "value": 35
+      },
+      {
+        "statId": 4,
+        "value": 70
+      },
+      {
+        "statId": 5,
+        "value": 30
+      },
+      {
+        "statId": 6,
+        "value": 40
+      }
+    ]
+  },
+  {
+    "name": "weepinbell",
+    "description": "It spits out poisonpowder to immobilize the enemy and then finishes it with a spray of acid. When hungry, it swallows anything that moves. Its hapless prey is melted inside by strong acids. Even though it is filled with acid, it does not melt because it also oozes a neutral izing fluid. If its prey is bigger than its mouth, it slices up the victim with sharp leaves, then eats every morsel. The leafy parts act as cutters for slashing foes. It spits a fluid that dissolves everything.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/70.png",
+    "height": 10,
+    "weight": 64,
+    "color": {
+      "r": 184,
+      "g": 208,
+      "b": 144
+    },
+    "typeIds": [
+      1,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 90
+      },
+      {
+        "statId": 3,
+        "value": 50
+      },
+      {
+        "statId": 4,
+        "value": 85
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 55
+      }
+    ]
+  },
+  {
+    "name": "victreebel",
+    "description": "Said to live in huge colonies deep in jungles, although no one has ever returned from there. Lures prey with the sweet aroma of honey. Swallowed whole, the prey is melted in a day, bones and all. Acid that has dis solved many prey becomes sweeter, making it even more effective at attracting prey. This horrifying plant Pokémon at tracts prey with aromatic honey, then melts them in its mouth. Once ingested into this Pokémon's body, even the hardest object will melt into nothing.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/71.png",
+    "height": 17,
+    "weight": 155,
+    "color": {
+      "r": 166,
+      "g": 208,
+      "b": 132
+    },
+    "typeIds": [
+      1,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 80
+      },
+      {
+        "statId": 2,
+        "value": 105
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "tentacool",
+    "description": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid. It can sometimes be found all dry and shriveled up on a beach. Toss it back into the sea to revive it. When the tide goes out, dehydrated tentacool remains can be found washed up on the shore. It drifts aimless ly in waves. Very difficult to see in water, it may not be noticed until it stings. As it floats along on the waves, it uses its toxic feelers to stab anything it touches.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/72.png",
+    "height": 9,
+    "weight": 455,
+    "color": {
+      "r": 61,
+      "g": 196,
+      "b": 232
+    },
+    "typeIds": [
+      5,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 40
+      },
+      {
+        "statId": 3,
+        "value": 35
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 100
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "tentacruel",
+    "description": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey. Its 80 tentacles can stretch and contract freely. They wrap around prey and weaken it with poison. Its 80 tentacles absorb water and stretch almost endlessly to con strict its prey and enemies. In battle, it extends all 80 of its tentacles to entrap its oppo nent inside a poisonous net. When its 80 feel ers absorb water, it stretches to become like a net to entangle its prey.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/73.png",
+    "height": 16,
+    "weight": 550,
+    "color": {
+      "r": 53,
+      "g": 199,
+      "b": 238
+    },
+    "typeIds": [
+      5,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 80
+      },
+      {
+        "statId": 2,
+        "value": 70
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 80
+      },
+      {
+        "statId": 5,
+        "value": 120
+      },
+      {
+        "statId": 6,
+        "value": 100
+      }
+    ]
+  },
+  {
+    "name": "geodude",
+    "description": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them. Commonly found near mountain trails, etc. If you step on one by accident, it gets angry. Most people may not notice, but a closer look should reveal that there are many geodude around. It uses its arms to steadily climb steep mountain paths. It swings its fists around if angered. Proud of their sturdy bodies, they bash against each other in a contest to prove whose is harder.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/74.png",
+    "height": 4,
+    "weight": 200,
+    "color": {
+      "r": 181,
+      "g": 182,
+      "b": 171
+    },
+    "typeIds": [
+      15,
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 80
+      },
+      {
+        "statId": 3,
+        "value": 100
+      },
+      {
+        "statId": 4,
+        "value": 30
+      },
+      {
+        "statId": 5,
+        "value": 30
+      },
+      {
+        "statId": 6,
+        "value": 20
+      }
+    ]
+  },
+  {
+    "name": "graveler",
+    "description": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction. Often seen rolling down mountain trails. Obstacles are just things to roll straight over, not avoid. With a free and uncaring nature, it doesn't mind if pieces break off while it rolls down mountains. A slow walker, it rolls to move. It pays no attention to any object that happens to be in its path. Graveler make their homes on sheer cliff faces by gouging out numerous horizontal holes.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/75.png",
+    "height": 10,
+    "weight": 1050,
+    "color": {
+      "r": 152,
+      "g": 155,
+      "b": 144
+    },
+    "typeIds": [
+      15,
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 55
+      },
+      {
+        "statId": 2,
+        "value": 95
+      },
+      {
+        "statId": 3,
+        "value": 115
+      },
+      {
+        "statId": 4,
+        "value": 45
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 35
+      }
+    ]
+  },
+  {
+    "name": "golem",
+    "description": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage. Once it sheds its skin, its body turns tender and whitish. Its hide hardens when it's exposed to air. It sheds its skin once a year. The discarded shell immediately hard ens and crumbles away. It is capable of blowing itself up. It uses this explosive force to jump from mountain to mountain. Its rock-like body is so durable, even high-powered dynamite blasts fail to scratch its rugged hide.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/76.png",
+    "height": 14,
+    "weight": 3000,
+    "color": {
+      "r": 146,
+      "g": 136,
+      "b": 128
+    },
+    "typeIds": [
+      15,
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 80
+      },
+      {
+        "statId": 2,
+        "value": 120
+      },
+      {
+        "statId": 3,
+        "value": 130
+      },
+      {
+        "statId": 4,
+        "value": 55
+      },
+      {
+        "statId": 5,
+        "value": 65
+      },
+      {
+        "statId": 6,
+        "value": 45
+      }
+    ]
+  },
+  {
+    "name": "ponyta",
+    "description": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time. Capable of jumping incredibly high. Its hooves and sturdy legs absorb the impact of a hard landing. It is a weak run ner immediately after birth. It gradually becomes faster by chasing after its parents. Its hind legs, which have hard er-than-diamond hooves, kick back at any presence it senses behind it.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/77.png",
+    "height": 10,
+    "weight": 300,
+    "color": {
+      "r": 219,
+      "g": 211,
+      "b": 131
+    },
+    "typeIds": [
+      3
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 50
+      },
+      {
+        "statId": 2,
+        "value": 85
+      },
+      {
+        "statId": 3,
+        "value": 55
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 65
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "rapidash",
+    "description": "Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it. Just loves to run. If it sees some thing faster than itself, it will give chase at top speed. At full gallop, its four hooves barely touch the ground because it moves so incredi bly fast. With incredible acceleration, it reaches its top speed of 150 mph after running just ten steps. It just loves to gallop. The faster it goes, the long er the swaying flames of its mane will become.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/78.png",
+    "height": 17,
+    "weight": 950,
+    "color": {
+      "r": 227,
+      "g": 218,
+      "b": 132
+    },
+    "typeIds": [
+      3
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 100
+      },
+      {
+        "statId": 3,
+        "value": 70
+      },
+      {
+        "statId": 4,
+        "value": 80
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 105
+      }
+    ]
+  },
+  {
+    "name": "slowpoke",
+    "description": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack. Incredibly slow and sluggish. It is quite content to loll about without worrying about the time. It lazes vacantly near water. If something bites its tail, it won't even notice for a whole day. A sweet sap leaks from its tail's tip. Although not nutritious, the tail is pleasant to chew on. It is always so absent-minded that it won't react, even if its flavorful tail is bitten.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/79.png",
+    "height": 12,
+    "weight": 360,
+    "color": {
+      "r": 242,
+      "g": 186,
+      "b": 191
+    },
+    "typeIds": [
+      5,
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 90
+      },
+      {
+        "statId": 2,
+        "value": 65
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 40
+      },
+      {
+        "statId": 6,
+        "value": 15
+      }
+    ]
+  },
+  {
+    "name": "slowbro",
+    "description": "The shellder that is latched onto slowpoke's tail is said to feed on the host's left over scraps. Lives lazily by the sea. If the shellder on its tail comes off, it becomes a slowpoke again. If the tail-biting shellder is thrown off in a harsh battle, it reverts to being an ordi nary slowpoke. Naturally dull to begin with, it lost its ability to feel pain due to shellder's seeping poison. An attached shellder won't let go because of the tasty flavor that oozes out of its tail.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/80.png",
+    "height": 16,
+    "weight": 785,
+    "color": {
+      "r": 224,
+      "g": 194,
+      "b": 194
+    },
+    "typeIds": [
+      5,
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 95
+      },
+      {
+        "statId": 2,
+        "value": 75
+      },
+      {
+        "statId": 3,
+        "value": 110
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "magnemite",
+    "description": "Uses anti-gravity to stay suspended. Appears without warning and uses thunder wave and similar moves. It is born with the ability to defy gravity. It floats in air on powerful electro magnetic waves. It is attracted by electromagnetic waves. It may approach trainers if they are using their PokéGEAR. The units at the sides of its body generate anti gravity energy to keep it aloft in the air. The faster the units at its sides rotate, the greater the magnetic force they generate.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/81.png",
+    "height": 3,
+    "weight": 60,
+    "color": {
+      "r": 183,
+      "g": 202,
+      "b": 210
+    },
+    "typeIds": [
+      8,
+      11
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 25
+      },
+      {
+        "statId": 2,
+        "value": 35
+      },
+      {
+        "statId": 3,
+        "value": 70
+      },
+      {
+        "statId": 4,
+        "value": 95
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 45
+      }
+    ]
+  },
+  {
+    "name": "magneton",
+    "description": "Formed by several Magnemite linked together. They frequently appear when sunspots flare up. Generates strange radio signals. It raises the tem perature by 3.6F degrees within 3,300 feet. Three magnemite are linked by a strong magnetic force. Earaches will occur if you get too close. The magnemite are united by a mag netism so power ful, it dries all moisture in its vicinities. When many magneton gather together, the resulting magnetic storm disrupts radio waves.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/82.png",
+    "height": 10,
+    "weight": 600,
+    "color": {
+      "r": 199,
+      "g": 217,
+      "b": 223
+    },
+    "typeIds": [
+      8,
+      11
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 50
+      },
+      {
+        "statId": 2,
+        "value": 60
+      },
+      {
+        "statId": 3,
+        "value": 95
+      },
+      {
+        "statId": 4,
+        "value": 120
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "farfetchd",
+    "description": "The sprig of green onions it holds is its weapon. It is used much like a metal sword. Lives where reedy plants grow. They are rarely seen, so it's thought their numbers are decreasing. If anyone tries to disturb where the essential plant sticks grow, it uses its own stick to thwart them. If it eats the plant stick it carries as emer gency rations, it runs off in search of a new stick. In order to pre vent their extinction, more people have made an effort to breed these Pokémon.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/83.png",
+    "height": 8,
+    "weight": 150,
+    "color": {
+      "r": 211,
+      "g": 183,
+      "b": 153
+    },
+    "typeIds": [
+      7,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 52
+      },
+      {
+        "statId": 2,
+        "value": 90
+      },
+      {
+        "statId": 3,
+        "value": 55
+      },
+      {
+        "statId": 4,
+        "value": 58
+      },
+      {
+        "statId": 5,
+        "value": 62
+      },
+      {
+        "statId": 6,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "doduo",
+    "description": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints. Its short wings make flying dif ficult. Instead, this Pokémon runs at high speed on developed legs. By alternately raising and lower ing its two heads, it balances itself to be more stable while running. It races through grassy plains with powerful strides, leaving footprints up to four inches deep. The brains in its two heads appear to communicate emotions to each other with a telepathic power.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/84.png",
+    "height": 14,
+    "weight": 392,
+    "color": {
+      "r": 210,
+      "g": 119,
+      "b": 17
+    },
+    "typeIds": [
+      7,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 35
+      },
+      {
+        "statId": 2,
+        "value": 85
+      },
+      {
+        "statId": 3,
+        "value": 45
+      },
+      {
+        "statId": 4,
+        "value": 35
+      },
+      {
+        "statId": 5,
+        "value": 35
+      },
+      {
+        "statId": 6,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "dodrio",
+    "description": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake. One of doduo's 2 heads splits to form a unique species. It runs close to 40 mph in prairies. It collects data and plans three times as wisely, but it may think too much and be come immobilized. If one of the heads gets to eat, the others will be satisfied, too, and they will stop squabbling. An enemy that takes its eyes off any of the three heads--even for a second--will get pecked severely.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/85.png",
+    "height": 18,
+    "weight": 852,
+    "color": {
+      "r": 213,
+      "g": 124,
+      "b": 36
+    },
+    "typeIds": [
+      7,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 110
+      },
+      {
+        "statId": 3,
+        "value": 70
+      },
+      {
+        "statId": 4,
+        "value": 60
+      },
+      {
+        "statId": 5,
+        "value": 60
+      },
+      {
+        "statId": 6,
+        "value": 110
+      }
+    ]
+  },
+  {
+    "name": "seel",
+    "description": "The protruding horn on its head is very hard. It is used for bashing through thick ice. Loves freezing cold conditions. Relishes swimming in a frigid cli mate of around 14F degrees. Although it can't walk well on land, it is a graceful swimmer. It espe cially loves being in frigid seas. In daytime, it is often found asleep on the seabed in shallow waters. Its nostrils close while it swims.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/86.png",
+    "height": 11,
+    "weight": 900,
+    "color": {
+      "r": 219,
+      "g": 223,
+      "b": 229
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 45
+      },
+      {
+        "statId": 3,
+        "value": 55
+      },
+      {
+        "statId": 4,
+        "value": 45
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 45
+      }
+    ]
+  },
+  {
+    "name": "dewgong",
+    "description": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters. Its entire body is a snowy-white. Unharmed by even intense cold, it swims powerfully in icy waters. Its streamlined body has little drag in water. The colder the temperature, the friskier it gets. It loves frigid seas with ice floes. It uses its long tail to change swimming direction quickly. It sleeps under shallow ocean waters during the day, then looks for food at night when it's cold.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/87.png",
+    "height": 17,
+    "weight": 1200,
+    "color": {
+      "r": 227,
+      "g": 227,
+      "b": 231
+    },
+    "typeIds": [
+      5,
+      16
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 90
+      },
+      {
+        "statId": 2,
+        "value": 70
+      },
+      {
+        "statId": 3,
+        "value": 80
+      },
+      {
+        "statId": 4,
+        "value": 70
+      },
+      {
+        "statId": 5,
+        "value": 95
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "grimer",
+    "description": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories. Made of hardened sludge. It smells too putrid to touch. Even weeds won't grow in its path. As it moves, it loses bits of its body from which new grimer emerge. This worsens the stench around it. Wherever grimer has passed, so many germs are left behind that no plants will ever grow again. When two of these Pokémon's bodies are combined together, new poisons are created.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/88.png",
+    "height": 9,
+    "weight": 300,
+    "color": {
+      "r": 139,
+      "g": 138,
+      "b": 199
+    },
+    "typeIds": [
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 80
+      },
+      {
+        "statId": 2,
+        "value": 80
+      },
+      {
+        "statId": 3,
+        "value": 50
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 25
+      }
+    ]
+  },
+  {
+    "name": "muk",
+    "description": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison. Smells so awful, it can cause fainting. Through degeneration, it lost its sense of smell. They love to gath er in smelly areas where sludge ac cumulates, making the stench around them worse. Its body is made of a powerful poi son. Touching it accidentally will cause a fever that requires bed rest. A toxic fluid seeps from its body. The fluid instantly kills plants and trees on contact.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/89.png",
+    "height": 12,
+    "weight": 300,
+    "color": {
+      "r": 127,
+      "g": 128,
+      "b": 209
+    },
+    "typeIds": [
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 105
+      },
+      {
+        "statId": 2,
+        "value": 105
+      },
+      {
+        "statId": 3,
+        "value": 75
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 100
+      },
+      {
+        "statId": 6,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "shellder",
+    "description": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open. The shell can withstand any attack. However, when it is open, the tender body is exposed. It swims facing backward by open ing and closing its two-piece shell. It is surprisingly fast. Grains of sand trapped in its shells mix with its body fluids to form beautiful pearls. Clamping on to an opponent reveals its vulnerable parts, so it uses this move only as a last resort.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/90.png",
+    "height": 3,
+    "weight": 40,
+    "color": {
+      "r": 108,
+      "g": 100,
+      "b": 218
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 30
+      },
+      {
+        "statId": 2,
+        "value": 65
+      },
+      {
+        "statId": 3,
+        "value": 100
+      },
+      {
+        "statId": 4,
+        "value": 45
+      },
+      {
+        "statId": 5,
+        "value": 25
+      },
+      {
+        "statId": 6,
+        "value": 40
+      }
+    ]
+  },
+  {
+    "name": "cloyster",
+    "description": "When attacked, it launches its horns in quick volleys. Its innards have never been seen. For protection, it uses its harderthan-diamonds shell. It also shoots spikes from the shell. Once it slams its shell shut, it is impossible to open, even by those with superi or strength. Cloyster that live in seas with harsh tidal currents grow large, sharp spikes on their shells. Even a missile can't break the spikes it uses to stab opponents. They're even hard er than its shell.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/91.png",
+    "height": 15,
+    "weight": 1325,
+    "color": {
+      "r": 150,
+      "g": 151,
+      "b": 196
+    },
+    "typeIds": [
+      5,
+      16
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 50
+      },
+      {
+        "statId": 2,
+        "value": 95
+      },
+      {
+        "statId": 3,
+        "value": 180
+      },
+      {
+        "statId": 4,
+        "value": 85
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "gastly",
+    "description": "Almost invisible, this gaseous Pokémon cloaks the target and puts it to sleep without notice. Said to appear in decrepit, deserted buildings. It has no real shape as it appears to be made of a gas. With its gas-like body, it can sneak into any place it desires. However, it can be blown away by wind. Its thin body is made of gas. It can envelop an opponent of any size and cause suffocation. This Pokémon’s body is 95% made up of gases, which are blown away by strong gusts of wind.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/92.png",
+    "height": 13,
+    "weight": 1,
+    "color": {
+      "r": 104,
+      "g": 79,
+      "b": 110
+    },
+    "typeIds": [
+      13,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 30
+      },
+      {
+        "statId": 2,
+        "value": 35
+      },
+      {
+        "statId": 3,
+        "value": 30
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 35
+      },
+      {
+        "statId": 6,
+        "value": 80
+      }
+    ]
+  },
+  {
+    "name": "haunter",
+    "description": "Because of its ability to slip through block walls, it is said to be from another dimension. By licking, it saps the victim's life. It causes shaking that won't stop until the victim's demise. In total darkness, where nothing is visible, haunter lurks, silently stalking its next victim. Its tongue is made of gas. If licked, its victim starts shaking constantly until death even tually comes. It hides in the dark, planning to take the life of the next living thing that wanders close by.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/93.png",
+    "height": 16,
+    "weight": 1,
+    "color": {
+      "r": 116,
+      "g": 101,
+      "b": 160
+    },
+    "typeIds": [
+      13,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 45
+      },
+      {
+        "statId": 2,
+        "value": 50
+      },
+      {
+        "statId": 3,
+        "value": 45
+      },
+      {
+        "statId": 4,
+        "value": 115
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 95
+      }
+    ]
+  },
+  {
+    "name": "gengar",
+    "description": "Under a full moon, this Pokémon likes to mimic the shadows of people and laugh at their fright. A gengar is close by if you feel a sudden chill. It may be trying to lay a curse on you. It steals heat from its surround ings. If you feel a sudden chill, it is certain that a gengar appeared. To steal the life of its target, it slips into the prey's shadow and silently waits for an opportunity. It is said to emerge from darkness to steal the lives of those who become lost in mountains.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/94.png",
+    "height": 15,
+    "weight": 405,
+    "color": {
+      "r": 119,
+      "g": 103,
+      "b": 164
+    },
+    "typeIds": [
+      13,
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 65
+      },
+      {
+        "statId": 3,
+        "value": 60
+      },
+      {
+        "statId": 4,
+        "value": 130
+      },
+      {
+        "statId": 5,
+        "value": 75
+      },
+      {
+        "statId": 6,
+        "value": 110
+      }
+    ]
+  },
+  {
+    "name": "onix",
+    "description": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black. Burrows at high speed in search of food. The tunnels it leaves are used as homes by DIGLETTs. It twists and squirms through the ground. The thunderous roar of its tunneling echoes a long way. It rapidly bores through the ground at 50 mph by squirming and twisting its mas sive, rugged body. When it travels underground, it causes rumbling and tremors. It can move at 50 mph.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/95.png",
+    "height": 88,
+    "weight": 2100,
+    "color": {
+      "r": 161,
+      "g": 165,
+      "b": 167
+    },
+    "typeIds": [
+      15,
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 35
+      },
+      {
+        "statId": 2,
+        "value": 45
+      },
+      {
+        "statId": 3,
+        "value": 160
+      },
+      {
+        "statId": 4,
+        "value": 30
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "drowzee",
+    "description": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams. If you sleep by it all the time, it will sometimes show you dreams it has eaten in the past. If you think that you had a good dream, but you can't remember it, a drowzee has probably eaten it. It remembers every dream it eats. It rarely eats the dreams of adults because children's are much tastier. It can tell what people are dreaming by sniffing with its big nose. It loves fun dreams.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/96.png",
+    "height": 10,
+    "weight": 324,
+    "color": {
+      "r": 242,
+      "g": 218,
+      "b": 27
+    },
+    "typeIds": [
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 48
+      },
+      {
+        "statId": 3,
+        "value": 45
+      },
+      {
+        "statId": 4,
+        "value": 43
+      },
+      {
+        "statId": 5,
+        "value": 90
+      },
+      {
+        "statId": 6,
+        "value": 42
+      }
+    ]
+  },
+  {
+    "name": "hypno",
+    "description": "When it locks eyes with an enemy, it will use a mix of psi moves such as hypnosis and confusion. Avoid eye contact if you come across one. It will try to put you to sleep by using its pendulum. When it is very hungry, it puts humans it meets to sleep, then it feasts on their dreams. Always holding a pendulum that it rocks at a steady rhythm, it causes drowsiness in any one nearby. The longer it swings its pendulum, the longer the effects of its hypnosis last.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/97.png",
+    "height": 16,
+    "weight": 756,
+    "color": {
+      "r": 231,
+      "g": 205,
+      "b": 25
+    },
+    "typeIds": [
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 85
+      },
+      {
+        "statId": 2,
+        "value": 73
+      },
+      {
+        "statId": 3,
+        "value": 70
+      },
+      {
+        "statId": 4,
+        "value": 73
+      },
+      {
+        "statId": 5,
+        "value": 115
+      },
+      {
+        "statId": 6,
+        "value": 67
+      }
+    ]
+  },
+  {
+    "name": "krabby",
+    "description": "Its pincers are not only powerful weapons, they are used for balance when walking sideways. Its pincers are superb weapons. They sometimes break off during battle, but they grow back fast. If it senses dan ger approaching, it cloaks itself with bubbles from its mouth so it will look bigger. The pincers break off easily. If it loses a pincer, it somehow becomes incapable of walk ing sideways. If it is unable to find food, it will absorb nutrients by swallowing a mouthful of sand.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/98.png",
+    "height": 4,
+    "weight": 65,
+    "color": {
+      "r": 235,
+      "g": 128,
+      "b": 45
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 30
+      },
+      {
+        "statId": 2,
+        "value": 105
+      },
+      {
+        "statId": 3,
+        "value": 90
+      },
+      {
+        "statId": 4,
+        "value": 25
+      },
+      {
+        "statId": 5,
+        "value": 25
+      },
+      {
+        "statId": 6,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "kingler",
+    "description": "The large pincer has 10,000 HP of crushing power. However, its huge size makes it unwieldy to use. One claw grew massively and as hard as steel. It has 10,000-HP strength. However, it is too heavy. It can hardly lift its massive, overgrown pincer. The pincer's size makes it difficult to aim properly. Its pincers grow peculiarly large. If it lifts the pincers too fast, it loses its bal ance and staggers.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/99.png",
+    "height": 13,
+    "weight": 600,
+    "color": {
+      "r": 243,
+      "g": 86,
+      "b": 5
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 55
+      },
+      {
+        "statId": 2,
+        "value": 130
+      },
+      {
+        "statId": 3,
+        "value": 115
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "voltorb",
+    "description": "Usually found in power plants. Easily mistaken for a Poké Ball, they have zapped many people. It is said to camouflage itself as a Poké Ball. It will self-destruct with very little stimulus. It rolls to move. If the ground is uneven, a sudden jolt from hitting a bump can cause it to explode. It was discovered when Poké Balls were introduced. It is said that there is some connection. During the study of this Pokémon, it was discovered that its compo nents are not found in nature.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/100.png",
+    "height": 5,
+    "weight": 104,
+    "color": {
+      "r": 235,
+      "g": 20,
+      "b": 64
+    },
+    "typeIds": [
+      8
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 30
+      },
+      {
+        "statId": 3,
+        "value": 50
+      },
+      {
+        "statId": 4,
+        "value": 55
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 100
+      }
+    ]
+  },
+  {
+    "name": "electrode",
+    "description": "It stores electric energy under very high pressure. It often explodes with little or no provocation. Stores electrical energy inside its body. Even the slightest shock could trigger a huge explosion. It is dangerous. If it has too much electricity and has nothing to do, it amuses itself by exploding. It stores an over flowing amount of electric energy inside its body. Even a small shock makes it explode.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/101.png",
+    "height": 12,
+    "weight": 666,
+    "color": {
+      "r": 225,
+      "g": 226,
+      "b": 225
+    },
+    "typeIds": [
+      8
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 50
+      },
+      {
+        "statId": 3,
+        "value": 70
+      },
+      {
+        "statId": 4,
+        "value": 80
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 150
+      }
+    ]
+  },
+  {
+    "name": "exeggcute",
+    "description": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms. The heads attract each other and spin around. There must be 6 heads for it to maintain balance. The shell is very durable. Even if it cracks, it can survive without spilling the contents. Using telepathy only they can receive, they always form a cluster of six exeggcute. If even one is separated from the group, the energy bond between the six will make them rejoin instantly.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/102.png",
+    "height": 4,
+    "weight": 25,
+    "color": {
+      "r": 240,
+      "g": 197,
+      "b": 204
+    },
+    "typeIds": [
+      1,
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 40
+      },
+      {
+        "statId": 3,
+        "value": 80
+      },
+      {
+        "statId": 4,
+        "value": 60
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 40
+      }
+    ]
+  },
+  {
+    "name": "exeggutor",
+    "description": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an exeggcute. Its cries are very noisy. This is because each of the 3 heads thinks about whatever it likes. Its three heads think independent ly. However, they are friendly and never appear to squabble. If a head drops off, it emits a telepathic call in search of others to form an exeggcute cluster. Living in a good environment makes it grow lots of heads. A head that drops off becomes an exeggcute.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/103.png",
+    "height": 20,
+    "weight": 1200,
+    "color": {
+      "r": 195,
+      "g": 168,
+      "b": 110
+    },
+    "typeIds": [
+      1,
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 95
+      },
+      {
+        "statId": 2,
+        "value": 95
+      },
+      {
+        "statId": 3,
+        "value": 85
+      },
+      {
+        "statId": 4,
+        "value": 125
+      },
+      {
+        "statId": 5,
+        "value": 75
+      },
+      {
+        "statId": 6,
+        "value": 55
+      }
+    ]
+  },
+  {
+    "name": "cubone",
+    "description": "Because it never removes its skull helmet, no one has ever seen this Pokémon's real face. Wears the skull of its deceased mother. Its cries echo inside the skull and come out as a sad melody. If it is sad or lonely, the skull it wears shakes, and emits a plain tive and mournful sound. It always wears the skull of its dead mother, so no one has any idea what its hidden face looks like. It lost its mother after its birth. It wears its mother's skull, never revealing its true face.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/104.png",
+    "height": 4,
+    "weight": 65,
+    "color": {
+      "r": 222,
+      "g": 213,
+      "b": 193
+    },
+    "typeIds": [
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 50
+      },
+      {
+        "statId": 2,
+        "value": 50
+      },
+      {
+        "statId": 3,
+        "value": 95
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 35
+      }
+    ]
+  },
+  {
+    "name": "marowak",
+    "description": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets. Small and weak, this Pokémon is adept with its bone club. It has grown more vicious over the ages. It has been seen pounding boulders with the bone it carries in order to tap out mes sages to others. It collects bones from an unknown place. A marowak graveyard exists somewhere in the world, rumors say.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/105.png",
+    "height": 10,
+    "weight": 450,
+    "color": {
+      "r": 212,
+      "g": 210,
+      "b": 203
+    },
+    "typeIds": [
+      9
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 80
+      },
+      {
+        "statId": 3,
+        "value": 110
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 45
+      }
+    ]
+  },
+  {
+    "name": "hitmonlee",
+    "description": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides. When kicking, the sole of its foot turns as hard as a diamond on im pact and destroys its enemy. This amazing Poké mon has an awesome sense of balance. It can kick in succession from any position. If it starts kick ing repeatedly, both legs will stretch even long er to strike a fleeing foe. It is also called the Kick Master. It uses its elastic legs to execute every known kick.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/106.png",
+    "height": 15,
+    "weight": 498,
+    "color": {
+      "r": 176,
+      "g": 135,
+      "b": 101
+    },
+    "typeIds": [
+      12
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 50
+      },
+      {
+        "statId": 2,
+        "value": 120
+      },
+      {
+        "statId": 3,
+        "value": 53
+      },
+      {
+        "statId": 4,
+        "value": 35
+      },
+      {
+        "statId": 5,
+        "value": 110
+      },
+      {
+        "statId": 6,
+        "value": 87
+      }
+    ]
+  },
+  {
+    "name": "hitmonchan",
+    "description": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see. Punches in cork screw fashion. It can punch its way through a concrete wall in the same way as a drill. Its punches slice the air. However, it seems to need a short break after fighting for three minutes. Its punches slice the air. They are launched at such high speed, even a slight graze could cause a burn.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/107.png",
+    "height": 14,
+    "weight": 502,
+    "color": {
+      "r": 203,
+      "g": 151,
+      "b": 107
+    },
+    "typeIds": [
+      12
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 50
+      },
+      {
+        "statId": 2,
+        "value": 105
+      },
+      {
+        "statId": 3,
+        "value": 79
+      },
+      {
+        "statId": 4,
+        "value": 35
+      },
+      {
+        "statId": 5,
+        "value": 110
+      },
+      {
+        "statId": 6,
+        "value": 76
+      }
+    ]
+  },
+  {
+    "name": "lickitung",
+    "description": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies. Its tongue spans almost 7 feet and moves more freely than its forelegs. Its licks can cause paralysis. Its tongue has well-developed nerves that run to the very tip, so it can be deft ly manipulated. Its long tongue, slathered with a gooey saliva, sticks to any thing, so it is very useful. It has a tongue that is over 6’6’’ long. It uses this long tongue to lick its body clean.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/108.png",
+    "height": 12,
+    "weight": 655,
+    "color": {
+      "r": 230,
+      "g": 157,
+      "b": 170
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 90
+      },
+      {
+        "statId": 2,
+        "value": 55
+      },
+      {
+        "statId": 3,
+        "value": 75
+      },
+      {
+        "statId": 4,
+        "value": 60
+      },
+      {
+        "statId": 5,
+        "value": 75
+      },
+      {
+        "statId": 6,
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "koffing",
+    "description": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning. In hot places, its internal gases could expand and explode without any warning. Be very careful!. Its thin, filmy body is filled with gases that cause constant sniffles, coughs and teary eyes. The poisonous gases it contains are a little bit lighter than air, keeping it slight ly airborne. Its thin, balloon-like body is inflated by horribly toxic gases. It reeks when it is nearby.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/109.png",
+    "height": 6,
+    "weight": 10,
+    "color": {
+      "r": 168,
+      "g": 163,
+      "b": 170
+    },
+    "typeIds": [
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 65
+      },
+      {
+        "statId": 3,
+        "value": 95
+      },
+      {
+        "statId": 4,
+        "value": 60
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 35
+      }
+    ]
+  },
+  {
+    "name": "weezing",
+    "description": "Where two kinds of poison gases meet, 2 Koffing can fuse into a weezing over many years. It lives and grows by absorbing dust, germs and poison gases that are contained in toxic waste and garbage. If one of the twin koffing inflates, the other one deflates. It con stantly mixes its poisonous gases. Top-grade perfume is made using its internal poison gases by diluting them to the high est level.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/110.png",
+    "height": 12,
+    "weight": 95,
+    "color": {
+      "r": 174,
+      "g": 153,
+      "b": 179
+    },
+    "typeIds": [
+      2
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 90
+      },
+      {
+        "statId": 3,
+        "value": 120
+      },
+      {
+        "statId": 4,
+        "value": 85
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "rhyhorn",
+    "description": "Its massive bones are 1000 times harder than human bones. It can easily knock a trailer flying. A Pokémon with a one-track mind. Once it charges, it won't stop running until it falls asleep. It is inept at turning because of its four short legs. It can only charge and run in one direction. It doesn't care if there is anything in its way. It just charges and destroys all ob stacles. It can remember only one thing at a time. Once it starts rushing, it forgets why it started.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/111.png",
+    "height": 10,
+    "weight": 1150,
+    "color": {
+      "r": 162,
+      "g": 182,
+      "b": 207
+    },
+    "typeIds": [
+      9,
+      15
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 80
+      },
+      {
+        "statId": 2,
+        "value": 85
+      },
+      {
+        "statId": 3,
+        "value": 95
+      },
+      {
+        "statId": 4,
+        "value": 30
+      },
+      {
+        "statId": 5,
+        "value": 30
+      },
+      {
+        "statId": 6,
+        "value": 25
+      }
+    ]
+  },
+  {
+    "name": "rhydon",
+    "description": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees. Walks on its hind legs. Shows signs of intelligence. Its armor-like hide even repels molten lava. Its rugged hide protects it from even the heat of lava. However, the hide also makes it insensitive. Its brain devel oped when it began walking on hind legs. Its thick hide protects it even in magma. By lightly spin ning its drilllike horn, it can easily shatter even a diamond in the rough.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/112.png",
+    "height": 19,
+    "weight": 1200,
+    "color": {
+      "r": 158,
+      "g": 173,
+      "b": 191
+    },
+    "typeIds": [
+      9,
+      15
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 105
+      },
+      {
+        "statId": 2,
+        "value": 130
+      },
+      {
+        "statId": 3,
+        "value": 120
+      },
+      {
+        "statId": 4,
+        "value": 45
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 40
+      }
+    ]
+  },
+  {
+    "name": "chansey",
+    "description": "A rare and elusive Pokémon that is said to bring happiness to those who manage to get it. A gentle and kind hearted Pokémon that shares its nutritious eggs if it sees an injured Pokémon. It walks carefully to prevent its egg from breaking. However, it is extremely fast at running away. Few in number and difficult to cap ture, it is said to bring happiness to the trainer who catches it. People try to catch it for its extremely nutritious eggs, but it rarely can be found.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/113.png",
+    "height": 11,
+    "weight": 346,
+    "color": {
+      "r": 236,
+      "g": 173,
+      "b": 194
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 250
+      },
+      {
+        "statId": 2,
+        "value": 5
+      },
+      {
+        "statId": 3,
+        "value": 5
+      },
+      {
+        "statId": 4,
+        "value": 35
+      },
+      {
+        "statId": 5,
+        "value": 105
+      },
+      {
+        "statId": 6,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "tangela",
+    "description": "The whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks. Its identity is obscured by masses of thick, blue vines. The vines are said to never stop growing. The vines that cloak its entire body are always jiggling. They effectively un nerve its foes. It tangles any moving thing with its vines. Their subtle shaking is ticklish if you get ensnared. During battle, it constantly moves the vines that cover its body in order to annoy its opponent.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/114.png",
+    "height": 10,
+    "weight": 350,
+    "color": {
+      "r": 58,
+      "g": 147,
+      "b": 220
+    },
+    "typeIds": [
+      1
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 55
+      },
+      {
+        "statId": 3,
+        "value": 115
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 40
+      },
+      {
+        "statId": 6,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "kangaskhan",
+    "description": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old. Raises its young in its belly pouch. Won't run from any fight to keep its young protected. If it is safe, the young gets out of the belly pouch to play. The adult keeps a close eye on the youngster. To protect its young, it will never give up during battle, no matter how badly wounded it is. To avoid crushing the baby it carries in its pouch, it always sleeps standing up.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/115.png",
+    "height": 22,
+    "weight": 800,
+    "color": {
+      "r": 163,
+      "g": 121,
+      "b": 82
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 105
+      },
+      {
+        "statId": 2,
+        "value": 95
+      },
+      {
+        "statId": 3,
+        "value": 80
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "horsea",
+    "description": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water. If it senses any danger, it will vigorously spray water or a special type of ink from its mouth. If attacked by a larger enemy, it quickly swims to safety by adeptly controlling its dorsal fin. Its big, developed fins move rapidly, allowing it to swim backward while still facing forward. When they're in a safe location, they can be seen playfully tangling their tails together.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/116.png",
+    "height": 4,
+    "weight": 80,
+    "color": {
+      "r": 53,
+      "g": 179,
+      "b": 229
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 30
+      },
+      {
+        "statId": 2,
+        "value": 40
+      },
+      {
+        "statId": 3,
+        "value": 70
+      },
+      {
+        "statId": 4,
+        "value": 70
+      },
+      {
+        "statId": 5,
+        "value": 25
+      },
+      {
+        "statId": 6,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "seadra",
+    "description": "Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail. Touching the back fin causes numb ness. It hooks its tail to coral to stay in place while sleeping. An examination of its cells revealed the presence of a gene not found in horsea. It became a hot topic. Its fin-tips leak poison. Its fins and bones are highly valued as ingredients in herbal medicine.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/117.png",
+    "height": 12,
+    "weight": 250,
+    "color": {
+      "r": 59,
+      "g": 189,
+      "b": 236
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 55
+      },
+      {
+        "statId": 2,
+        "value": 65
+      },
+      {
+        "statId": 3,
+        "value": 95
+      },
+      {
+        "statId": 4,
+        "value": 95
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 85
+      }
+    ]
+  },
+  {
+    "name": "goldeen",
+    "description": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen. When it is time for them to lay eggs, they can be seen swimming up rivers and falls in large groups. Its dorsal, pecto ral and tail fins wave elegantly in water. That is why it is known as the water dancer. A strong swimmer, it is capable of swimming nonstop up fast streams at a steady speed of five knots.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/118.png",
+    "height": 6,
+    "weight": 150,
+    "color": {
+      "r": 234,
+      "g": 222,
+      "b": 217
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 45
+      },
+      {
+        "statId": 2,
+        "value": 67
+      },
+      {
+        "statId": 3,
+        "value": 60
+      },
+      {
+        "statId": 4,
+        "value": 35
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 63
+      }
+    ]
+  },
+  {
+    "name": "seaking",
+    "description": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks. It is the male's job to make a nest by carving out boulders in a stream using the horn on its head. During spawning season, seaking gather from all over, coloring the rivers a brilliant red. Using its horn, it bores holes in riverbed boulders, making nests to prevent its eggs from washing away. When autumn comes, the males patrol the area around their nests in order to protect their offspring.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/119.png",
+    "height": 13,
+    "weight": 390,
+    "color": {
+      "r": 220,
+      "g": 217,
+      "b": 216
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 80
+      },
+      {
+        "statId": 2,
+        "value": 92
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 68
+      }
+    ]
+  },
+  {
+    "name": "staryu",
+    "description": "An enigmatic Pokémon that can effortlessly regenerate any appendage it loses in battle. As long as the center section is unharmed, it can grow back fully even if it is chopped to bits. At night, the cen ter of its body slowly flickers with the same rhythm as a human heartbeat. Even if its body is torn, it can regenerate as long as the glowing central core re mains intact. When the stars twinkle at night, it floats up from the sea floor, and its body's center core flickers.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/120.png",
+    "height": 8,
+    "weight": 345,
+    "color": {
+      "r": 173,
+      "g": 109,
+      "b": 13
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 30
+      },
+      {
+        "statId": 2,
+        "value": 45
+      },
+      {
+        "statId": 3,
+        "value": 55
+      },
+      {
+        "statId": 4,
+        "value": 70
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 85
+      }
+    ]
+  },
+  {
+    "name": "starmie",
+    "description": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem. The center section is named the core. People think it is communicating when it glows in 7 colors. The center section of its body is called the core. It glows in a different color each time it is seen. Regardless of the environment it lives in, its body grows to form a symmetrical geo metric shape.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/121.png",
+    "height": 11,
+    "weight": 800,
+    "color": {
+      "r": 147,
+      "g": 148,
+      "b": 216
+    },
+    "typeIds": [
+      5,
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 75
+      },
+      {
+        "statId": 3,
+        "value": 85
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 85
+      },
+      {
+        "statId": 6,
+        "value": 115
+      }
+    ]
+  },
+  {
+    "name": "mr-mime",
+    "description": "If interrupted while it is miming, it will slap around the offender with its broad hands. Always practices its pantomime act. It makes enemies believe something exists that really doesn't. A skilled mime from birth, it gains the ability to create invisi ble objects as it matures. Its fingertips emit a peculiar force field that hardens air to create an actual wall. It uses the mysterious power it has in its fingers to solidify air into an invisible wall.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/122.png",
+    "height": 13,
+    "weight": 545,
+    "color": {
+      "r": 19,
+      "g": 101,
+      "b": 154
+    },
+    "typeIds": [
+      14,
+      10
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 40
+      },
+      {
+        "statId": 2,
+        "value": 45
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 120
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "scyther",
+    "description": "With ninja-like agility and speed, it can create the illusion that there is more than one. Leaps out of tall grass and slices prey with its scythes. The move ment looks like that of a ninja. It slashes through grass with its sharp scythes, moving too fast for the human eye to track. When it moves, it leaves only a blur. If it hides in grass, its pro tective colors make it invisible. It tears and shreds prey with its wickedly sharp scythes. It very rarely spreads its wings to fly.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/123.png",
+    "height": 15,
+    "weight": 560,
+    "color": {
+      "r": 110,
+      "g": 198,
+      "b": 82
+    },
+    "typeIds": [
+      6,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 70
+      },
+      {
+        "statId": 2,
+        "value": 110
+      },
+      {
+        "statId": 3,
+        "value": 80
+      },
+      {
+        "statId": 4,
+        "value": 55
+      },
+      {
+        "statId": 5,
+        "value": 80
+      },
+      {
+        "statId": 6,
+        "value": 105
+      }
+    ]
+  },
+  {
+    "name": "jynx",
+    "description": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it. Appears to move to a rhythm of its own, as if it were dancing. It wiggles its hips as it walks. It rocks its body rhythmically. It appears to alter the rhythm depend ing on how it is feeling. It speaks a lan guage similar to that of humans. However, it seems to use dancing to communicate. It has several different cry pat terns, each of which seems to have its own meaning.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/124.png",
+    "height": 14,
+    "weight": 406,
+    "color": {
+      "r": 226,
+      "g": 215,
+      "b": 136
+    },
+    "typeIds": [
+      16,
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 50
+      },
+      {
+        "statId": 3,
+        "value": 35
+      },
+      {
+        "statId": 4,
+        "value": 115
+      },
+      {
+        "statId": 5,
+        "value": 95
+      },
+      {
+        "statId": 6,
+        "value": 95
+      }
+    ]
+  },
+  {
+    "name": "electabuzz",
+    "description": "Normally found near power plants, they can wander away and cause major blackouts in cities. If a major power outage occurs, it is certain that this Pokémon has eaten electricity at a power plant. Electricity runs across the surface of its body. In darkness, its en tire body glows a whitish-blue. Its body constant ly discharges electricity. Get ting close to it will make your hair stand on end. When two electabuzz touch, they control the electric currents to communicate their feelings.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/125.png",
+    "height": 11,
+    "weight": 300,
+    "color": {
+      "r": 237,
+      "g": 205,
+      "b": 5
+    },
+    "typeIds": [
+      8
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 83
+      },
+      {
+        "statId": 3,
+        "value": 57
+      },
+      {
+        "statId": 4,
+        "value": 95
+      },
+      {
+        "statId": 5,
+        "value": 85
+      },
+      {
+        "statId": 6,
+        "value": 105
+      }
+    ]
+  },
+  {
+    "name": "magmar",
+    "description": "Its body always burns with an orange glow that enables it to hide perfectly among flames. Born in an active volcano. Its body is always cloaked in flames, so it looks like a big ball of fire. It dislikes cold places, so it blows scorching flames to make the environment suit able for itself. The fiery surface of its body gives off a wavering, rippling glare that is similar to the sun. It moves more frequently in hot areas. It can heal itself by dipping its wound into lava.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/126.png",
+    "height": 13,
+    "weight": 445,
+    "color": {
+      "r": 236,
+      "g": 41,
+      "b": 49
+    },
+    "typeIds": [
+      3
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 95
+      },
+      {
+        "statId": 3,
+        "value": 57
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 85
+      },
+      {
+        "statId": 6,
+        "value": 93
+      }
+    ]
+  },
+  {
+    "name": "pinsir",
+    "description": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard. Grips its prey in its pincers and squeezes hard! It can't move if it's cold, so it lives in warm places. With its horns, it digs burrows to sleep in at night. In the morning, damp soil clings to its body. Swings its long antlers wildly to attack. During cold periods, it hides deep in forests. When the tempera ture drops at night, it sleeps on treetops or among roots where it is well hidden.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/127.png",
+    "height": 15,
+    "weight": 550,
+    "color": {
+      "r": 173,
+      "g": 145,
+      "b": 133
+    },
+    "typeIds": [
+      6
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 125
+      },
+      {
+        "statId": 3,
+        "value": 100
+      },
+      {
+        "statId": 4,
+        "value": 55
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 85
+      }
+    ]
+  },
+  {
+    "name": "tauros",
+    "description": "When it targets an enemy, it charges furiously while whipping its body with its long tails. A rowdy Pokémon with a lot of stamina. Once running, it won't stop until it hits something. They fight each other by locking horns. The herd's protector takes pride in its bat tle-scarred horns. After heightening its will to fight by whipping itself with its three tails, it charges at full speed. These violent Pokémon fight with other mem bers of their herd in order to prove their strength.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/128.png",
+    "height": 14,
+    "weight": 884,
+    "color": {
+      "r": 183,
+      "g": 110,
+      "b": 32
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 75
+      },
+      {
+        "statId": 2,
+        "value": 100
+      },
+      {
+        "statId": 3,
+        "value": 95
+      },
+      {
+        "statId": 4,
+        "value": 40
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 110
+      }
+    ]
+  },
+  {
+    "name": "magikarp",
+    "description": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today. Famous for being very unreliable. It can be found swimming in seas, lakes, rivers and shallow puddles. An underpowered, pathetic Pokémon. It may jump high on rare occasions, but never more than seven feet. For no reason, it jumps and splashes about, making it easy for predators like pidgeotto to catch it mid-jump.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/129.png",
+    "height": 9,
+    "weight": 100,
+    "color": {
+      "r": 231,
+      "g": 68,
+      "b": 14
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 20
+      },
+      {
+        "statId": 2,
+        "value": 10
+      },
+      {
+        "statId": 3,
+        "value": 55
+      },
+      {
+        "statId": 4,
+        "value": 15
+      },
+      {
+        "statId": 5,
+        "value": 20
+      },
+      {
+        "statId": 6,
+        "value": 80
+      }
+    ]
+  },
+  {
+    "name": "gyarados",
+    "description": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage. Brutally vicious and enormously destructive. Known for totally destroying cities in ancient times. They say that during past wars, gyarados would appear and leave blazing ruins in its wake. Once it appears, it goes on a ram page. It remains enraged until it demolishes every thing around it. It appears when ever there is world conflict, burning down any place it travels through.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/130.png",
+    "height": 65,
+    "weight": 2350,
+    "color": {
+      "r": 215,
+      "g": 205,
+      "b": 158
+    },
+    "typeIds": [
+      5,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 95
+      },
+      {
+        "statId": 2,
+        "value": 125
+      },
+      {
+        "statId": 3,
+        "value": 79
+      },
+      {
+        "statId": 4,
+        "value": 60
+      },
+      {
+        "statId": 5,
+        "value": 100
+      },
+      {
+        "statId": 6,
+        "value": 81
+      }
+    ]
+  },
+  {
+    "name": "lapras",
+    "description": "A Pokémon that has been overhunted almost to extinction. It can ferry people across the water. A gentle soul that can read the minds of people. It can ferry people across the sea on its back. They have gentle hearts. Because they rarely fight, many have been caught. Their num ber has dwindled. It ferries people across the sea on its back. It may sing an enchanting cry if it is in a good mood. It loves crossing the sea with people and Pokémon on its back. It understands human speech.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/131.png",
+    "height": 25,
+    "weight": 2200,
+    "color": {
+      "r": 108,
+      "g": 173,
+      "b": 210
+    },
+    "typeIds": [
+      5,
+      16
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 130
+      },
+      {
+        "statId": 2,
+        "value": 85
+      },
+      {
+        "statId": 3,
+        "value": 80
+      },
+      {
+        "statId": 4,
+        "value": 85
+      },
+      {
+        "statId": 5,
+        "value": 95
+      },
+      {
+        "statId": 6,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "ditto",
+    "description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy. When it spots an enemy, its body transfigures into an almost perfect copy of its oppo nent. It can transform into anything. When it sleeps, it changes into a stone to avoid being attacked. Its transformation ability is per fect. However, if made to laugh, it can't maintain its disguise. It can freely recombine its own cellular structure to transform into other lifeforms.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/132.png",
+    "height": 3,
+    "weight": 40,
+    "color": {
+      "r": 198,
+      "g": 174,
+      "b": 239
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 48
+      },
+      {
+        "statId": 2,
+        "value": 48
+      },
+      {
+        "statId": 3,
+        "value": 48
+      },
+      {
+        "statId": 4,
+        "value": 48
+      },
+      {
+        "statId": 5,
+        "value": 48
+      },
+      {
+        "statId": 6,
+        "value": 48
+      }
+    ]
+  },
+  {
+    "name": "eevee",
+    "description": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs. Its genetic code is unstable, so it could evolve in a variety of ways. There are only a few alive. It has the ability to alter the com position of its body to suit its surrounding envi ronment. Its irregularly configured DNA is affected by its surroundings. It evolves if its en vironment changes. An extremely rare Pokémon that may evolve in a number of different ways depending on stimuli.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/133.png",
+    "height": 3,
+    "weight": 65,
+    "color": {
+      "r": 209,
+      "g": 146,
+      "b": 70
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 55
+      },
+      {
+        "statId": 2,
+        "value": 55
+      },
+      {
+        "statId": 3,
+        "value": 50
+      },
+      {
+        "statId": 4,
+        "value": 45
+      },
+      {
+        "statId": 5,
+        "value": 65
+      },
+      {
+        "statId": 6,
+        "value": 55
+      }
+    ]
+  },
+  {
+    "name": "vaporeon",
+    "description": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's. Its cell structure is similar to water molecules. It will melt away and become invis ible in water. When vaporeon's fins begin to vi brate, it is a sign that rain will come within a few hours. It prefers beauti ful shores. With cells similar to water molecules, it could melt in water. As it uses the fins on the tip of its tail to swim, it blends with the water perfectly.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/134.png",
+    "height": 10,
+    "weight": 290,
+    "color": {
+      "r": 54,
+      "g": 179,
+      "b": 207
+    },
+    "typeIds": [
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 130
+      },
+      {
+        "statId": 2,
+        "value": 65
+      },
+      {
+        "statId": 3,
+        "value": 60
+      },
+      {
+        "statId": 4,
+        "value": 110
+      },
+      {
+        "statId": 5,
+        "value": 95
+      },
+      {
+        "statId": 6,
+        "value": 65
+      }
+    ]
+  },
+  {
+    "name": "jolteon",
+    "description": "It accumulates negative ions in the atmosphere to blast out 10,000-volt lightning bolts. A sensitive Poké mon that easily becomes sad or angry. Every time its mood changes, it charges power. It concentrates the weak electric charges emitted by its cells and launches wicked lightning bolts. Every hair on its body starts to stand sharply on end if it becomes charged with electricity. The negatively charged ions generated in its fur create a constant sparking noise.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/135.png",
+    "height": 8,
+    "weight": 245,
+    "color": {
+      "r": 241,
+      "g": 199,
+      "b": 6
+    },
+    "typeIds": [
+      8
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 65
+      },
+      {
+        "statId": 3,
+        "value": 60
+      },
+      {
+        "statId": 4,
+        "value": 110
+      },
+      {
+        "statId": 5,
+        "value": 95
+      },
+      {
+        "statId": 6,
+        "value": 130
+      }
+    ]
+  },
+  {
+    "name": "flareon",
+    "description": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees. It has a flame chamber inside its body. It inhales, then blows out fire that is over 3,000F degrees. It stores some of the air it inhales in its internal flame pouch, which heats it to over 3,000 degrees. It fluffs out its fur collar to cool down its body temperature, which can reach 1,650 degrees. Once it has stored up enough heat, this Pokémon's body temperature can reach up to 1700 degrees.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/136.png",
+    "height": 9,
+    "weight": 250,
+    "color": {
+      "r": 238,
+      "g": 201,
+      "b": 120
+    },
+    "typeIds": [
+      3
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 130
+      },
+      {
+        "statId": 3,
+        "value": 60
+      },
+      {
+        "statId": 4,
+        "value": 95
+      },
+      {
+        "statId": 5,
+        "value": 110
+      },
+      {
+        "statId": 6,
+        "value": 65
+      }
+    ]
+  },
+  {
+    "name": "porygon",
+    "description": "A Pokémon that consists entirely of programming code. Capable of moving freely in cyberspace. The only Pokémon people anticipate can fly into space. None has managed the feat yet, however. It is a manmade Pokémon. Since it doesn't breathe, people are eager to try it in any environment. A manmade Pokémon that came about as a result of re search. It is pro grammed with only basic motions. An artificial Pokémon created due to extensive research, it can perform only what is in its program.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/137.png",
+    "height": 8,
+    "weight": 365,
+    "color": {
+      "r": 112,
+      "g": 208,
+      "b": 211
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 65
+      },
+      {
+        "statId": 2,
+        "value": 60
+      },
+      {
+        "statId": 3,
+        "value": 70
+      },
+      {
+        "statId": 4,
+        "value": 85
+      },
+      {
+        "statId": 5,
+        "value": 75
+      },
+      {
+        "statId": 6,
+        "value": 40
+      }
+    ]
+  },
+  {
+    "name": "omanyte",
+    "description": "Although long extinct, in rare cases, it can be genetically resurrected from fossils. An ancient Pokémon that was recovered from a fossil. It swims by cleverly twisting its 10 tentacles about. Revived from an ancient fossil, this Pokémon uses air stored in its shell to sink and rise in water. This Pokémon from ancient times is said to have navi gated the sea by adeptly twisting its 10 tentacles. A Pokémon that was resurrected from a fossil using modern science. It swam in ancient seas.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/138.png",
+    "height": 4,
+    "weight": 75,
+    "color": {
+      "r": 219,
+      "g": 185,
+      "b": 131
+    },
+    "typeIds": [
+      15,
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 35
+      },
+      {
+        "statId": 2,
+        "value": 40
+      },
+      {
+        "statId": 3,
+        "value": 100
+      },
+      {
+        "statId": 4,
+        "value": 90
+      },
+      {
+        "statId": 5,
+        "value": 55
+      },
+      {
+        "statId": 6,
+        "value": 35
+      }
+    ]
+  },
+  {
+    "name": "omastar",
+    "description": "A prehistoric Pokémon that died out when its heavy shell made it impossible to catch prey. Sharp beaks ring its mouth. Its shell was too big for it to move freely, so it became extinct. Apparently, it cracked shellder's shell with its sharp fangs and sucked out the insides. Once wrapped around its prey, it never lets go. It eats the prey by tearing at it with sharp fangs. Its heavy shell allowed it to reach only nearby food. This could be the reason it is extinct.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/139.png",
+    "height": 10,
+    "weight": 350,
+    "color": {
+      "r": 5,
+      "g": 154,
+      "b": 190
+    },
+    "typeIds": [
+      15,
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 70
+      },
+      {
+        "statId": 2,
+        "value": 60
+      },
+      {
+        "statId": 3,
+        "value": 125
+      },
+      {
+        "statId": 4,
+        "value": 115
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 55
+      }
+    ]
+  },
+  {
+    "name": "kabuto",
+    "description": "A Pokémon that was resurrected from a fossil found in what was once the ocean floor eons ago. A Pokémon that was recovered from a fossil. It uses the eyes on its back while hiding on the sea floor. On rare occasions, some have been found as fossils which they became while hiding on the ocean floor. This Pokémon lived in ancient times. On rare occasions, it has been discovered as a living fossil.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/140.png",
+    "height": 5,
+    "weight": 115,
+    "color": {
+      "r": 178,
+      "g": 118,
+      "b": 14
+    },
+    "typeIds": [
+      15,
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 30
+      },
+      {
+        "statId": 2,
+        "value": 80
+      },
+      {
+        "statId": 3,
+        "value": 90
+      },
+      {
+        "statId": 4,
+        "value": 55
+      },
+      {
+        "statId": 5,
+        "value": 45
+      },
+      {
+        "statId": 6,
+        "value": 55
+      }
+    ]
+  },
+  {
+    "name": "kabutops",
+    "description": "Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids. A slim and fast swimmer. It slices its prey with its sharp sickles and drinks the body fluids. In the water, it tucks in its limbs to become more compact, then it wiggles its shell to swim fast. With sharp claws, this ferocious, ancient Pokémon rips apart prey and sucks their body fluids. It was able to swim quickly thro ugh the water by compactly folding up its razor-sharp sickles.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/141.png",
+    "height": 13,
+    "weight": 405,
+    "color": {
+      "r": 195,
+      "g": 125,
+      "b": 15
+    },
+    "typeIds": [
+      15,
+      5
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 60
+      },
+      {
+        "statId": 2,
+        "value": 115
+      },
+      {
+        "statId": 3,
+        "value": 105
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 80
+      }
+    ]
+  },
+  {
+    "name": "aerodactyl",
+    "description": "A ferocious, prehistoric Pokémon that goes for the enemy's throat with its serrated saw-like fangs. A savage Pokémon that died out in ancient times. It was resurrected using DNA taken from amber. A vicious Pokémon from the distant past, it appears to have flown by spreading its wings and gliding. This vicious Poké mon is said to have flown in an cient skies while shrieking highpitched cries. In prehistoric times, this Pokémon flew freely and fearlessly through the skies.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/142.png",
+    "height": 18,
+    "weight": 590,
+    "color": {
+      "r": 160,
+      "g": 133,
+      "b": 176
+    },
+    "typeIds": [
+      15,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 80
+      },
+      {
+        "statId": 2,
+        "value": 105
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 60
+      },
+      {
+        "statId": 5,
+        "value": 75
+      },
+      {
+        "statId": 6,
+        "value": 130
+      }
+    ]
+  },
+  {
+    "name": "snorlax",
+    "description": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful. Will eat anything, even if the food happens to be a little moldy. It never gets an upset stomach. What sounds like its cry may ac tually be its snores or the rumblings of its hungry belly. Its stomach's di gestive juices can dissolve any kind of poison. It can even eat things off the ground. This Pokémon's stomach is so strong, even eating moldy or rotten food will not affect it.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/143.png",
+    "height": 21,
+    "weight": 4600,
+    "color": {
+      "r": 5,
+      "g": 109,
+      "b": 146
+    },
+    "typeIds": [
+      7
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 160
+      },
+      {
+        "statId": 2,
+        "value": 110
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 65
+      },
+      {
+        "statId": 5,
+        "value": 110
+      },
+      {
+        "statId": 6,
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "articuno",
+    "description": "A legendary bird Pokémon that is said to appear to doomed people who are lost in icy mountains. A legendary bird Pokémon. It freezes water that is contained in winter air and makes it snow. The magnificent, seemingly translu cent wings of this legendary bird Pokémon are said to be made of ice. One of the legen dary bird Pokémon, it chills moisture in the atmosphere to create snow while flying. Legendary bird Pokémon. As it flies through the sky, it cools the air, causing snow to fall.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/144.png",
+    "height": 17,
+    "weight": 554,
+    "color": {
+      "r": 60,
+      "g": 159,
+      "b": 206
+    },
+    "typeIds": [
+      16,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 90
+      },
+      {
+        "statId": 2,
+        "value": 85
+      },
+      {
+        "statId": 3,
+        "value": 100
+      },
+      {
+        "statId": 4,
+        "value": 95
+      },
+      {
+        "statId": 5,
+        "value": 125
+      },
+      {
+        "statId": 6,
+        "value": 85
+      }
+    ]
+  },
+  {
+    "name": "zapdos",
+    "description": "A legendary bird Pokémon that is said to appear from clouds while dropping enormous lightning bolts. This legendary bird Pokémon is said to appear when the sky turns dark and lightning showers down. This legendary bird Pokémon causes savage thunderstorms by flapping its glit tering wings. Legendary bird Pokémon. They say lightning caused by the flapping of its wings causes summer storms. One of the legendary bird Pokémon. While it is flying, it makes crackling and snapping sounds.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/145.png",
+    "height": 16,
+    "weight": 526,
+    "color": {
+      "r": 241,
+      "g": 204,
+      "b": 77
+    },
+    "typeIds": [
+      8,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 90
+      },
+      {
+        "statId": 2,
+        "value": 90
+      },
+      {
+        "statId": 3,
+        "value": 85
+      },
+      {
+        "statId": 4,
+        "value": 125
+      },
+      {
+        "statId": 5,
+        "value": 90
+      },
+      {
+        "statId": 6,
+        "value": 100
+      }
+    ]
+  },
+  {
+    "name": "moltres",
+    "description": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames. A legendary bird Pokémon. As it flaps its flaming wings, even the night sky will turn red. This legendary Pokémon scatters embers with every flap of its wings. It is a thrilling sight to behold. This legendary bird Pokémon is said to bring early spring to the wintry lands it visits. Legendary bird Pokémon. It is said to migrate from the south along with the spring.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/146.png",
+    "height": 20,
+    "weight": 600,
+    "color": {
+      "r": 246,
+      "g": 184,
+      "b": 9
+    },
+    "typeIds": [
+      3,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 90
+      },
+      {
+        "statId": 2,
+        "value": 100
+      },
+      {
+        "statId": 3,
+        "value": 90
+      },
+      {
+        "statId": 4,
+        "value": 125
+      },
+      {
+        "statId": 5,
+        "value": 85
+      },
+      {
+        "statId": 6,
+        "value": 90
+      }
+    ]
+  },
+  {
+    "name": "dratini",
+    "description": "Long considered a mythical Pokémon until recently when a small colony was found living underwater. The existence of this mythical Pokémon was only recently confirmed by a fisherman who caught one. It is born large to start with. It repeatedly sheds its skin as it steadily grows longer. This Pokémon is full of life ener gy. It continually sheds its skin and grows steadily larger. Even the young can exceed 6.5 feet in length. It grows larger by repeatedly shedding skin.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/147.png",
+    "height": 18,
+    "weight": 33,
+    "color": {
+      "r": 163,
+      "g": 174,
+      "b": 205
+    },
+    "typeIds": [
+      17
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 41
+      },
+      {
+        "statId": 2,
+        "value": 64
+      },
+      {
+        "statId": 3,
+        "value": 45
+      },
+      {
+        "statId": 4,
+        "value": 50
+      },
+      {
+        "statId": 5,
+        "value": 50
+      },
+      {
+        "statId": 6,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "dragonair",
+    "description": "A mystical Pokémon that exudes a gentle aura. Has the ability to change climate conditions. According to a witness, its body was surrounded by a strange aura that gave it a mystical look. They say that if it emits an aura from its whole body, the weather will begin to change instantly. Its crystalline orbs appear to give this Pokémon the power to freely control the weather. It is called the divine Pokémon. When its entire body brightens slightly, the weather changes.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/148.png",
+    "height": 40,
+    "weight": 165,
+    "color": {
+      "r": 218,
+      "g": 222,
+      "b": 225
+    },
+    "typeIds": [
+      17
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 61
+      },
+      {
+        "statId": 2,
+        "value": 84
+      },
+      {
+        "statId": 3,
+        "value": 65
+      },
+      {
+        "statId": 4,
+        "value": 70
+      },
+      {
+        "statId": 5,
+        "value": 70
+      },
+      {
+        "statId": 6,
+        "value": 70
+      }
+    ]
+  },
+  {
+    "name": "dragonite",
+    "description": "An extremely rarely seen marine Pokémon. Its intelligence is said to match that of humans. It is said that this Pokémon lives somewhere in the sea and that it flies. However, it is only a rumor. It is said that this Pokémon con stantly flies over the immense seas and rescues drown ing people. This marine Poké mon has an impres sive build that lets it freely fly over raging seas without trouble. It can fly in spite of its big and bulky physique. It circles the globe in just 16 hours.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/149.png",
+    "height": 22,
+    "weight": 2100,
+    "color": {
+      "r": 224,
+      "g": 161,
+      "b": 22
+    },
+    "typeIds": [
+      17,
+      4
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 91
+      },
+      {
+        "statId": 2,
+        "value": 134
+      },
+      {
+        "statId": 3,
+        "value": 95
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 100
+      },
+      {
+        "statId": 6,
+        "value": 80
+      }
+    ]
+  },
+  {
+    "name": "mewtwo",
+    "description": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments. Its DNA is almost the same as mew's. However, its size and disposition are vastly different. Because its battle abilities were raised to the ultimate level, it thinks only of defeating its foes. It usually remains motionless to conserve energy, so that it may unleash its full power in battle.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/150.png",
+    "height": 20,
+    "weight": 1220,
+    "color": {
+      "r": 201,
+      "g": 180,
+      "b": 202
+    },
+    "typeIds": [
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 106
+      },
+      {
+        "statId": 2,
+        "value": 110
+      },
+      {
+        "statId": 3,
+        "value": 90
+      },
+      {
+        "statId": 4,
+        "value": 154
+      },
+      {
+        "statId": 5,
+        "value": 90
+      },
+      {
+        "statId": 6,
+        "value": 130
+      }
+    ]
+  },
+  {
+    "name": "mew",
+    "description": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide. When viewed through a microscope, this Pokémon's short, fine, delicate hair can be seen. Apparently, it appears only to those people who are pure of heart and have a strong desire to see it. Its DNA is said to contain the genetic codes of all Pokémon, so it can use all kinds of techniques.",
+    "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/151.png",
+    "height": 4,
+    "weight": 40,
+    "color": {
+      "r": 235,
+      "g": 210,
+      "b": 216
+    },
+    "typeIds": [
+      14
+    ],
+    "stats": [
+      {
+        "statId": 1,
+        "value": 100
+      },
+      {
+        "statId": 2,
+        "value": 100
+      },
+      {
+        "statId": 3,
+        "value": 100
+      },
+      {
+        "statId": 4,
+        "value": 100
+      },
+      {
+        "statId": 5,
+        "value": 100
+      },
+      {
+        "statId": 6,
+        "value": 100
+      }
+    ]
+  }
+]

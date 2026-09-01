@@ -1,0 +1,39 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="header-container">
+      <div>
+        <h1>{{ title() }}</h1>
+        <p>{{ subtitle() }}</p>
+      </div>
+      <ion-buttons slot="end">
+        <ion-icon [src]="pokeballIcon" (click)="toggle()" />
+      </ion-buttons>
+    </div>
+    @if (showFilters()) {
+      <div class="header-search">
+        <ion-searchbar
+          animated="true"
+          placeholder="Search pokémon..."
+          [debounce]="400"
+          mode="ios"
+          (ionInput)="pokedexSvc.search.set($event.target.value ?? '')"
+        />
+        <ion-icon name="filter-outline" />
+      </div>
+      <div class="header-slider">
+        @for (t of pokemonTypes; track t) {
+          <div
+            #type
+            class="slider-item"
+            [class.selected]="typeSelected() == t"
+            [style.--type-color]="POKEMON_TYPE_CONFIG[t].color"
+            (click)="changeType(t)"
+          >
+            <ion-icon [src]="POKEMON_TYPE_CONFIG[t].icon" />
+            {{ t }}
+          </div>
+        }
+      </div>
+    }
+  </ion-toolbar>
+</ion-header>

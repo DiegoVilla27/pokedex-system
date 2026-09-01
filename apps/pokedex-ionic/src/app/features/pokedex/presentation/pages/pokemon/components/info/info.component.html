@@ -1,0 +1,56 @@
+<div class="pokemon-box-info">
+  <h2>#{{ pokemon().info.id | padNumber }}</h2>
+  <h1>{{ pokemon().name }}</h1>
+  <div class="pokemon-types">
+    @for (t of pokemon().info.types; track t.type.name) {
+      @let config = POKEMON_TYPE_CONFIG[t.type.name];
+      <div [ngStyle]="{ 'background-color': config.color }">
+        <ion-icon [src]="config.icon" class="type-icon"></ion-icon>
+        <p>{{ t.type.name }}</p>
+      </div>
+    }
+  </div>
+  <p class="title-info">Height</p>
+  <p class="subtitle-info">{{ pokemon().info.height }} m</p>
+  <p class="title-info">Weight</p>
+  <p class="subtitle-info">{{ pokemon().info.weight }} kg</p>
+  
+  <div class="sprite-wrapper">
+    <!-- 1. Pokéball de trazo sutil centrada detrás de la cabeza -->
+    <ion-icon src="assets/pokeball.svg" class="bg-pokeball"></ion-icon>
+
+    <!-- 2. Partículas temáticas flotando en 3D -->
+    @if (pokemon().info.types.length > 0) {
+      @let mainType = pokemon().info.types[0].type.name;
+      <div class="particles-container">
+        <ion-icon
+          [src]="POKEMON_TYPE_CONFIG[mainType].icon"
+          class="particle p-top-left"
+        ></ion-icon>
+        <ion-icon
+          [src]="POKEMON_TYPE_CONFIG[mainType].icon"
+          class="particle p-bottom-right"
+        ></ion-icon>
+        <ion-icon
+          [src]="POKEMON_TYPE_CONFIG[mainType].icon"
+          class="particle p-top-right"
+        ></ion-icon>
+      </div>
+    }
+
+    <!-- 3. Sprite del Pokémon -->
+    @if (pokemon().info.sprites.other.home.front_default; as sprite) {
+      <img
+        [ngSrc]="sprite"
+        width="120"
+        height="120"
+        [alt]="pokemon().name"
+        class="pokemon-sprite"
+        priority
+      />
+    }
+
+    <!-- 4. Sombra suave de suelo bajo los pies -->
+    <div class="ground-shadow"></div>
+  </div>
+</div>

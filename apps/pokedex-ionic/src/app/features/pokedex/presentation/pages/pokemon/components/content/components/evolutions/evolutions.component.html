@@ -1,0 +1,110 @@
+<div class="evolutions-card">
+  @if (evolutions().length > 0) {
+    <!-- CASO 1: Cadena Lineal (<= 3 evoluciones, ej: Bulbasaur) -->
+    @if (evolutions().length <= 3) {
+      <div class="evolution-chain linear-chain">
+        @for (evol of evolutions(); track evol.id; let isLast = $last) {
+          @let primaryType = evol.types[0].type.name;
+          @let typeConfig = POKEMON_TYPE_CONFIG[primaryType];
+          <div
+            class="evolution-node"
+            [class.is-current]="evol.id === currentId()"
+          >
+            <div
+              class="evolution-avatar"
+              [style.--ring-color]="typeConfig.color"
+            >
+              @if (evol.sprites.other.home.front_default; as sprite) {
+                <img
+                  [src]="sprite"
+                  [alt]="evol.name"
+                  class="evolution-img"
+                  loading="lazy"
+                />
+              }
+            </div>
+            <span class="evolution-number">#{{ evol.id | padNumber }}</span>
+            <span class="evolution-title">{{ evol.name }}</span>
+          </div>
+
+          @if (!isLast) {
+            <div class="evolution-arrow">
+              <ion-icon name="arrow-forward"></ion-icon>
+            </div>
+          }
+        }
+      </div>
+    } @else {
+      <!-- CASO 2: Árbol Ramificado (> 3 evoluciones, ej: Eevee con 8 ramas) -->
+      <div class="evolution-tree">
+        <!-- Forma Base (ej: Eevee) -->
+        @let baseEvol = evolutions()[0];
+        @let basePrimaryType = baseEvol.types[0].type.name;
+        @let baseTypeConfig = POKEMON_TYPE_CONFIG[basePrimaryType];
+        
+        <div
+          class="evolution-node base-node"
+          [class.is-current]="baseEvol.id === currentId()"
+        >
+          <div
+            class="evolution-avatar"
+            [style.--ring-color]="baseTypeConfig.color"
+          >
+            @if (baseEvol.sprites.other.home.front_default; as sprite) {
+              <img
+                [src]="sprite"
+                [alt]="baseEvol.name"
+                class="evolution-img"
+                loading="lazy"
+              />
+            }
+          </div>
+          <span class="evolution-number">#{{ baseEvol.id | padNumber }}</span>
+          <span class="evolution-title">{{ baseEvol.name }}</span>
+        </div>
+
+        <!-- Conector Ramificado -->
+        <div class="branch-connector">
+          <div class="branch-line"></div>
+          <div class="branch-badge">
+            <ion-icon name="arrow-down"></ion-icon>
+            <span>{{ evolutions().length - 1 }} Evolutions</span>
+          </div>
+          <div class="branch-line"></div>
+        </div>
+
+        <!-- Grid de Ramificaciones (ej: Vaporeon, Jolteon, Flareon, etc.) -->
+        <div class="branch-grid">
+          @for (evol of evolutions().slice(1); track evol.id) {
+            @let primaryType = evol.types[0].type.name;
+            @let typeConfig = POKEMON_TYPE_CONFIG[primaryType];
+            <div
+              class="evolution-node branch-node"
+              [class.is-current]="evol.id === currentId()"
+            >
+              <div
+                class="evolution-avatar"
+                [style.--ring-color]="typeConfig.color"
+              >
+                @if (evol.sprites.other.home.front_default; as sprite) {
+                  <img
+                    [src]="sprite"
+                    [alt]="evol.name"
+                    class="evolution-img"
+                    loading="lazy"
+                  />
+                }
+              </div>
+              <span class="evolution-number">#{{ evol.id | padNumber }}</span>
+              <span class="evolution-title">{{ evol.name }}</span>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  } @else {
+    <div class="no-evolutions-msg">
+      <p>This Pokémon has no evolutions</p>
+    </div>
+  }
+</div>

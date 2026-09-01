@@ -1,0 +1,23 @@
+<ion-content>
+  <div class="pokemon-tabs">
+    <ion-segment [value]="selectedTab()" (ionChange)="onTabChange($event)">
+      <ion-segment-button value="stats">
+        <ion-label>Stats</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="evolutions">
+        <ion-label>Evolutions</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div class="tab-panel">
+      @if (selectedTab() === 'stats') {
+        <app-pokemon-stats [stats]="pokemon().info.stats" />
+      } @else if (selectedTab() === 'evolutions') {
+        <app-pokemon-evolutions
+          [evolutions]="pokemon().evolution_data"
+          [currentId]="pokemon().info.id"
+        />
+      }
+    </div>
+  </div>
+</ion-content>

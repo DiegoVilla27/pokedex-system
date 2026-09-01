@@ -1,0 +1,187 @@
+.evolutions-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.2rem 2.5rem 0.2rem;
+  width: 100%;
+
+  .evolution-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    &:active {
+      transform: scale(0.92);
+    }
+
+    .evolution-avatar {
+      position: relative;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      border: 2px solid var(--ring-color, #20c997);
+      box-shadow:
+        0 0 14px rgba(0, 0, 0, 0.5),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.08) 0%,
+        #0f1726 100%
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      .evolution-img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.6));
+      }
+    }
+
+    &.is-current {
+      .evolution-avatar {
+        box-shadow:
+          0 0 16px var(--ring-color),
+          inset 0 0 10px var(--ring-color);
+        transform: scale(1.05);
+      }
+      .evolution-number {
+        color: #94a3b8;
+      }
+      .evolution-title {
+        color: #ffffff;
+        font-weight: 800;
+      }
+    }
+
+    .evolution-number {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #64748b;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    .evolution-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+
+  // 1. Cadena Lineal (<= 3 evoluciones, ej: Bulbasaur)
+  .linear-chain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(6px, 2vw, 14px);
+    width: 100%;
+    padding: 0.5rem 0.2rem 1rem 0.2rem;
+
+    .evolution-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      color: #3b4c6b;
+      font-size: 18px;
+      opacity: 0.85;
+    }
+  }
+
+  // 2. Árbol Ramificado (> 3 evoluciones, ej: Eevee con 8 ramas)
+  .evolution-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+    .base-node {
+      .evolution-avatar {
+        width: 76px;
+        height: 76px;
+        .evolution-img {
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+
+    .branch-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      max-width: 260px;
+      margin: 2px 0;
+
+      .branch-line {
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+      }
+
+      .branch-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 3px 10px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        color: #94a3b8;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+
+        ion-icon {
+          font-size: 12px;
+          color: #38bdf8;
+        }
+      }
+    }
+
+    .branch-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px 6px;
+      width: 100%;
+      justify-items: center;
+      padding-top: 4px;
+
+      .branch-node {
+        .evolution-avatar {
+          width: 62px;
+          height: 62px;
+          .evolution-img {
+            width: 44px;
+            height: 44px;
+          }
+        }
+        .evolution-title {
+          font-size: 0.78rem;
+        }
+      }
+    }
+  }
+
+  .no-evolutions-msg {
+    padding: 2rem;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+}

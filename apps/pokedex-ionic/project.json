@@ -1,0 +1,39 @@
+{
+  "name": "pokedex-ionic",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/pokedex-ionic/src",
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm dev",
+        "cwd": "apps/pokedex-ionic"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "outputs": [
+        "{projectRoot}/www"
+      ],
+      "options": {
+        "command": "pnpm build",
+        "cwd": "apps/pokedex-ionic"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm test",
+        "cwd": "apps/pokedex-ionic"
+      }
+    },
+    "sync": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm sync",
+        "cwd": "apps/pokedex-ionic"
+      }
+    }
+  }
+}

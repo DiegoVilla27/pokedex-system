@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true">
+  @if (favoritesSvc.favorites().length > 0) {
+    <div class="favorites-grid">
+      @for (pokemon of favoritesSvc.favorites(); track pokemon.info.id) {
+        <app-pokemon-card [pokemon]="pokemon" />
+      }
+    </div>
+  } @else {
+    <div class="empty-favorites">
+      <div class="empty-icon-wrap">
+        <ion-icon name="heart-dislike-outline"></ion-icon>
+      </div>
+      <h2>No Favorites Yet</h2>
+      <p>Tap the heart icon on any Pokémon in the Pokédex to save them here!</p>
+    </div>
+  }
+</ion-content>
