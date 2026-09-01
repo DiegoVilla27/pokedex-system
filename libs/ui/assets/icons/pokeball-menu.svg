@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+  width="100%" height="100%">
+  <defs>
+    <radialGradient id="redSphere" cx="38%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="45%" stop-color="#EE2B2B" />
+      <stop offset="85%" stop-color="#B81414" />
+      <stop offset="100%" stop-color="#730909" />
+    </radialGradient>
+    <radialGradient id="whiteSphere" cx="42%" cy="68%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F2F3F7" />
+      <stop offset="80%" stop-color="#C5C9D3" />
+      <stop offset="100%" stop-color="#7E8494" />
+    </radialGradient>
+    <radialGradient id="buttonGradient" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="65%" stop-color="#EFF1F5" />
+      <stop offset="100%" stop-color="#BDC3CE" />
+    </radialGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="dropShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="50" cy="94" rx="36" ry="5" fill="url(#dropShadow)" />
+  <circle cx="50" cy="50" r="44" fill="#111317" stroke="#08090A" stroke-width="1.5" />
+  <path d="M 8 50 A 42 42 0 0 1 92 50 Z" fill="url(#redSphere)" />
+  <path d="M 8 50 A 42 42 0 0 0 92 50 Z" fill="url(#whiteSphere)" />
+  <rect x="8" y="46" width="84" height="8" fill="#111317" />
+  <circle cx="50" cy="50" r="14.5" fill="#111317" />
+  <circle cx="50" cy="50" r="8.5" fill="url(#buttonGradient)" stroke="#22262C" stroke-width="1.2" />
+  <circle cx="48" cy="48" r="3" fill="#FFFFFF" opacity="0.6" />
+  <ellipse cx="44" cy="24" rx="15" ry="9" fill="url(#gloss)" transform="rotate(-15 44 24)"
+    opacity="0.65" />
+</svg>
