@@ -1,12 +1,13 @@
 # 🔴 Pokédex REST API
 
-[![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org/)
+[![Java](https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-4.1.1-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16%2B-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![OpenAPI](https://img.shields.io/badge/OpenAPI-3.0-85EA2D?style=for-the-badge&logo=openapiinitiative&logoColor=black)](https://swagger.io/specification/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-A production-grade, enterprise-ready **Pokédex REST API** built with **Java 17**, **Spring Boot 4.1.1**, and **PostgreSQL**, designed following **Hexagonal / Clean Architecture** and **Domain-Driven Design (DDD)** principles.
+A production-grade, enterprise-ready **Pokédex REST API** built with **Java 21**, **Spring Boot 4.1.1**, and **PostgreSQL**, designed following **Hexagonal / Clean Architecture** and **Domain-Driven Design (DDD)** principles.
 
 ---
 
@@ -22,11 +23,12 @@ A production-grade, enterprise-ready **Pokédex REST API** built with **Java 17*
   - [Elemental Types Catalog](#3-elemental-types-catalog)
   - [Combat Statistics Catalog](#4-combat-statistics-catalog)
 - [Standardized Error Handling (RFC 7807)](#-standardized-error-handling-rfc-7807)
+- [🐳 Docker & Containerization](#-docker--containerization)
 - [Getting Started & Installation](#-getting-started--installation)
   - [Prerequisites](#prerequisites)
   - [Environment Configuration](#environment-configuration)
-  - [Docker Setup (PostgreSQL)](#docker-setup-postgresql)
   - [Build and Run Locally](#build-and-run-locally)
+- [Nx Monorepo Orchestration](#-nx-monorepo-orchestration)
 
 ---
 
@@ -96,13 +98,8 @@ graph TD
 
 ### 3. `seedPokemon()`
 * Loads **151 Generation 1 Pokémon** from classpath resource [`src/main/resources/data/pokemons_151.json`](src/main/resources/data/pokemons_151.json).
-* Validates and maps:
-  - Unique name and official artwork avatar URL.
-  - Height (meters) and Weight (kilograms).
-  - Primary UI theme RGB color.
-  - Assigned elemental type foreign keys.
-  - 6 initial base stat values (1–255).
-* **Idempotency Guard**: Executes only if `pokemonRepositoryPort.count() == 0`, preventing re-seeding on subsequent application restarts.
+* Validates and maps unique names, avatars, heights, weights, RGB theme colors, type foreign keys, and 6 base stat values.
+* **Idempotency Guard**: Executes only if `pokemonRepositoryPort.count() == 0`.
 
 ### 4. `seedEvolutions()`
 * Loads evolution progression lines from classpath resource [`src/main/resources/data/pokemon_evolutions.json`](src/main/resources/data/pokemon_evolutions.json).
@@ -136,31 +133,6 @@ Once the application is running, explore and test the entire API interactively u
 | `PATCH` | `/pokemons/{id}` | Partially update Pokémon details (name, color, dimensions) | `200 OK` / `400` / `404` / `409` |
 | `DELETE` | `/pokemons/{id}` | Delete a Pokémon and cascade related relations | `204 No Content` / `404 Not Found` |
 
-#### Example: Create Pokémon (`POST /pokemons`)
-```json
-{
-  "name": "Pikachu",
-  "description": "When several of these Pokémon gather, their electricity could build and cause lightning storms.",
-  "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
-  "height": 0.4,
-  "weight": 6.0,
-  "color": {
-    "r": 255,
-    "g": 204,
-    "b": 0
-  },
-  "typeIds": [8],
-  "stats": [
-    { "statId": 1, "value": 35 },
-    { "statId": 2, "value": 55 },
-    { "statId": 3, "value": 40 },
-    { "statId": 4, "value": 50 },
-    { "statId": 5, "value": 50 },
-    { "statId": 6, "value": 90 }
-  ]
-}
-```
-
 ---
 
 ### 2. Pokémon Specialized Relations
@@ -170,17 +142,6 @@ Once the application is running, explore and test the entire API interactively u
 | `PATCH` | `/pokemons/{pokemonId}/types` | Replace elemental types assigned to a Pokémon (1–2 types) | `204 No Content` / `400` / `404` |
 | `PATCH` | `/pokemons/{pokemonId}/stats` | Replace combat stats assigned to a Pokémon | `204 No Content` / `400` / `404` |
 | `PATCH` | `/pokemons/{pokemonId}/evolutions` | Assign forward evolution pathways and stages | `204 No Content` / `400` / `404` / `409` |
-
-#### Example: Assign Evolution Chain (`PATCH /pokemons/1/evolutions`)
-```json
-{
-  "evolutions": [
-    { "toPokemonId": 1, "order": 1 },
-    { "toPokemonId": 2, "order": 2 },
-    { "toPokemonId": 3, "order": 3 }
-  ]
-}
-```
 
 ---
 
@@ -226,97 +187,74 @@ All API errors return a consistent, uniform problem details payload:
 }
 ```
 
-| HTTP Status | Reason | Trigger Example |
-| :--- | :--- | :--- |
-| `400 Bad Request` | Validation Failure | Missing required fields, invalid stat values (not 1–255), blank names |
-| `404 Not Found` | Resource Missing | Requesting a non-existent Pokémon, Type, or Stat ID |
-| `409 Conflict` | Unique Violation | Registering an existing Pokémon name or duplicate Type name |
-| `500 Server Error`| Internal Failure | Unexpected database or system exceptions |
+---
+
+## 🐳 Docker & Containerization
+
+The backend API is containerized with a high-performance **Multi-Stage Dockerfile**:
+- **Stage 1 (Build)**: `maven:3.9-eclipse-temurin-21-alpine` pre-caches dependencies via `mvn dependency:go-offline` and compiles the artifact.
+- **Stage 2 (Runtime)**: `eclipse-temurin:21-jre-alpine` ultralight production image containing only the executable `app.jar`.
+
+### Standalone Docker Build via Nx
+```bash
+pnpm nx docker-build pokedex-api
+```
+
+### Full Monorepo Compose Execution
+```bash
+# Starts API and Backoffice connected to external shared-network
+pnpm docker:up
+```
 
 ---
 
 ## 🚀 Getting Started & Installation
 
 ### Prerequisites
-* **Java Development Kit (JDK)**: Version 17 or higher
-* **Apache Maven**: Version 3.8+ (or use the included `./mvnw` wrapper)
-* **PostgreSQL**: Version 15+ (or Docker)
+* **Java Development Kit (JDK)**: Version 21 (LTS)
+* **Apache Maven**: Version 3.9+ (or use `./mvnw`)
+* **PostgreSQL**: Version 16+ (or via Docker)
 
 ---
 
 ### Environment Configuration
 
-The application reads database connection settings from system environment variables or a local `.env` file in the root directory:
+The application reads database connection settings from `.env` in `apps/pokedex-api/.env` or system environment variables:
 
-1. Create a `.env` file in the project root:
-   ```env
-   POSTGRES_URL=jdbc:postgresql://localhost:5432/pokedex
-   ```
-
-2. Configuration variables in `src/main/resources/application.properties`:
-   ```properties
-   spring.application.name=pokedex
-   server.servlet.context-path=/api/v1
-   spring.datasource.url=${POSTGRES_URL}
-   spring.datasource.username=user
-   spring.datasource.password=password
-   spring.jpa.hibernate.ddl-auto=update
-   ```
-
----
-
-### Docker Setup (PostgreSQL)
-
-To quickly spin up a PostgreSQL instance using Docker Compose:
-
-1. Create a `docker-compose.yml` file in the root directory:
-   ```yaml
-   services:
-     postgres:
-       image: postgres:16-alpine
-       container_name: pokedex-postgres
-       restart: always
-       environment:
-         POSTGRES_DB: pokedex
-         POSTGRES_USER: user
-         POSTGRES_PASSWORD: password
-       ports:
-         - "5432:5432"
-       volumes:
-         - postgres_data:/var/lib/postgresql/data
-
-   volumes:
-     postgres_data:
-   ```
-
-2. Start the database container:
-   ```bash
-   docker compose up -d
-   ```
+```properties
+spring.application.name=pokedex
+server.servlet.context-path=/api/v1
+spring.datasource.url=${POSTGRES_URL:jdbc:postgresql://localhost:5432/pokemon_db}
+spring.datasource.username=${POSTGRES_USER:pokemon_user}
+spring.datasource.password=${POSTGRES_PASSWORD:pokemon_pass}
+spring.jpa.hibernate.ddl-auto=update
+```
 
 ---
 
 ### Build and Run Locally
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/pokedex.git
-   cd pokedex
-   ```
+```bash
+# 1. Build and test with Maven wrapper
+./mvnw clean package
 
-2. **Build and test the project**:
-   ```bash
-   ./mvnw clean package
-   ```
+# 2. Run Spring Boot application locally
+./mvnw spring-boot:run
 
-3. **Run the Spring Boot application**:
-   ```bash
-   ./mvnw spring-boot:run
-   ```
+# 3. Or run through Nx task runner
+pnpm nx dev pokedex-api
+```
 
-4. **Verify Application Startup**:
-   Open your browser and navigate to the Swagger UI:  
-   👉 **`http://localhost:8080/api/v1/api-docs/swagger-ui.html`**
+---
+
+## ⚡ Nx Monorepo Orchestration
+
+| Nx Target | Command | Purpose |
+| :--- | :--- | :--- |
+| `dev` | `pnpm nx dev pokedex-api` | Launches Spring Boot dev server locally |
+| `build` | `pnpm nx build pokedex-api` | Compiles `.jar` artifact to `target/` with computation cache |
+| `test` | `pnpm nx test pokedex-api` | Executes JUnit unit and integration tests |
+| `docker-build` | `pnpm nx docker-build pokedex-api` | Builds production Docker image `pokedex-api:latest` |
 
 ---
 

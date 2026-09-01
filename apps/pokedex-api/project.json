@@ -27,6 +27,16 @@
         "command": "./mvnw test",
         "cwd": "apps/pokedex-api"
       }
+    },
+    "docker-build": {
+      "executor": "nx:run-commands",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "command": "docker build -t pokedex-api:latest .",
+        "cwd": "apps/pokedex-api"
+      }
     }
   }
 }

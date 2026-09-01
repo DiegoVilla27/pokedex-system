@@ -7,7 +7,10 @@
     "build": "npx nx run-many -t build",
     "test": "npx nx run-many -t test",
     "graph": "npx nx graph",
-    "docker": "docker compose up build -d",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:build": "docker compose build",
+    "docker:logs": "docker compose logs -f",
     "clean:backoffice": "rm -rf apps/pokedex-backoffice/node_modules apps/pokedex-backoffice/.angular",
     "clean:ionic": "rm -rf apps/pokedex-ionic/node_modules apps/pokedex-ionic/.angular",
     "clean": "rm -rf node_modules .nx pnpm-lock.yaml && pnpm clean:backoffice && pnpm clean:ionic && pnpm i"

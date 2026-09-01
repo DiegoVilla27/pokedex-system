@@ -7,9 +7,10 @@
 [![Angular](https://img.shields.io/badge/Angular-22-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev)
 [![Ionic](https://img.shields.io/badge/Ionic-9.0-3880FF?style=for-the-badge&logo=ionic&logoColor=white)](https://ionicframework.com/)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-Enterprise-grade, multi-application monorepo powered by **Nx** and **pnpm workspaces**, architected around **Java 21 / Spring Boot 3.x / 4.x**, **Angular 22** standalone components with Signal reactivity, **Ionic 9 / Capacitor 8+** for cross-platform hybrid mobile delivery, **Flutter 3.x (Dart 3)** with **RPS (Run Pubspec Scripts)**, and a **Multiplatform Design Token Engine** (`@pokedex/ui`).
+Enterprise-grade, multi-application monorepo powered by **Nx** and **pnpm workspaces**, architected around **Java 21 / Spring Boot 4.1.1**, **Angular 22** standalone components with Signal reactivity, **Ionic 9 / Capacitor 8+** for cross-platform hybrid mobile delivery, **Flutter 3.x (Dart 3)** with **RPS (Run Pubspec Scripts)**, **Docker & Docker Compose** containerization, and a **Multiplatform Design Token Engine** (`@pokedex/ui`).
 
 ---
 
@@ -21,7 +22,7 @@ The **Pokédex System** is an end-to-end digital ecosystem for Pokémon catalogi
 
 | Workspace Target | Type | Primary Technology | Description | Status | Documentation Link | Default Port / Target |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`pokedex-api`** | Backend REST API | Java 21 / Spring Boot 3.x / PostgreSQL | High-throughput REST API with PostgreSQL persistence, JPA queries, and Swagger OpenAPI documentation. | 🟢 Active | [API Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex-api/README.md) | `http://localhost:8080/api/v1` |
+| **`pokedex-api`** | Backend REST API | Java 21 / Spring Boot 4.1.1 / PostgreSQL | High-throughput REST API with PostgreSQL persistence, JPA queries, and Swagger OpenAPI documentation. | 🟢 Active | [API Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex-api/README.md) | `http://localhost:8080/api/v1` |
 | **`pokedex-backoffice`** | Web Application | Angular `v22.1.4` (Standalone) | Administrative dashboard for managing Pokémon data, icon galleries, and catalog metadata with Signals. | 🟢 Active | [Backoffice Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex-backoffice/README.md) | `http://localhost:4200` |
 | **`pokedex-ionic`** | Hybrid Mobile & Web | Ionic 9 / Angular `v22.1.4` / Capacitor 8+ | Native cross-platform application for iOS, Android, and Web with local storage and fluid micro-interactions. | 🟢 Active | [Ionic Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex-ionic/README.md) | `http://localhost:8100` / iOS / Android |
 | **`pokedex_flutter`** | Native Mobile Client | Flutter 3.x / Dart 3 / RPS | Native mobile client with custom RPS (Run Pubspec Scripts) automation and design token bindings. | 🟢 Active | [Flutter & RPS Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex_flutter/README.md) | iOS Simulator / Android |
@@ -53,7 +54,7 @@ graph TD
 
     subgraph BackendServices [Backend & Persistence Layer]
         API["☕ pokedex-api<br/>(Spring Boot / Java 21)"]
-        Postgres[("🐘 PostgreSQL Database<br/>(localhost:5432/pokemon_db)")]
+        Postgres[("🐘 PostgreSQL Database<br/>(global_postgres:5432)")]
         Swagger["📑 Swagger UI / OpenAPI 3.0<br/>(/api/v1/swagger-ui.html)"]
         
         API --> Postgres
@@ -80,12 +81,14 @@ pokedex-system/
 │   ├── AGENTS.md                          # Master architectural protocol & coding standards
 │   └── skills/                            # Domain-specific engineering skills
 ├── apps/
-│   ├── pokedex-api/                       # Spring Boot 3.x / Java 21 REST API
+│   ├── pokedex-api/                       # Spring Boot 4.1.1 / Java 21 REST API
 │   │   ├── src/
 │   │   │   └── main/
 │   │   │       ├── java/com/dv/pokedex/   # Domain entities, repositories, and controllers
 │   │   │       └── resources/             # application.properties, data seeders & SQL
 │   │   ├── pom.xml                        # Maven dependency configuration
+│   │   ├── Dockerfile                     # Multi-stage Java 21 Dockerfile
+│   │   ├── .dockerignore                  # API Docker ignore rules
 │   │   ├── project.json                   # Nx project target definitions
 │   │   └── README.md                      # Backend API documentation
 │   ├── pokedex-backoffice/                # Standalone Angular 22 Backoffice Web Application
@@ -98,6 +101,9 @@ pokedex-system/
 │   │   │   ├── main.ts                    # Standalone bootstrapping entrypoint
 │   │   │   └── styles.scss                # Global styles with @pokedex/ui imports
 │   │   ├── angular.json                   # Angular workspace configuration
+│   │   ├── Dockerfile                     # Monorepo-aware Angular Dockerfile
+│   │   ├── .dockerignore                  # Backoffice Docker ignore rules
+│   │   ├── proxy.conf.json                # Development API proxy configuration
 │   │   ├── project.json                   # Nx project target definitions
 │   │   ├── package.json                   # Backoffice workspace dependencies
 │   │   └── README.md                      # Backoffice application documentation
@@ -139,7 +145,8 @@ pokedex-system/
 │       │   └── flutter/                   # pokedex_tokens.dart (Flutter)
 │       ├── package.json                   # Subpath exports definition
 │       └── README.md                      # UI Library documentation & integration guide
-├── docker-compose.yml                     # Local PostgreSQL and container definitions
+├── docker-compose.yml                     # Multi-service container orchestration (API + Backoffice)
+├── .dockerignore                          # Monorepo root Docker ignore rules
 ├── nx.json                                # Nx build system and task graph caching
 ├── package.json                           # Monorepo root configuration (Single Version Policy)
 ├── pnpm-workspace.yaml                    # Workspace packages topology
@@ -170,10 +177,14 @@ All shared web dependencies are hoisted and managed at the root [package.json](f
 
 ### Backend API (`apps/pokedex-api`)
 - **Java**: `21` (LTS)
-- **Spring Boot**: `3.x` / `4.1.1`
+- **Spring Boot**: `4.1.1`
 - **Spring Data JPA**: PostgreSQL persistence and Specification queries
 - **Springdoc OpenAPI**: Automated Swagger 3.0 UI generation
-- **HikariCP**: High-performance database connection pooling
+- **Docker**: Multi-stage lightweight Alpine build
+
+### Web Application (`apps/pokedex-backoffice`)
+- **Angular**: `^22.1.4` (Standalone & Signals)
+- **Docker**: Monorepo-aware container with pnpm workspace resolution
 
 ### Mobile & Hybrid Application (`apps/pokedex-ionic`)
 - **Ionic Framework**: `@ionic/angular` `^9.0.0` (Standalone native Web Components)
@@ -189,13 +200,55 @@ All shared web dependencies are hoisted and managed at the root [package.json](f
 
 ---
 
+## 🐳 Docker & Containerization Guide
+
+The monorepo includes full **Docker Compose** orchestration for running the entire backend and frontend stack in isolated containers.
+
+### Docker Compose Architecture
+Configured in [`docker-compose.yml`](file:///Users/diegovilla/Desktop/pokedex-system/docker-compose.yml):
+- **Network**: `shared-network` (`external: true`) linking services to the global PostgreSQL instance (`global_postgres:5432`).
+- **`pokedex-api`**: Multi-stage Java 21 container exposed on port `8080`.
+- **`pokedex-backoffice`**: Node 22 container running Angular on port `4200` with monorepo context.
+
+### Docker Commands
+
+```bash
+# 🚀 Build and start all containers in background
+pnpm docker:up
+
+# 🛑 Stop and remove running containers
+pnpm docker:down
+
+# 🔨 Rebuild Docker images
+pnpm docker:build
+
+# 📑 Stream live container logs
+pnpm docker:logs
+```
+
+### Nx Target Container Builds
+You can also build individual Docker images leveraging Nx computation caching:
+
+```bash
+# Build API image
+pnpm nx docker-build pokedex-api
+
+# Build Backoffice image (automatically triggers @pokedex/ui build)
+pnpm nx docker-build pokedex-backoffice
+
+# Build all Docker images in parallel
+pnpm nx run-many -t docker-build
+```
+
+---
+
 ## ⚙️ Provisioning & Setup Guide
 
 ### Prerequisites
 - **Node.js**: `>= 20.x` or `>= 22.x`
 - **pnpm**: `>= 9.x` (`npm install -g pnpm`)
-- **Java JDK**: `21` (for `pokedex-api`)
-- **Docker**: For running PostgreSQL database container
+- **Java JDK**: `21` (for local `pokedex-api` execution)
+- **Docker & Docker Compose**: For containerized execution
 - **Flutter SDK**: `>= 3.24.x` / `3.27.x`
 - **RPS CLI**: `dart pub global activate rps`
 - **Xcode** *(macOS)*: For running `pokedex-ionic` and `pokedex_flutter` on iOS Simulator
@@ -216,24 +269,7 @@ pnpm install
 
 ---
 
-### 2. Database Setup (Docker PostgreSQL)
-
-Start the PostgreSQL database container:
-
-```bash
-# Start PostgreSQL on port 5432
-docker compose up -d
-```
-
-Database connection parameters:
-- **Host**: `localhost:5432`
-- **Database**: `pokemon_db`
-- **Username**: `pokemon_user`
-- **Password**: `pokemon_pass`
-
----
-
-### 3. Running Applications
+### 2. Running Applications (Local Dev)
 
 You can start all applications simultaneously or target them individually:
 
@@ -258,7 +294,7 @@ cd apps/pokedex_flutter && rps dev:ios
 
 ---
 
-### 4. Compiling Multiplatform Design Tokens (`@pokedex/ui`)
+### 3. Compiling Multiplatform Design Tokens (`@pokedex/ui`)
 
 When modifying `tokens.json` or adding SVG icons to `libs/ui/assets/icons/`, recompile the tokens:
 
@@ -269,7 +305,7 @@ pnpm --filter @pokedex/ui build
 
 ---
 
-### 5. Build, Test & Maintenance Scripts
+### 4. Build, Test & Maintenance Scripts
 
 ```bash
 # Build all workspace applications for production
@@ -293,6 +329,7 @@ pnpm clean
 - **🛡️ Signal-Driven Reactivity & OnPush**: Components utilize Angular Signals (`signal()`, `computed()`, `input()`) with `ChangeDetectionStrategy.OnPush` for optimal DOM reconciliation.
 - **🎨 Multiplatform Token Engine**: Design tokens are authored in W3C JSON format and automatically compiled into type-safe constants for Web (`tokens.ts`, `tokens.css`) and Mobile (`pokedex_tokens.dart`).
 - **📱 60fps Native Hybrid & Fluid Flutter Delivery**: Ionic 9 standalone web components paired with Capacitor 8+ hardware-accelerated bridges alongside native Flutter 3.x client.
+- **🐳 Enterprise Dockerization**: Multi-stage builds and monorepo-aware container images integrated with Nx task graph.
 - **⚡ RPS DX Boost**: Flutter lifecycle commands unified and accessible via `rps <script>` directly from `pubspec.yaml`.
 - **🚀 Nx Computation Caching**: Builds, tests, and lints are hashed and cached to ensure instant subsequent task execution.
 

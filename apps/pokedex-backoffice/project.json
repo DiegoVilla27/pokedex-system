@@ -22,6 +22,17 @@
         "command": "pnpm test",
         "cwd": "apps/pokedex-backoffice"
       }
+    },
+    "docker-build": {
+      "executor": "nx:run-commands",
+      "dependsOn": [
+        "^build",
+        "build"
+      ],
+      "options": {
+        "command": "docker build -t pokedex-backoffice:latest -f apps/pokedex-backoffice/Dockerfile .",
+        "cwd": "."
+      }
     }
   }
 }
