@@ -20,14 +20,14 @@ The **Pokédex System** is an end-to-end digital ecosystem for Pokémon catalogi
 
 ### Feature & Workspace Matrix
 
-| Workspace Target | Type | Primary Technology | Description | Status | Documentation Link | Default Port / Target |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`pokedex-api`** | Backend REST API | Java 21 / Spring Boot 4.1.1 / PostgreSQL | High-throughput REST API with PostgreSQL persistence, JPA queries, and Swagger OpenAPI documentation. | 🟢 Active | [API Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex-api/README.md) | `http://localhost:8080/api/v1` |
-| **`pokedex-backoffice`** | Web Application | Angular `v22.1.4` (Standalone) | Administrative dashboard for managing Pokémon data, icon galleries, and catalog metadata with Signals. | 🟢 Active | [Backoffice Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex-backoffice/README.md) | `http://localhost:4200` |
-| **`pokedex-ionic`** | Hybrid Mobile & Web | Ionic 9 / Angular `v22.1.4` / Capacitor 8+ | Native cross-platform application for iOS, Android, and Web with local storage and fluid micro-interactions. | 🟢 Active | [Ionic Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex-ionic/README.md) | `http://localhost:8100` / iOS / Android |
-| **`pokedex_flutter`** | Native Mobile Client | Flutter 3.x / Dart 3 / RPS | Native mobile client with custom RPS (Run Pubspec Scripts) automation and design token bindings. | 🟢 Active | [Flutter & RPS Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex_flutter/README.md) | iOS Simulator / Android |
-| **`@pokedex/ui`** | Shared Design Core | TypeScript / CSS / Dart / W3C Tokens | Multiplatform design system compiling W3C tokens and SVGs to Web (CSS/TS) and Flutter (Dart). | 🟢 Active | [UI Design Token Documentation](file:///Users/diegovilla/Desktop/pokedex-system/libs/ui/README.md) | Subpath exports (`@pokedex/ui/*`) |
-| **`.agents/`** | Architecture | Custom AI Rules & Skills | Enterprise engineering standards for Angular, Ionic, Spring Boot, Flutter, and Performance. | 🟢 Active | [Master Architecture Protocol](file:///Users/diegovilla/Desktop/pokedex-system/.agents/AGENTS.md) | Monorepo Governance |
+| Workspace Target         | Type                 | Primary Technology                         | Description                                                                                                  | Status    | Documentation Link                                                                                            | Default Port / Target                   |
+| :----------------------- | :------------------- | :----------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :-------- | :------------------------------------------------------------------------------------------------------------ | :-------------------------------------- |
+| **`pokedex-api`**        | Backend REST API     | Java 21 / Spring Boot 4.1.1 / PostgreSQL   | High-throughput REST API with PostgreSQL persistence, JPA queries, and Swagger OpenAPI documentation.        | 🟢 Active | [API Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex-api/README.md)               | `http://localhost:8080/api/v1`          |
+| **`pokedex-backoffice`** | Web Application      | Angular `v22.1.4` (Standalone)             | Administrative dashboard for managing Pokémon data, icon galleries, and catalog metadata with Signals.       | 🟢 Active | [Backoffice Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex-backoffice/README.md) | `http://localhost:4200`                 |
+| **`pokedex-ionic`**      | Hybrid Mobile & Web  | Ionic 9 / Angular `v22.1.4` / Capacitor 8+ | Native cross-platform application for iOS, Android, and Web with local storage and fluid micro-interactions. | 🟢 Active | [Ionic Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex-ionic/README.md)           | `http://localhost:8100` / iOS / Android |
+| **`pokedex_flutter`**    | Native Mobile Client | Flutter 3.x / Dart 3 / RPS                 | Native mobile client with custom RPS (Run Pubspec Scripts) automation and design token bindings.             | 🟢 Active | [Flutter & RPS Documentation](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex_flutter/README.md) | iOS Simulator / Android                 |
+| **`@pokedex/ui`**        | Shared Design Core   | TypeScript / CSS / Dart / W3C Tokens       | Multiplatform design system compiling W3C tokens and SVGs to Web (CSS/TS) and Flutter (Dart).                | 🟢 Active | [UI Design Token Documentation](file:///Users/diegovilla/Desktop/pokedex-system/libs/ui/README.md)            | Subpath exports (`@pokedex/ui/*`)       |
+| **`.agents/`**           | Architecture         | Custom AI Rules & Skills                   | Enterprise engineering standards for Angular, Ionic, Spring Boot, Flutter, and Performance.                  | 🟢 Active | [Master Architecture Protocol](file:///Users/diegovilla/Desktop/pokedex-system/.agents/AGENTS.md)             | Monorepo Governance                     |
 
 ---
 
@@ -45,7 +45,7 @@ graph TD
         TokensSource["tokens.json<br/>(W3C Standard Colors)"]
         IconsSource["assets/icons/*.svg<br/>(Single Source SVGs)"]
         BuildScript["build-tokens.ts<br/>(Token Compiler)"]
-        
+
         TokensSource --> BuildScript
         IconsSource --> BuildScript
         BuildScript --> GeneratedWeb["generated/web/<br/>(tokens.css, tokens.ts, icons.ts)"]
@@ -56,7 +56,7 @@ graph TD
         API["☕ pokedex-api<br/>(Spring Boot / Java 21)"]
         Postgres[("🐘 PostgreSQL Database<br/>(global_postgres:5432)")]
         Swagger["📑 Swagger UI / OpenAPI 3.0<br/>(/api/v1/swagger-ui.html)"]
-        
+
         API --> Postgres
         API --> Swagger
     end
@@ -161,21 +161,22 @@ pokedex-system/
 
 All shared web dependencies are hoisted and managed at the root [package.json](file:///Users/diegovilla/Desktop/pokedex-system/package.json) to eliminate dependency duplication across workspace applications:
 
-| Dependency | Category | Exact Version | Purpose |
-| :--- | :--- | :--- | :--- |
-| **`nx`** | Build Orchestration | `23.1.2` | Smart monorepo task runner, computation caching, and project dependency graph |
-| **`@angular/core`** | Frontend Framework | `^22.1.4` | Modern Angular with Signals, OnPush change detection, and Standalone components |
-| **`@angular/common`** | Framework Utilities | `^22.1.4` | Core directives, pipes, and common browser abstractions |
-| **`@angular/router`** | Routing Engine | `^22.1.4` | Component input binding and granular lazy-loading |
-| **`@angular/forms`** | Forms Management | `^22.1.4` | Strictly typed reactive forms |
-| **`@angular/platform-browser`** | Browser Platform | `^22.1.4` | DOM rendering and browser execution layer |
-| **`@angular/cli` / `@angular/build`** | Build Engine | `^22.1.4` | Vite/esbuild application bundler and development server |
-| **`rxjs`** | Reactive Streams | `~7.8.0` | Asynchronous stream processing and state orchestration |
-| **`zone.js`** | Runtime Tracking | `~0.15.0` | Execution context tracking |
-| **`typescript`** | Language | `~6.0.3` | Strict static typing and modern ECMAScript compilation |
-| **`prettier`** | Code Quality | `^3.8.1` | Automated and unified code formatting |
+| Dependency                            | Category            | Exact Version | Purpose                                                                         |
+| :------------------------------------ | :------------------ | :------------ | :------------------------------------------------------------------------------ |
+| **`nx`**                              | Build Orchestration | `23.1.2`      | Smart monorepo task runner, computation caching, and project dependency graph   |
+| **`@angular/core`**                   | Frontend Framework  | `^22.1.4`     | Modern Angular with Signals, OnPush change detection, and Standalone components |
+| **`@angular/common`**                 | Framework Utilities | `^22.1.4`     | Core directives, pipes, and common browser abstractions                         |
+| **`@angular/router`**                 | Routing Engine      | `^22.1.4`     | Component input binding and granular lazy-loading                               |
+| **`@angular/forms`**                  | Forms Management    | `^22.1.4`     | Strictly typed reactive forms                                                   |
+| **`@angular/platform-browser`**       | Browser Platform    | `^22.1.4`     | DOM rendering and browser execution layer                                       |
+| **`@angular/cli` / `@angular/build`** | Build Engine        | `^22.1.4`     | Vite/esbuild application bundler and development server                         |
+| **`rxjs`**                            | Reactive Streams    | `~7.8.0`      | Asynchronous stream processing and state orchestration                          |
+| **`zone.js`**                         | Runtime Tracking    | `~0.15.0`     | Execution context tracking                                                      |
+| **`typescript`**                      | Language            | `~6.0.3`      | Strict static typing and modern ECMAScript compilation                          |
+| **`prettier`**                        | Code Quality        | `^3.8.1`      | Automated and unified code formatting                                           |
 
 ### Backend API (`apps/pokedex-api`)
+
 - **Java**: `21` (LTS)
 - **Spring Boot**: `4.1.1`
 - **Spring Data JPA**: PostgreSQL persistence and Specification queries
@@ -183,16 +184,19 @@ All shared web dependencies are hoisted and managed at the root [package.json](f
 - **Docker**: Multi-stage lightweight Alpine build
 
 ### Web Application (`apps/pokedex-backoffice`)
+
 - **Angular**: `^22.1.4` (Standalone & Signals)
 - **Docker**: Monorepo-aware container with pnpm workspace resolution
 
 ### Mobile & Hybrid Application (`apps/pokedex-ionic`)
+
 - **Ionic Framework**: `@ionic/angular` `^9.0.0` (Standalone native Web Components)
 - **Capacitor**: `@capacitor/core`, `@capacitor/ios`, `@capacitor/android` `^8.5.0`
 - **Native Plugins**: `@capacitor/haptics`, `@capacitor/keyboard`, `@capacitor/status-bar`, `@capacitor/app`
 - **Local Persistence**: `@ionic/storage-angular` `^4.0.0`
 
 ### Mobile Client (`apps/pokedex_flutter`)
+
 - **Flutter**: `3.x`
 - **Dart**: `^3.11.1`
 - **RPS (Run Pubspec Scripts)**: `^0.10.x` for custom pubspec script orchestration
@@ -205,7 +209,9 @@ All shared web dependencies are hoisted and managed at the root [package.json](f
 The monorepo includes full **Docker Compose** orchestration for running the entire backend and frontend stack in isolated containers.
 
 ### Docker Compose Architecture
+
 Configured in [`docker-compose.yml`](file:///Users/diegovilla/Desktop/pokedex-system/docker-compose.yml):
+
 - **Network**: `shared-network` (`external: true`) linking services to the global PostgreSQL instance (`global_postgres:5432`).
 - **`pokedex-api`**: Multi-stage Java 21 container exposed on port `8080`.
 - **`pokedex-backoffice`**: Node 22 container running Angular on port `4200` with monorepo context.
@@ -227,6 +233,7 @@ pnpm docker:logs
 ```
 
 ### Nx Target Container Builds
+
 You can also build individual Docker images leveraging Nx computation caching:
 
 ```bash
@@ -245,13 +252,14 @@ pnpm nx run-many -t docker-build
 ## ⚙️ Provisioning & Setup Guide
 
 ### Prerequisites
+
 - **Node.js**: `>= 20.x` or `>= 22.x`
 - **pnpm**: `>= 9.x` (`npm install -g pnpm`)
 - **Java JDK**: `21` (for local `pokedex-api` execution)
 - **Docker & Docker Compose**: For containerized execution
 - **Flutter SDK**: `>= 3.24.x` / `3.27.x`
 - **RPS CLI**: `dart pub global activate rps`
-- **Xcode** *(macOS)*: For running `pokedex-ionic` and `pokedex_flutter` on iOS Simulator
+- **Xcode** _(macOS)_: For running `pokedex-ionic` and `pokedex_flutter` on iOS Simulator
 - **Android Studio**: For running on Android Emulator
 
 ---

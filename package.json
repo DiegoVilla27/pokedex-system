@@ -13,7 +13,8 @@
     "docker:logs": "docker compose logs -f",
     "clean:backoffice": "rm -rf apps/pokedex-backoffice/node_modules apps/pokedex-backoffice/.angular",
     "clean:ionic": "rm -rf apps/pokedex-ionic/node_modules apps/pokedex-ionic/.angular",
-    "clean": "rm -rf node_modules .nx pnpm-lock.yaml && pnpm clean:backoffice && pnpm clean:ionic && pnpm i"
+    "clean": "rm -rf node_modules .nx pnpm-lock.yaml && pnpm clean:backoffice && pnpm clean:ionic && pnpm i",
+    "api:types": "pnpm --filter @pokedex/api-types generate"
   },
   "private": true,
   "dependencies": {

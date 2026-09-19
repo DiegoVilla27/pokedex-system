@@ -1,0 +1,2371 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "Pokedex API",
+        "description": "# Pokédex REST API\n\nWelcome to the **Pokédex API** documentation. This service provides a complete,\nrobust and reactive RESTful API for managing Pokémon catalog data, elemental types,\nbase combat statistics, and complex multi-tier evolution chains.\n\n### Key Features\n- **Pokémon Management:** Complete CRUD operations for Pokémon entities including physical dimensions, RGB display colors, and avatars.\n- **Elemental Types:** Cataloging and assigning elemental types (Fire, Water, Grass, etc.) with strict constraints.\n- **Combat Stats:** Granular base stat definitions (HP, Attack, Defense, Speed, etc.) and assignments to individual Pokémon.\n- **Evolution Chains:** Sequential evolution tracking with ordered progression requirements.\n\n### Error Handling\nAll endpoints follow a standardized, predictable error response format adhering to RFC 7807 principles, returning detailed field-level validation breakdowns where applicable.\n",
+        "termsOfService": "https://example.com/terms",
+        "contact": {
+            "name": "Diego Villa",
+            "url": "https://github.com/DiegoVilla27",
+            "email": "cabuweb.info@gmail.com"
+        },
+        "license": {
+            "name": "Apache License 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "version": "1.0.0",
+        "summary": "RESTful API for Pokémon, Types, Stats and Evolutions management."
+    },
+    "externalDocs": {
+        "description": "Pokédex Project GitHub Repository",
+        "url": "https://github.com/DiegoVilla27/pokedex"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8080/api/v1",
+            "description": "Local Development Environment"
+        }
+    ],
+    "security": [
+        {
+            "Bearer Authentication": []
+        }
+    ],
+    "tags": [
+        {
+            "name": "Pokemon Evolutions",
+            "description": "Operations for managing evolution paths and relationships between Pokémon."
+        },
+        {
+            "name": "Pokemon Stats",
+            "description": "Operations for assigning base stats and attribute values to Pokémon."
+        },
+        {
+            "name": "Pokemon Types",
+            "description": "Operations for assigning elemental types to Pokémon."
+        },
+        {
+            "name": "Types",
+            "description": "Operations for managing global Pokémon elemental types."
+        },
+        {
+            "name": "Stats",
+            "description": "Operations for managing global Pokémon base combat statistics."
+        },
+        {
+            "name": "Pokemons",
+            "description": "Operations for managing Pokémon profiles, creation, updates, and catalog queries."
+        }
+    ],
+    "paths": {
+        "/types": {
+            "get": {
+                "tags": [
+                    "Types"
+                ],
+                "summary": "Retrieve all elemental types",
+                "description": "Fetches the full catalog of registered Pokémon elemental types.",
+                "operationId": "getTypes",
+                "responses": {
+                    "200": {
+                        "description": "List of elemental types retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/TypeResponse"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Types"
+                ],
+                "summary": "Create a new elemental type",
+                "description": "Registers a unique elemental type (e.g. Electric, Water, Fire) in the system.",
+                "operationId": "createType",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CreateTypeRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "201": {
+                        "description": "Elemental type created successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TypeResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "The request conflicts with the current state of the resource (e.g. unique constraint violation).",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "ConflictResponse": {
+                                        "summary": "Resource already exists response",
+                                        "description": "ConflictResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 409,
+                                            "error": "Conflict",
+                                            "message": "Pokemon with name 'Pikachu' already exists",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/stats": {
+            "get": {
+                "tags": [
+                    "Stats"
+                ],
+                "summary": "Retrieve all combat stats",
+                "description": "Fetches the full catalog of registered Pokémon combat statistics (e.g. HP, Attack, Defense, Speed).",
+                "operationId": "getStats",
+                "responses": {
+                    "200": {
+                        "description": "List of combat stats retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/StatResponse"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Stats"
+                ],
+                "summary": "Create a new combat stat",
+                "description": "Registers a unique base combat statistic (e.g. Special Attack, Defense) in the Pokédex system.",
+                "operationId": "createStat",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CreateStatRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "201": {
+                        "description": "Combat stat created successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/StatResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "The request conflicts with the current state of the resource (e.g. unique constraint violation).",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "ConflictResponse": {
+                                        "summary": "Resource already exists response",
+                                        "description": "ConflictResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 409,
+                                            "error": "Conflict",
+                                            "message": "Pokemon with name 'Pikachu' already exists",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/pokemons": {
+            "get": {
+                "tags": [
+                    "Pokemons"
+                ],
+                "summary": "Retrieve all Pokémon",
+                "description": "Fetches a complete list of all registered Pokémon along with their types, stats, and evolutions.",
+                "operationId": "getAllPokemon",
+                "responses": {
+                    "200": {
+                        "description": "List of Pokémon retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/PokemonResponse"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Pokemons"
+                ],
+                "summary": "Create a new Pokémon",
+                "description": "Registers a new Pokémon with physical dimensions, theme color, assigned types, and initial stats.",
+                "operationId": "createPokemon",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CreatePokemonRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "201": {
+                        "description": "Pokémon created successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PokemonResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "The request conflicts with the current state of the resource (e.g. unique constraint violation).",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "ConflictResponse": {
+                                        "summary": "Resource already exists response",
+                                        "description": "ConflictResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 409,
+                                            "error": "Conflict",
+                                            "message": "Pokemon with name 'Pikachu' already exists",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/types/{id}": {
+            "delete": {
+                "tags": [
+                    "Types"
+                ],
+                "summary": "Delete elemental type",
+                "description": "Deletes an elemental type from the system by its unique identifier.",
+                "operationId": "deleteType",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Unique numeric identifier of the elemental type to delete",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "minimum": 1
+                        },
+                        "example": 13
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Elemental type deleted successfully."
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "The requested resource could not be found.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "NotFoundResponse": {
+                                        "summary": "Resource not found response",
+                                        "description": "NotFoundResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 404,
+                                            "error": "Not Found",
+                                            "message": "Resource with identifier '25' was not found",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "Types"
+                ],
+                "summary": "Update elemental type",
+                "description": "Updates the name of an existing elemental type by its unique identifier.",
+                "operationId": "updateType",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Unique numeric identifier of the elemental type",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "minimum": 1
+                        },
+                        "example": 13
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateTypeRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Elemental type updated successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TypeResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "The requested resource could not be found.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "NotFoundResponse": {
+                                        "summary": "Resource not found response",
+                                        "description": "NotFoundResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 404,
+                                            "error": "Not Found",
+                                            "message": "Resource with identifier '25' was not found",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "The request conflicts with the current state of the resource (e.g. unique constraint violation).",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "ConflictResponse": {
+                                        "summary": "Resource already exists response",
+                                        "description": "ConflictResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 409,
+                                            "error": "Conflict",
+                                            "message": "Pokemon with name 'Pikachu' already exists",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/stats/{id}": {
+            "delete": {
+                "tags": [
+                    "Stats"
+                ],
+                "summary": "Delete combat stat",
+                "description": "Deletes a combat statistic from the system by its unique identifier.",
+                "operationId": "deleteStat",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Unique numeric identifier of the combat statistic to delete",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "minimum": 1
+                        },
+                        "example": 1
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Combat stat deleted successfully."
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "The requested resource could not be found.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "NotFoundResponse": {
+                                        "summary": "Resource not found response",
+                                        "description": "NotFoundResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 404,
+                                            "error": "Not Found",
+                                            "message": "Resource with identifier '25' was not found",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "Stats"
+                ],
+                "summary": "Update combat stat",
+                "description": "Updates the name of an existing combat statistic by its unique identifier.",
+                "operationId": "updateStat",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Unique numeric identifier of the combat statistic",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "minimum": 1
+                        },
+                        "example": 1
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateStatRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Combat stat updated successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/StatResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "The requested resource could not be found.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "NotFoundResponse": {
+                                        "summary": "Resource not found response",
+                                        "description": "NotFoundResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 404,
+                                            "error": "Not Found",
+                                            "message": "Resource with identifier '25' was not found",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "The request conflicts with the current state of the resource (e.g. unique constraint violation).",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "ConflictResponse": {
+                                        "summary": "Resource already exists response",
+                                        "description": "ConflictResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 409,
+                                            "error": "Conflict",
+                                            "message": "Pokemon with name 'Pikachu' already exists",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/pokemons/{pokemonId}/types": {
+            "patch": {
+                "tags": [
+                    "Pokemon Types"
+                ],
+                "summary": "Assign elemental types to Pokémon",
+                "description": "Replaces the elemental types assigned to the specified Pokémon (1 or 2 types allowed).",
+                "operationId": "assignPokemonTypes",
+                "parameters": [
+                    {
+                        "name": "pokemonId",
+                        "in": "path",
+                        "description": "Unique numeric identifier of the Pokémon",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example": 25
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/AssignPokemonTypesRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "204": {
+                        "description": "Types assigned successfully."
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "The requested resource could not be found.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "NotFoundResponse": {
+                                        "summary": "Resource not found response",
+                                        "description": "NotFoundResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 404,
+                                            "error": "Not Found",
+                                            "message": "Resource with identifier '25' was not found",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/pokemons/{pokemonId}/stats": {
+            "patch": {
+                "tags": [
+                    "Pokemon Stats"
+                ],
+                "summary": "Assign stats to Pokémon",
+                "description": "Replaces or updates combat stat assignments for the specified Pokémon.",
+                "operationId": "assignPokemonStats",
+                "parameters": [
+                    {
+                        "name": "pokemonId",
+                        "in": "path",
+                        "description": "Unique numeric identifier of the Pokémon",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example": 25
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/AssignPokemonStatsRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "204": {
+                        "description": "Stats assigned successfully."
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "The requested resource could not be found.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "NotFoundResponse": {
+                                        "summary": "Resource not found response",
+                                        "description": "NotFoundResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 404,
+                                            "error": "Not Found",
+                                            "message": "Resource with identifier '25' was not found",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/pokemons/{pokemonId}/evolutions": {
+            "patch": {
+                "tags": [
+                    "Pokemon Evolutions"
+                ],
+                "summary": "Assign evolutions to Pokémon",
+                "description": "Configures forward evolution paths and target Pokémon IDs for the specified Pokémon.",
+                "operationId": "assignEvolutions",
+                "parameters": [
+                    {
+                        "name": "pokemonId",
+                        "in": "path",
+                        "description": "Unique numeric identifier of the base Pokémon",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example": 25
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/AssignPokemonEvolutionsRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "204": {
+                        "description": "Evolutions assigned successfully."
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "The requested resource could not be found.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "NotFoundResponse": {
+                                        "summary": "Resource not found response",
+                                        "description": "NotFoundResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 404,
+                                            "error": "Not Found",
+                                            "message": "Resource with identifier '25' was not found",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "The request conflicts with the current state of the resource (e.g. unique constraint violation).",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "ConflictResponse": {
+                                        "summary": "Resource already exists response",
+                                        "description": "ConflictResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 409,
+                                            "error": "Conflict",
+                                            "message": "Pokemon with name 'Pikachu' already exists",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/pokemons/{id}": {
+            "get": {
+                "tags": [
+                    "Pokemons"
+                ],
+                "summary": "Get Pokémon by ID",
+                "description": "Retrieves a single Pokémon profile by its unique integer identifier.",
+                "operationId": "getById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Unique numeric identifier of the Pokémon",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example": 25
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Pokémon found and retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PokemonResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "The requested resource could not be found.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "NotFoundResponse": {
+                                        "summary": "Resource not found response",
+                                        "description": "NotFoundResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 404,
+                                            "error": "Not Found",
+                                            "message": "Resource with identifier '25' was not found",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Pokemons"
+                ],
+                "summary": "Delete Pokémon",
+                "description": "Removes a Pokémon and its associated stats, types, and evolution relationships from the Pokédex.",
+                "operationId": "deletePokemon",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Unique numeric identifier of the Pokémon to delete",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example": 25
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Pokémon deleted successfully."
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "The requested resource could not be found.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "NotFoundResponse": {
+                                        "summary": "Resource not found response",
+                                        "description": "NotFoundResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 404,
+                                            "error": "Not Found",
+                                            "message": "Resource with identifier '25' was not found",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "Pokemons"
+                ],
+                "summary": "Update Pokémon details",
+                "description": "Partially updates general information (name, description, avatar, height, weight, color) of an existing Pokémon.",
+                "operationId": "updatePokemon",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Unique numeric identifier of the Pokémon to update",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example": 25
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdatePokemonRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Pokémon updated successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PokemonResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "The request is invalid, contains malformed JSON, or fails field-level validation constraints.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "BadRequestResponse": {
+                                        "summary": "Validation error response",
+                                        "description": "BadRequestResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 400,
+                                            "error": "Bad Request",
+                                            "message": "The request contains validation errors",
+                                            "errors": [
+                                                {
+                                                    "field": "name",
+                                                    "value": "P",
+                                                    "message": "Name must be between 2 and 50 characters"
+                                                },
+                                                {
+                                                    "field": "height",
+                                                    "value": 0,
+                                                    "message": "Height must be greater than 0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "The requested resource could not be found.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "NotFoundResponse": {
+                                        "summary": "Resource not found response",
+                                        "description": "NotFoundResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 404,
+                                            "error": "Not Found",
+                                            "message": "Resource with identifier '25' was not found",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "The request conflicts with the current state of the resource (e.g. unique constraint violation).",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "ConflictResponse": {
+                                        "summary": "Resource already exists response",
+                                        "description": "ConflictResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 409,
+                                            "error": "Conflict",
+                                            "message": "Pokemon with name 'Pikachu' already exists",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "An unexpected internal server error occurred while processing the request.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                },
+                                "examples": {
+                                    "InternalServerErrorResponse": {
+                                        "summary": "Server error response",
+                                        "description": "InternalServerErrorResponse",
+                                        "value": {
+                                            "timestamp": "2026-08-25T10:00:00Z",
+                                            "status": 500,
+                                            "error": "Internal Server Error",
+                                            "message": "An internal server error has occurred.",
+                                            "errors": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "CreateTypeRequest": {
+                "type": "object",
+                "description": "Payload required to create a new elemental Pokémon type.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Unique name of the elemental type.",
+                        "example": "Electric",
+                        "maxLength": 15,
+                        "minLength": 2
+                    }
+                },
+                "required": [
+                    "name"
+                ]
+            },
+            "TypeName": {
+                "type": "object",
+                "description": "Elemental type name representation.",
+                "properties": {
+                    "value": {
+                        "type": "string",
+                        "description": "Elemental type name.",
+                        "example": "grass"
+                    }
+                }
+            },
+            "TypeResponse": {
+                "type": "object",
+                "description": "Global Pokémon elemental type definition.",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Unique numeric identifier of the elemental type.",
+                        "example": 1
+                    },
+                    "name": {
+                        "$ref": "#/components/schemas/TypeName",
+                        "description": "Elemental type name object."
+                    }
+                }
+            },
+            "ErrorResponse": {
+                "type": "object",
+                "description": "Standardized error response payload following RFC 7807 problem details structure.",
+                "properties": {
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "UTC timestamp when the error occurred.",
+                        "example": "2026-08-25T10:00:00Z"
+                    },
+                    "status": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "HTTP status code.",
+                        "example": 400
+                    },
+                    "error": {
+                        "type": "string",
+                        "description": "HTTP status reason phrase.",
+                        "example": "Bad Request"
+                    },
+                    "message": {
+                        "type": "string",
+                        "description": "Human-readable description of the error.",
+                        "example": "The request contains validation errors"
+                    },
+                    "errors": {
+                        "type": "array",
+                        "description": "Collection of field-level validation errors, if applicable.",
+                        "items": {
+                            "$ref": "#/components/schemas/FieldError"
+                        }
+                    }
+                }
+            },
+            "FieldError": {
+                "type": "object",
+                "description": "Details about a specific field-level validation failure.",
+                "properties": {
+                    "field": {
+                        "type": "string",
+                        "description": "Name of the invalid property/field.",
+                        "example": "name"
+                    },
+                    "value": {
+                        "description": "The rejected invalid value supplied by the client.",
+                        "example": "P"
+                    },
+                    "message": {
+                        "type": "string",
+                        "description": "Validation failure reason message.",
+                        "example": "Name must be between 2 and 50 characters"
+                    }
+                }
+            },
+            "CreateStatRequest": {
+                "type": "object",
+                "description": "Payload required to register a new base combat statistic.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the combat statistic.",
+                        "example": "Speed",
+                        "maxLength": 15,
+                        "minLength": 2
+                    }
+                },
+                "required": [
+                    "name"
+                ]
+            },
+            "StatName": {
+                "type": "object",
+                "description": "Combat statistic name representation.",
+                "properties": {
+                    "value": {
+                        "type": "string",
+                        "description": "Combat statistic name.",
+                        "example": "speed"
+                    }
+                }
+            },
+            "StatResponse": {
+                "type": "object",
+                "description": "Global Pokémon base combat statistic definition.",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Unique numeric identifier of the combat statistic.",
+                        "example": 1
+                    },
+                    "name": {
+                        "$ref": "#/components/schemas/StatName",
+                        "description": "Combat statistic name object."
+                    }
+                }
+            },
+            "CreatePokemonRequest": {
+                "type": "object",
+                "description": "Payload required to register a new Pokémon profile.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the Pokémon.",
+                        "example": "Pikachu",
+                        "maxLength": 50,
+                        "minLength": 2
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Detailed lore and Pokédex entry description.",
+                        "example": "When it smashes its foes with its tail, it releases strong electric shocks.",
+                        "maxLength": 500,
+                        "minLength": 2
+                    },
+                    "avatar": {
+                        "type": "string",
+                        "description": "URL pointing to the Pokémon official artwork or sprite.",
+                        "example": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+                        "maxLength": 200,
+                        "minLength": 2
+                    },
+                    "height": {
+                        "type": "number",
+                        "format": "double",
+                        "description": "Height of the Pokémon in meters.",
+                        "example": 0.4,
+                        "minimum": 0.1
+                    },
+                    "weight": {
+                        "type": "number",
+                        "format": "double",
+                        "description": "Weight of the Pokémon in kilograms.",
+                        "example": 6.0,
+                        "minimum": 0.1
+                    },
+                    "color": {
+                        "$ref": "#/components/schemas/PokemonColorRequest",
+                        "description": "Color configuration (RGB) for Pokémon theme."
+                    },
+                    "typeIds": {
+                        "type": "array",
+                        "description": "Set of elemental Type IDs (between 1 and 2 types allowed).",
+                        "items": {
+                            "type": "integer",
+                            "format": "int32",
+                            "description": "Type ID",
+                            "example": 13
+                        },
+                        "maxItems": 2,
+                        "minItems": 1,
+                        "uniqueItems": true
+                    },
+                    "stats": {
+                        "type": "array",
+                        "description": "Set of initial combat stat assignments.",
+                        "items": {
+                            "$ref": "#/components/schemas/PokemonStatRequest"
+                        },
+                        "minItems": 1,
+                        "uniqueItems": true
+                    }
+                },
+                "required": [
+                    "avatar",
+                    "color",
+                    "description",
+                    "height",
+                    "name",
+                    "stats",
+                    "typeIds",
+                    "weight"
+                ]
+            },
+            "PokemonColorRequest": {
+                "type": "object",
+                "description": "RGB color definition for the Pokémon UI card theme.",
+                "properties": {
+                    "r": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Red channel intensity (0-255).",
+                        "example": 255,
+                        "maximum": 255,
+                        "minimum": 0
+                    },
+                    "g": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Green channel intensity (0-255).",
+                        "example": 204,
+                        "maximum": 255,
+                        "minimum": 0
+                    },
+                    "b": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Blue channel intensity (0-255).",
+                        "example": 0,
+                        "maximum": 255,
+                        "minimum": 0
+                    }
+                },
+                "required": [
+                    "b",
+                    "g",
+                    "r"
+                ]
+            },
+            "PokemonStatRequest": {
+                "type": "object",
+                "description": "Stat identifier and value assigned to a Pokémon.",
+                "properties": {
+                    "statId": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Identifier of the base combat stat.",
+                        "example": 1,
+                        "minimum": 1
+                    },
+                    "value": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Base stat value for this Pokémon (1-255).",
+                        "example": 35,
+                        "maximum": 255,
+                        "minimum": 1
+                    }
+                },
+                "required": [
+                    "statId",
+                    "value"
+                ]
+            },
+            "PokemonColor": {
+                "type": "object",
+                "description": "RGB color profile used for UI theming.",
+                "properties": {
+                    "red": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Red channel intensity (0-255).",
+                        "example": 246
+                    },
+                    "green": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Green channel intensity (0-255).",
+                        "example": 211
+                    },
+                    "blue": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Blue channel intensity (0-255).",
+                        "example": 5
+                    }
+                }
+            },
+            "PokemonEvolution": {
+                "type": "object",
+                "description": "Evolution relationship target and progression sequence.",
+                "properties": {
+                    "toPokemonId": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Identifier of the target evolved Pokémon.",
+                        "example": 26
+                    },
+                    "order": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Progression order/stage in the evolution chain.",
+                        "example": 1
+                    }
+                }
+            },
+            "PokemonResponse": {
+                "type": "object",
+                "description": "Detailed profile and catalog information of a Pokémon.",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Unique numeric identifier of the Pokémon.",
+                        "example": 25
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the Pokémon.",
+                        "example": "pikachu"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Official lore and Pokédex entry description.",
+                        "example": "When several of these Pokémon gather, their electricity could build and cause lightning storms."
+                    },
+                    "avatar": {
+                        "type": "string",
+                        "description": "URL pointing to the official artwork or sprite.",
+                        "example": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png"
+                    },
+                    "height": {
+                        "type": "number",
+                        "format": "double",
+                        "description": "Height of the Pokémon in meters.",
+                        "example": 0.4
+                    },
+                    "weight": {
+                        "type": "number",
+                        "format": "double",
+                        "description": "Weight of the Pokémon in kilograms.",
+                        "example": 6.0
+                    },
+                    "color": {
+                        "$ref": "#/components/schemas/PokemonColor",
+                        "description": "RGB color profile used for UI theming."
+                    },
+                    "types": {
+                        "type": "array",
+                        "description": "Set of assigned elemental type IDs.",
+                        "items": {
+                            "type": "integer",
+                            "format": "int32",
+                            "description": "Elemental type ID",
+                            "example": 8
+                        },
+                        "uniqueItems": true
+                    },
+                    "stats": {
+                        "type": "array",
+                        "description": "Set of base combat statistics assigned to this Pokémon.",
+                        "items": {
+                            "$ref": "#/components/schemas/PokemonStat"
+                        },
+                        "uniqueItems": true
+                    },
+                    "evolutions": {
+                        "type": "array",
+                        "description": "Set of forward evolution transitions available for this Pokémon.",
+                        "items": {
+                            "$ref": "#/components/schemas/PokemonEvolution"
+                        },
+                        "uniqueItems": true
+                    }
+                }
+            },
+            "PokemonStat": {
+                "type": "object",
+                "description": "Assigned base combat statistic value.",
+                "properties": {
+                    "statId": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Identifier of the combat statistic.",
+                        "example": 1
+                    },
+                    "value": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Base stat value for this Pokémon (1-255).",
+                        "example": 35
+                    }
+                }
+            },
+            "UpdateTypeRequest": {
+                "type": "object",
+                "description": "Payload required to update an existing elemental Pokémon type name.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Updated unique name of the elemental type.",
+                        "example": "Fire",
+                        "maxLength": 15,
+                        "minLength": 2
+                    }
+                },
+                "required": [
+                    "name"
+                ]
+            },
+            "UpdateStatRequest": {
+                "type": "object",
+                "description": "Payload required to update an existing combat statistic name.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Updated name of the combat statistic.",
+                        "example": "Attack",
+                        "maxLength": 15,
+                        "minLength": 2
+                    }
+                },
+                "required": [
+                    "name"
+                ]
+            },
+            "AssignPokemonTypesRequest": {
+                "type": "object",
+                "description": "Set of type IDs to assign to the Pokémon (replaces previous type assignments).",
+                "properties": {
+                    "typeIds": {
+                        "type": "array",
+                        "description": "Set of elemental Type IDs (1 to 2 allowed).",
+                        "items": {
+                            "type": "integer",
+                            "format": "int32",
+                            "description": "Type ID",
+                            "example": 13
+                        },
+                        "maxItems": 2,
+                        "minItems": 1,
+                        "uniqueItems": true
+                    }
+                },
+                "required": [
+                    "typeIds"
+                ]
+            },
+            "AssignPokemonStatsRequest": {
+                "type": "object",
+                "description": "Set of combat stats to assign to the Pokémon (replaces previous stat values).",
+                "properties": {
+                    "stats": {
+                        "type": "array",
+                        "description": "Set of stat ID and value mappings.",
+                        "items": {
+                            "$ref": "#/components/schemas/PokemonStatRequest"
+                        },
+                        "minItems": 1,
+                        "uniqueItems": true
+                    }
+                },
+                "required": [
+                    "stats"
+                ]
+            },
+            "AssignPokemonEvolutionsRequest": {
+                "type": "object",
+                "description": "Set of evolution transitions to assign to the Pokémon.",
+                "properties": {
+                    "evolutions": {
+                        "type": "array",
+                        "description": "Set of target evolutions with their order.",
+                        "items": {
+                            "$ref": "#/components/schemas/PokemonEvolutionRequest"
+                        },
+                        "minItems": 1,
+                        "uniqueItems": true
+                    }
+                },
+                "required": [
+                    "evolutions"
+                ]
+            },
+            "PokemonEvolutionRequest": {
+                "type": "object",
+                "description": "Target Pokémon identifier and sequence order in the evolution line.",
+                "properties": {
+                    "toPokemonId": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Identifier of the target evolved Pokémon.",
+                        "example": 26,
+                        "minimum": 1
+                    },
+                    "order": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Progression order/stage in the evolution chain.",
+                        "example": 1,
+                        "minimum": 1
+                    }
+                },
+                "required": [
+                    "order",
+                    "toPokemonId"
+                ]
+            },
+            "UpdatePokemonRequest": {
+                "type": "object",
+                "description": "Payload required to partially update Pokémon details. All fields are optional.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Updated name of the Pokémon.",
+                        "example": "Raichu",
+                        "maxLength": 50,
+                        "minLength": 2
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Updated Pokédex entry description.",
+                        "example": "Its long tail serves as a ground to protect itself from its own high-voltage power.",
+                        "maxLength": 500,
+                        "minLength": 2
+                    },
+                    "avatar": {
+                        "type": "string",
+                        "description": "Updated URL for the official artwork/sprite.",
+                        "example": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+                        "maxLength": 200,
+                        "minLength": 2
+                    },
+                    "height": {
+                        "type": "number",
+                        "format": "double",
+                        "description": "Updated height of the Pokémon in meters.",
+                        "example": 0.8,
+                        "minimum": 0.1
+                    },
+                    "weight": {
+                        "type": "number",
+                        "format": "double",
+                        "description": "Updated weight of the Pokémon in kilograms.",
+                        "example": 30.0,
+                        "minimum": 0.1
+                    },
+                    "color": {
+                        "$ref": "#/components/schemas/PokemonColorRequest",
+                        "description": "Updated RGB color profile."
+                    }
+                }
+            }
+        },
+        "securitySchemes": {
+            "Bearer Authentication": {
+                "type": "http",
+                "description": "JSON Web Token (JWT) Bearer authentication.\nEnter the token directly. The 'Bearer ' prefix is added automatically.\n",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    }
+}
