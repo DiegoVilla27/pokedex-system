@@ -12,7 +12,6 @@ import com.dv.pokedex.features.stat.domain.model.Stat;
 import com.dv.pokedex.features.type.application.services.TypeService;
 import com.dv.pokedex.features.type.domain.model.Type;
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
