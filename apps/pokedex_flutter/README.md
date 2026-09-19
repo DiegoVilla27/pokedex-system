@@ -3,9 +3,11 @@
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
 [![RPS](https://img.shields.io/badge/RPS-Scripts_Runner-blueviolet?style=for-the-badge)](https://pub.dev/packages/rps)
+[![OpenAPI 3.0](https://img.shields.io/badge/OpenAPI-3.0_CDD-6BA539?style=for-the-badge&logo=openapiinitiative&logoColor=white)](https://swagger.io/specification/)
+[![Riverpod](https://img.shields.io/badge/Riverpod-2.x_Codegen-0553B1?style=for-the-badge)](https://riverpod.dev)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-High-performance, cross-platform mobile client for the **Pokédex System** built with **Flutter** and **Dart 3**, powered by **RPS (Run Pubspec Scripts)** for seamless developer script orchestration and integrated with the monorepo's **Multiplatform Design Token Engine** (`@pokedex/ui`).
+High-performance, cross-platform native mobile client for the **Pokédex System** built with **Flutter** and **Dart 3**. Powered by **RPS (Run Pubspec Scripts)** for streamlined developer orchestration, **Contract-Driven Development (CDD)** via **Swagger Parser**, **Riverpod 2.0 with Codegen** for state management, and full integration with the monorepo's **Multiplatform Design Token Engine** (`@pokedex/ui`).
 
 ---
 
@@ -18,9 +20,17 @@ High-performance, cross-platform mobile client for the **Pokédex System** built
   - [Installation & Shell Setup](#installation--shell-setup)
   - [Configuration in `pubspec.yaml`](#configuration-in-pubspecyaml)
   - [Available Project Scripts & Examples](#available-project-scripts--examples)
-  - [Advanced Features (Arguments, Interactive Mode, Chaining)](#advanced-features)
+  - [Advanced Features (Arguments, Interactive Menu, Chaining)](#advanced-features)
   - [Troubleshooting & Common Pitfalls](#troubleshooting--common-pitfalls)
+- [📑 Contract-Driven Development (CDD) with OpenAPI](#-contract-driven-development-cdd-with-openapi)
+  - [How CDD Works in Flutter](#how-cdd-works-in-flutter)
+  - [Swagger Parser Configuration](#swagger-parser-configuration)
+  - [Generating Typed Dart Models](#generating-typed-dart-models)
+  - [Consuming Models in Code](#consuming-models-in-code)
+- [🏗️ Architectural Standard & Tech Stack](#️-architectural-standard--tech-stack)
 - [🎨 Integration with Multiplatform Design Tokens (`@pokedex/ui`)](#-integration-with-multiplatform-design-tokens-pokedexui)
+  - [Dart Tokens](#dart-tokens)
+  - [Shared SVG Assets](#shared-svg-assets)
 - [⚙️ Prerequisites & Environment Setup](#️-prerequisites--environment-setup)
 - [🚀 Running the Application](#-running-the-application)
 - [📁 Project Structure](#-project-structure)
@@ -31,9 +41,10 @@ High-performance, cross-platform mobile client for the **Pokédex System** built
 
 `pokedex_flutter` provides a fluid native client for the Pokédex ecosystem. It is designed to consume:
 
-1. **Multiplatform Design Tokens**: Generated directly by `@pokedex/ui` as strongly typed Dart color constants (`PokedexTokens`).
-2. **Centralized SVG Icons**: Shared single-source icons located in `libs/ui/assets/icons/`.
-3. **High-Throughput Backend**: Communicating with the Spring Boot `pokedex-api` (`http://localhost:8080/api/v1`).
+1. **Contract-Driven API Models**: Automatically parsed from Spring Boot's OpenAPI contract (`/api/v1/api-docs`) via `swagger_parser` and serialized with `json_serializable`.
+2. **Multiplatform Design Tokens**: Generated directly by `@pokedex/ui` as strongly typed Dart color constants (`PokedexTokens`).
+3. **Centralized SVG Icons**: Shared single-source icons located in `libs/ui/assets/icons/`.
+4. **Reactive State & Networking**: Driven by Riverpod 2.0 (`riverpod_generator`), Dio HTTP client, and GoRouter.
 
 ---
 
@@ -50,6 +61,8 @@ Instead of memorizing long terminal commands, maintaining scattered `.sh` script
 │                   pubspec.yaml                         │
 │  scripts:                                              │
 │    dev:ios: flutter run -d <IOS_DEVICE_UUID>          │
+│    api:types: dart run swagger_parser                  │
+│    generate: dart run build_runner build ...          │
 │    clean:all: flutter clean && flutter pub get ...    │
 └────────────────────────────────────────────────────────┘
                            │
@@ -124,8 +137,11 @@ scripts:
   # Run on the active Android Emulator or physical device
   dev:android: flutter run -d
 
-  # Code Generation with Build Runner
-  gen: dart run build_runner build --delete-conflicting-outputs
+  # Sincronizar tipos de OpenAPI (Swagger Parser)
+  api:types: dart run swagger_parser
+
+  # Code Generation con build_runner (JSON Serializable & Riverpod)
+  generate: dart run build_runner build --delete-conflicting-outputs
 
   # Complete clean, package re-fetch, and cache flush
   clean:all: >
@@ -135,34 +151,21 @@ scripts:
 
 environment:
   sdk: ^3.11.1
-
-dependencies:
-  flutter:
-    sdk: flutter
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^6.0.0
-
-flutter:
-  uses-material-design: true
-  assets:
-    - ../../libs/ui/assets/icons/
 ```
 
 ---
 
 ### Available Project Scripts & Examples
 
-| Script                | Command                                | Purpose & Description                                                                                                              |
-| :-------------------- | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
-| **`rps dev:ios`**     | `flutter run -d <UUID>`                | Launches the app in debug mode on the target iOS Simulator (e.g., iPhone 17 Pro). Supports Hot Reload (`r`) and Hot Restart (`R`). |
-| **`rps dev:android`** | `flutter run -d`                       | Launches the app on the connected Android emulator or physical device.                                                             |
-| **`rps gen`**         | `dart run build_runner build ...`      | Runs code generation for JSON serialization, Freezed models, or Riverpod providers.                                                |
-| **`rps clean:all`**   | `flutter clean && flutter pub get ...` | Deletes build artifacts, cleans `.dart_tool`, flushes Xcode/Gradle cache, and re-resolves dependencies.                            |
-| **`rps ls`**          | `rps ls`                               | Lists all defined scripts and their underlying commands.                                                                           |
-| **`rps`**             | _(interactive)_                        | Displays an interactive CLI menu to select and execute any script.                                                                 |
+| Script | Command | Purpose & Description |
+| :--- | :--- | :--- |
+| **`rps dev:ios`** | `flutter run -d <UUID>` | Launches the app in debug mode on target iOS Simulator (e.g., iPhone 17 Pro). Supports Hot Reload (`r`) and Hot Restart (`R`). |
+| **`rps dev:android`** | `flutter run -d` | Launches the app on connected Android emulator or physical device. |
+| **`rps api:types`** | `dart run swagger_parser` | Downloads the OpenAPI spec and generates strongly typed Dart DTOs in `lib/shared/models/`. |
+| **`rps generate`** | `dart run build_runner build ...` | Runs `build_runner` for JSON serialization (`.g.dart`) and Riverpod provider code generation. |
+| **`rps clean:all`** | `flutter clean && flutter pub get ...` | Deletes build artifacts, cleans `.dart_tool`, flushes Xcode/Gradle cache, and re-resolves dependencies. |
+| **`rps ls`** | `rps ls` | Lists all defined scripts and their underlying commands. |
+| **`rps`** | _(interactive)_ | Displays an interactive CLI menu to select and execute any script. |
 
 #### Usage Examples:
 
@@ -173,10 +176,16 @@ rps dev:ios
 # 🤖 2. Run on Android Emulator
 rps dev:android
 
-# 🧹 3. Run complete cleanup pipeline
+# 📑 3. Generate DTOs from OpenAPI backend
+rps api:types
+
+# ⚡ 4. Generate serialization (.g.dart) & providers
+rps generate
+
+# 🧹 5. Run complete cleanup pipeline
 rps clean:all
 
-# 📋 4. List all available scripts
+# 📋 6. List all available scripts
 rps ls
 ```
 
@@ -205,7 +214,8 @@ $ rps
 ? Select script to run:
 ❯ dev:ios (flutter run -d DF7E47CA-2BBD-42A2-AF30-4DBB8DC271C7)
   dev:android (flutter run -d)
-  gen (dart run build_runner build --delete-conflicting-outputs)
+  api:types (dart run swagger_parser)
+  generate (dart run build_runner build --delete-conflicting-outputs)
   clean:all (flutter clean && flutter pub get ...)
 ```
 
@@ -233,7 +243,7 @@ scripts:
 #### 2. `Could not find package build_runner`
 
 - **Cause**: Running a build runner script when `build_runner` is not declared in `dev_dependencies`.
-- **Fix**: Add `build_runner: ^2.4.0` to `dev_dependencies` in `pubspec.yaml` and execute `flutter pub get`.
+- **Fix**: Add `build_runner: ^2.4.13` to `dev_dependencies` in `pubspec.yaml` and execute `flutter pub get`.
 
 #### 3. Exit Code 137 on `rps dev:ios`
 
@@ -244,6 +254,95 @@ scripts:
 
 - **Cause**: `~/.pub-cache/bin` is not in your shell's `$PATH`.
 - **Fix**: Add `export PATH="$PATH":"$HOME/.pub-cache/bin"` to your `~/.zshrc` and run `source ~/.zshrc`.
+
+---
+
+## 📑 Contract-Driven Development (CDD) with OpenAPI
+
+This Flutter application enforces **Contract-Driven Development**. The backend (Spring Boot `pokedex-api`) is the single source of truth, exposing an OpenAPI 3.0 specification at `http://localhost:8080/api/v1/api-docs`.
+
+```
+  [Spring Boot: pokedex-api]
+             │ (/api/v1/api-docs)
+             ▼
+    [rps api:types (swagger_parser)]
+             │ Generates Dart classes
+             ▼
+  [lib/shared/models/*.dart]
+             │ Generates JSON serialization (_$FromJson / _$ToJson)
+             ▼
+    [rps generate (build_runner)]
+             │
+             ▼
+  [Strongly-typed DTOs ready in Flutter]
+```
+
+### Swagger Parser Configuration
+
+The generation settings are managed in [`swagger_parser.yaml`](file:///Users/diegovilla/Desktop/pokedex-system/apps/pokedex_flutter/swagger_parser.yaml):
+
+```yaml
+swagger_parser:
+  schema_url: http://localhost:8080/api/v1/api-docs
+  output_directory: lib/shared
+  language: dart
+  json_serializer: json_serializable
+  root_client: false
+  export_file: false
+  generate_client: false
+  put_clients_in_folder: true
+  clients_folder: clients
+```
+
+### Generating Typed Dart Models
+
+To update models when the backend changes:
+
+```bash
+# 1. Fetch OpenAPI schema and create Dart classes in lib/shared/models/
+rps api:types
+
+# 2. Run build_runner to generate .g.dart serialization files
+rps generate
+```
+
+### Consuming Models in Code
+
+The generated models are located in `lib/shared/models/` and include complete `fromJson` / `toJson` capabilities:
+
+```dart
+import 'package:pokedex_flutter/shared/models/pokemon_response.dart';
+import 'package:pokedex_flutter/shared/models/create_pokemon_request.dart';
+
+// Deserialization from API response:
+final pokemon = PokemonResponse.fromJson(jsonResponse);
+print('Pokemon name: ${pokemon.name}');
+print('Base stats: ${pokemon.stats?.length}');
+
+// Serialization to JSON for POST/PUT:
+final request = CreatePokemonRequest(
+  name: 'Pikachu',
+  description: 'Electric mouse Pokémon',
+  avatar: 'https://...',
+  height: 0.4,
+  weight: 6.0,
+  typeIds: [1],
+);
+final jsonPayload = request.toJson();
+```
+
+---
+
+## 🏗️ Architectural Standard & Tech Stack
+
+Following the enterprise guidelines defined in [`.agents/AGENTS.md`](file:///Users/diegovilla/Desktop/pokedex-system/.agents/AGENTS.md):
+
+* **Architecture**: Modular Feature-First Architecture (`lib/features/[feature_name]/`).
+* **Language**: Dart 3 with sealed classes, exhaustive pattern matching, and null-safety.
+* **State Management & DI**: **Riverpod 2.0** with code generation (`@riverpod`, `flutter_riverpod`, `riverpod_generator`).
+* **Networking**: **Dio** (`^5.11.1`) with custom interceptors for authentication, retry policies, and error handling.
+* **Navigation**: **GoRouter** (`^17.5.0`) for declarative routing, deep linking, and type-safe navigation.
+* **Serialization**: `json_annotation` + `json_serializable` generated by `build_runner`.
 
 ---
 
@@ -318,7 +417,14 @@ apps/pokedex_flutter/
 ├── android/                 # Native Android host configuration
 ├── ios/                     # Native iOS host configuration
 ├── lib/
-│   └── main.dart            # Flutter application entrypoint
+│   ├── main.dart            # Flutter application entrypoint
+│   └── shared/
+│       └── models/          # OpenAPI auto-generated DTOs and .g.dart serializers
+│           ├── pokemon_response.dart
+│           ├── pokemon_response.g.dart
+│           ├── create_pokemon_request.dart
+│           └── ... (40+ auto-generated models)
+├── swagger_parser.yaml      # OpenAPI contract generator configuration
 ├── pubspec.yaml             # Dependencies, assets & RPS scripts configuration
 ├── analysis_options.yaml    # Linter rules & static analysis settings
 ├── project.json             # Nx monorepo target mappings

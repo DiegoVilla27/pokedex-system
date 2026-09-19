@@ -81,4 +81,3 @@ apps/**/.flutter-plugins-dependencies
 apps/**/.packages
 apps/**/.pub-cache/
 *.iml
-
