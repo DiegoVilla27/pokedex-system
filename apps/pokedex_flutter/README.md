@@ -30,6 +30,7 @@ High-performance, cross-platform mobile client for the **Pokédex System** built
 ## 📖 Overview
 
 `pokedex_flutter` provides a fluid native client for the Pokédex ecosystem. It is designed to consume:
+
 1. **Multiplatform Design Tokens**: Generated directly by `@pokedex/ui` as strongly typed Dart color constants (`PokedexTokens`).
 2. **Centralized SVG Icons**: Shared single-source icons located in `libs/ui/assets/icons/`.
 3. **High-Throughput Backend**: Communicating with the Spring Boot `pokedex-api` (`http://localhost:8080/api/v1`).
@@ -111,8 +112,8 @@ In `apps/pokedex_flutter/pubspec.yaml`, scripts are defined under the root `scri
 
 ```yaml
 name: pokedex_flutter
-description: "Pokédex Flutter Mobile Client"
-publish_to: "none"
+description: 'Pokédex Flutter Mobile Client'
+publish_to: 'none'
 version: 0.1.0+1
 
 # ⚡ Custom RPS Scripts Definition
@@ -154,14 +155,14 @@ flutter:
 
 ### Available Project Scripts & Examples
 
-| Script | Command | Purpose & Description |
-| :--- | :--- | :--- |
-| **`rps dev:ios`** | `flutter run -d <UUID>` | Launches the app in debug mode on the target iOS Simulator (e.g., iPhone 17 Pro). Supports Hot Reload (`r`) and Hot Restart (`R`). |
-| **`rps dev:android`** | `flutter run -d` | Launches the app on the connected Android emulator or physical device. |
-| **`rps gen`** | `dart run build_runner build ...` | Runs code generation for JSON serialization, Freezed models, or Riverpod providers. |
-| **`rps clean:all`** | `flutter clean && flutter pub get ...` | Deletes build artifacts, cleans `.dart_tool`, flushes Xcode/Gradle cache, and re-resolves dependencies. |
-| **`rps ls`** | `rps ls` | Lists all defined scripts and their underlying commands. |
-| **`rps`** | *(interactive)* | Displays an interactive CLI menu to select and execute any script. |
+| Script                | Command                                | Purpose & Description                                                                                                              |
+| :-------------------- | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
+| **`rps dev:ios`**     | `flutter run -d <UUID>`                | Launches the app in debug mode on the target iOS Simulator (e.g., iPhone 17 Pro). Supports Hot Reload (`r`) and Hot Restart (`R`). |
+| **`rps dev:android`** | `flutter run -d`                       | Launches the app on the connected Android emulator or physical device.                                                             |
+| **`rps gen`**         | `dart run build_runner build ...`      | Runs code generation for JSON serialization, Freezed models, or Riverpod providers.                                                |
+| **`rps clean:all`**   | `flutter clean && flutter pub get ...` | Deletes build artifacts, cleans `.dart_tool`, flushes Xcode/Gradle cache, and re-resolves dependencies.                            |
+| **`rps ls`**          | `rps ls`                               | Lists all defined scripts and their underlying commands.                                                                           |
+| **`rps`**             | _(interactive)_                        | Displays an interactive CLI menu to select and execute any script.                                                                 |
 
 #### Usage Examples:
 
@@ -184,6 +185,7 @@ rps ls
 ### Advanced Features
 
 #### 1. Argument Forwarding
+
 You can pass additional flags and arguments to any RPS script by appending them after the script name:
 
 ```bash
@@ -195,6 +197,7 @@ rps dev:ios -v --flavor production
 ```
 
 #### 2. Interactive Selection Menu
+
 Simply type `rps` in the project root to open an interactive prompt:
 
 ```bash
@@ -207,6 +210,7 @@ $ rps
 ```
 
 #### 3. Chaining Multi-Line Commands
+
 When chaining multiple commands, use YAML's folded block scalar `>` and combine with `&&`:
 
 ```yaml
@@ -222,18 +226,22 @@ scripts:
 ### Troubleshooting & Common Pitfalls
 
 #### 1. `Cannot use type YamlList as a command`
+
 - **Cause**: Defining scripts as a YAML list (e.g. `[flutter clean, flutter pub get]`).
 - **Fix**: RPS expects string commands. Use `&&` with the folded block scalar `>` as shown above.
 
 #### 2. `Could not find package build_runner`
+
 - **Cause**: Running a build runner script when `build_runner` is not declared in `dev_dependencies`.
 - **Fix**: Add `build_runner: ^2.4.0` to `dev_dependencies` in `pubspec.yaml` and execute `flutter pub get`.
 
 #### 3. Exit Code 137 on `rps dev:ios`
+
 - **Cause**: Exit code `137` occurs when a process is killed externally (e.g., stopping the process with `Ctrl+C` / `SIGKILL` or iOS Simulator process termination).
 - **Fix**: Re-run `rps dev:ios` or restart the iOS Simulator via `Simulator > Quit Simulator` and relaunch.
 
 #### 4. `command not found: rps`
+
 - **Cause**: `~/.pub-cache/bin` is not in your shell's `$PATH`.
 - **Fix**: Add `export PATH="$PATH":"$HOME/.pub-cache/bin"` to your `~/.zshrc` and run `source ~/.zshrc`.
 
@@ -244,7 +252,9 @@ scripts:
 This Flutter application integrates directly with the monorepo's single source of truth design tokens.
 
 ### Dart Tokens
+
 When `@pokedex/ui` is built via `pnpm --filter @pokedex/ui build`, it outputs:
+
 - [`libs/ui/generated/flutter/pokedex_tokens.dart`](file:///Users/diegovilla/Desktop/pokedex-system/libs/ui/generated/flutter/pokedex_tokens.dart)
 
 Use them in any Flutter widget:
@@ -262,6 +272,7 @@ Container(
 ```
 
 ### Shared SVG Assets
+
 Shared SVGs from `libs/ui/assets/icons/` are registered in `pubspec.yaml`:
 
 ```yaml
@@ -276,7 +287,7 @@ flutter:
 
 - **Flutter SDK**: `>= 3.24.x` / `3.27.x`
 - **Dart SDK**: `^3.11.1`
-- **Xcode** *(macOS)*: 15+ for iOS simulator and physical device builds.
+- **Xcode** _(macOS)_: 15+ for iOS simulator and physical device builds.
 - **Android Studio**: Android SDK & platform tools configured.
 - **RPS**: Activated via `dart pub global activate rps`.
 
@@ -285,12 +296,14 @@ flutter:
 ## 🚀 Running the Application
 
 ### Via RPS (Recommended)
+
 ```bash
 cd apps/pokedex_flutter
 rps dev:ios
 ```
 
 ### Via Nx (Monorepo Orchestration)
+
 ```bash
 # From monorepo root:
 pnpm nx dev pokedex_flutter

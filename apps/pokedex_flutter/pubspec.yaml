@@ -6,7 +6,8 @@ version: 0.1.0+1
 scripts:
   dev:ios: flutter run -d DF7E47CA-2BBD-42A2-AF30-4DBB8DC271C7
   dev:android: flutter run -d
-  gen: dart run build_runner build --delete-conflicting-outputs
+  api:types: dart run swagger_parser
+  generate: dart run build_runner build --delete-conflicting-outputs
   clean:all: >
     flutter clean &&
     flutter pub get &&
@@ -16,13 +17,25 @@ environment:
   sdk: ^3.11.1
 
 dependencies:
+  dio: ^5.11.1
+  equatable: ^3.0.0
   flutter:
     sdk: flutter
+  get_it: ^9.2.1
+  go_router: ^17.5.0
+  json_annotation: ^4.9.0
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  build_runner: ^2.4.13
+  json_serializable: ^6.9.0
+  riverpod_generator: ^2.6.2
+  riverpod_lint: ^2.6.2
+  swagger_parser: ^1.44.3
 
 flutter:
   uses-material-design: true

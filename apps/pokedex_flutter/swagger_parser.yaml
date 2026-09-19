@@ -1,0 +1,10 @@
+swagger_parser:
+  schema_url: http://localhost:8080/api/v1/api-docs
+  output_directory: lib/shared
+  language: dart
+  json_serializer: json_serializable
+  root_client: false
+  export_file: false
+  generate_client: false
+  put_clients_in_folder: true
+  clients_folder: clients
