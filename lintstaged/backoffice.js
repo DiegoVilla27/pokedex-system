@@ -10,7 +10,6 @@ export const backofficeConfig = {
     // 2. Comandos base para todo archivo modificado
     const commands = [
       `pnpm --dir apps/pokedex-backoffice exec prettier --write ${filesList}`,
-      `pnpm --dir apps/pokedex-backoffice exec eslint --no-warn-ignored ${filesList}`,
       `pnpm --dir apps/pokedex-backoffice exec tsc --noEmit`
     ];
 

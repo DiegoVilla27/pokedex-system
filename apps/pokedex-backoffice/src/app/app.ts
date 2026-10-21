@@ -2,11 +2,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  imports: [
-    RouterModule
-  ],
+  imports: [RouterModule],
+  standalone: true,
   selector: 'app-root',
-  template: `<router-outlet />`,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  template: `<main><router-outlet /></main>`,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class App { }
+export class App {}

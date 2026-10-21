@@ -1,8 +1,15 @@
-<h1>HOLA!</h1>
-
-@for (icon of iconsMapped(); track icon) {
-<div style="display: flex; gap: 4px">
-  <p style="margin: 0px">{{ icon.n }}</p>
-  <div [innerHTML]="icon.i | safeHtml" style="width: 20px; height: 20px"></div>
+<div class="p-4 flex justify-center">
+  <cdk-virtual-scroll-viewport
+    itemSize="220"
+    class="h-screen w-full max-w-full md:max-w-3/4"
+  >
+    <div
+      *cdkVirtualFor="let row of pokemonRows(); trackBy: trackByRow"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-4"
+    >
+      @for (pokemon of row; track pokemon.id) {
+      <app-pokemon [pokemon]="pokemon" />
+      }
+    </div>
+  </cdk-virtual-scroll-viewport>
 </div>
-}
