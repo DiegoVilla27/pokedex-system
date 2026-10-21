@@ -6,9 +6,9 @@
     "moduleResolution": "bundler",
     "module": "preserve",
     "paths": {
-      "@shared/*": [
-        "./src/app/shared/*"
-      ]
+      "@environments/*": ["./src/environments/*"],
+      "@features/*": ["./src/app/features/*"],
+      "@shared/*": ["./src/app/shared/*"]
     }
   },
   "angularCompilerOptions": {

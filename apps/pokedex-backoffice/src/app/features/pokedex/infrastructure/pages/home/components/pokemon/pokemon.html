@@ -1,0 +1,8 @@
+<div
+  class="border-2 bg-slate-200 rounded-4xl p-4 bg-cover bg-center"
+  [style.background-image]="'url(' + pokemon()?.avatar + ')'"
+>
+  <p class="text-3xl font-bold">#{{ pokemon()?.id }}</p>
+  <h1 class="text-5xl capitalize font-bold">{{ pokemon()?.name }}</h1>
+  <p class="text-sm">{{ pokemon()?.description }}</p>
+</div>

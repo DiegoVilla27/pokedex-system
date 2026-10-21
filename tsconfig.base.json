@@ -10,10 +10,16 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
-    "lib": ["ES2022", "dom", "dom.iterable"],
+    "lib": [
+      "ES2022",
+      "dom",
+      "dom.iterable"
+    ],
     "moduleResolution": "bundler",
     "paths": {
-      "@pokedex/api-types": ["libs/api-types/src/index.ts"]
+      "@pokedex/api-types": [
+        "./libs/api-types/src/index.ts"
+      ]
     }
   }
 }

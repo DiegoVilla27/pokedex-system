@@ -8,7 +8,11 @@
     "test": "ng test"
   },
   "dependencies": {
-    "@pokedex/ui": "workspace:*"
-  },
-  "devDependencies": {}
+    "@angular/cdk": "^22.2.0",
+    "@pokedex/api-types": "workspace:*",
+    "@pokedex/ui": "workspace:*",
+    "@tailwindcss/postcss": "^4.3.3",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3"
+  }
 }
